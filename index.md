@@ -17,6 +17,6 @@ Most parameters are identical between `GET` requests and `POST` requests, except
 
 | GET  | POST |
 | ------------- | ------------- |
-| ?key=value1|value2|value3  | key:[value1,value2,value3]  |
+| ?key=value1\|value2\|value3  | key:[value1,value2,value3]  |
 
 ## Request Type
