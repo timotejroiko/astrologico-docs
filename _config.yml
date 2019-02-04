@@ -17,4 +17,4 @@ sass:
   sass_dir: _sass
   style: compressed
 
-theme: jekyll-theme-slate
+theme: jekyll-theme-minimal
