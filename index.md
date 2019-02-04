@@ -9,10 +9,10 @@ navigation: 1
 
 Astrologico API is a fully featured microservice for retrieving astrological calculations and data. All endpoints are `HTTPS` only and available via `GET` and `POST`. Automated key generation is currently not available but you can request a key at our [Discord server (https://discord.gg/jtaCURK)](https://discord.gg/jtaCURK)
 
-The API's base url is `https://api.astrologico.org`. 
+The API's base url is `https://api.astrologico.org`.
 
-
-
+  
+  
 ## GET vs POST
 
 There are two differences between `GET` requests and `POST` requests. In `GET` requests, array parameters should be pipe-delimited query strings, and the API key should be a query-string as well. In `POST` requests, array parameters should be JSON arrays, and the API key should be in the `Authorization` header.
