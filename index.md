@@ -4,6 +4,7 @@ title: Getting Started
 navigation: 1
 ---
 
+<br>
 
 # Astrologico API
 
