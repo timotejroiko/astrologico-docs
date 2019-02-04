@@ -11,7 +11,7 @@ Astrologico API is a fully featured microservice for retrieving astrological cal
 
 The API's base url is `https://api.astrologico.org`.
 
-<br><br><br>
+<br><br>
   
 ## GET vs POST
 
@@ -21,7 +21,7 @@ There are two differences between `GET` requests and `POST` requests. In `GET` r
 | --- | --- |
 | ```?field=value1|value2|value3&key=APIKEY```  | ```header: {Authorization:APIKEY}, body: {field:[value1,value2,value3]}``` |
 
-<br><br><br>
+<br><br>
 
 ## Rate Limits & Request Type
 
@@ -35,7 +35,7 @@ Our current Rate limits are as follows:
 | --- | --- |
 | 250/day | 50/day |
 
-<br><br><br>
+<br><br>
 
 ## Sample requests
 
@@ -59,4 +59,4 @@ body: {
 }
 ```
 
-<br><br><br><br><br><br>
+<br><br><br><br>
