@@ -12,7 +12,7 @@ Astrologico API is a fully featured microservice for retrieving astrological cal
 
 The API's base url is `https://api.astrologico.org`.
 
-<br><br>
+<br>
   
 ## GET vs POST
 
@@ -22,7 +22,7 @@ There are two differences between `GET` requests and `POST` requests. In `GET` r
 | --- | --- |
 | ```?field=value1|value2|value3&key=APIKEY```  | ```header: {Authorization:APIKEY}, body: {field:[value1,value2,value3]}``` |
 
-<br><br>
+<br>
 
 ## Rate Limits & Request Type
 
@@ -36,7 +36,7 @@ Our current Rate limits are as follows:
 | --- | --- |
 | 250/day | 50/day |
 
-<br><br>
+<br>
 
 ## Sample request
 
@@ -51,78 +51,78 @@ POST
 
 url: "https://api.astrologico.org/v1/chart",
 header: {
-  "Authorization": APIKEY
+	"Authorization": APIKEY
 },
 body: {
-  "utcdate":[25,10,2003,12,30,0],
-  "location":[51.5074,0.1278],
-  "planets":["P0","P1","P2"]
+	"utcdate":[25,10,2003,12,30,0],
+	"location":[51.5074,0.1278],
+	"planets":["P0","P1","P2"]
 }
 ```
 
-<br><br>
+<br>
 
 ## Sample response
 
 ```
 "status": "OK",
 "metadata": {
-  "options": {
-    "zodiacType": "Tropical",
-    "zodiacName": "Tropical",
-    "ayanamsa": 0,
-    "positions": "Apparent",
-    "coordinates": "Geocentric",
-    "houseSystem": false,
-    "displayOptions": [
-      "LONGITUDE",
-      "LONGITUDE_SPEED"
-    ]
-  },
-  "location": {
-    "latitude": 51.5074,
-    "longitude": 0.1278,
-    "elevation": 0
-  },
-  "date": {
-    "input": "utcdate",
-    "calendar": "Gregorian",
-    "accuracy": 4,
-    "ISO": "2003-10-25T12:30:00.000Z",
-    "UNIX": 1067085000000,
-    "UTCDate": {
-      "day": 25,
-      "month": 10,
-      "year": 2003,
-      "hour": 12,
-      "minute": 30,
-      "second": 0,
-      "milisecond": 0
-    },
-    "JD": {
-      "julianDayET": 2452938.021576204,
-      "julianDayUT": 2452938.0208290154
-    },
-    "siderealTime": "14:43:55"
-  }
+	"options": {
+		"zodiacType": "Tropical",
+		"zodiacName": "Tropical",
+		"ayanamsa": 0,
+		"positions": "Apparent",
+		"coordinates": "Geocentric",
+		"houseSystem": false,
+		"displayOptions": [
+			"LONGITUDE",
+			"LONGITUDE_SPEED"
+		]
+	},
+	"location": {
+		"latitude": 51.5074,
+		"longitude": 0.1278,
+		"elevation": 0
+	},
+	"date": {
+		"input": "utcdate",
+		"calendar": "Gregorian",
+		"accuracy": 4,
+		"ISO": "2003-10-25T12:30:00.000Z",
+		"UNIX": 1067085000000,
+		"UTCDate": {
+			"day": 25,
+			"month": 10,
+			"year": 2003,
+			"hour": 12,
+			"minute": 30,
+			"second": 0,
+			"milisecond": 0
+		},
+		"JD": {
+			"julianDayET": 2452938.021576204,
+			"julianDayUT": 2452938.0208290154
+		},
+		"siderealTime": "14:43:55"
+	}
 },
 "planets": {
-  "P0": {
-    "name": "Sun",
-    "longitude": 211.67580106071702,
-    "longitudeSpeed": 0.9970129304741013
-  },
-  "P1": {
-    "name": "Moon",
-    "longitude": 211.47772385703817,
-    "longitudeSpeed": 15.041226718480267
-  },
-  "P2": {
-    "name": "Mercury",
-    "longitude": 211.74593364533044,
-    "longitudeSpeed": 1.660100144491379
-  }
+	"P0": {
+		"name": "Sun",
+		"longitude": 211.67580106071702,
+		"longitudeSpeed": 0.9970129304741013
+	},
+	"P1": {
+		"name": "Moon",
+		"longitude": 211.47772385703817,
+		"longitudeSpeed": 15.041226718480267
+	},
+	"P2": {
+		"name": "Mercury",
+		"longitude": 211.74593364533044,
+		"longitudeSpeed": 1.660100144491379
+	}
 }
 ```
 
-<br><br><br><br>
+<br><br><br>
