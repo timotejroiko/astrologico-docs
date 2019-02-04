@@ -15,11 +15,11 @@ The API's base url is `https://api.astrologico.org`.
 
 ## GET vs POST
 
-Most parameters are identical between `GET` requests and `POST` requests, except for array parameters, which have the following difference:
+There are two differences between `GET` requests and `POST` requests. In `GET` requests, array parameters should be pipe-delimited query strings, and the API key should be a query-string as well. In `POST` requests, array parameters should be JSON arrays, and the API key should be in the `Authorization` header.
 
 | GET  | POST |
-| ------------- | ------------- |
-| ?key=value1\|value2\|value3  | key:[value1,value2,value3]  |
+| --- | --- |
+| ?field=value1\|value2\|value3&key=APIKEY  | header: {Authorization:APIKEY},body: {field:[value1,value2,value3]}  |
 
 
 
@@ -32,10 +32,14 @@ When the rate limits are reached, subsequent requests will have a 5 second delay
 Our current Rate limits are as follows:
 
 | Type1  | Type2 |
-| ------------- | ------------- |
+| --- | --- |
 | 250/day | 50/day |
 
 
+## Sample requests
 
+```
+GET
 
-
+https://api.astrologico.org/chart?utcdate=25|10|2003|12|30|0&location=51.5074|0.1278&planets=P0|P1|P2
+```
