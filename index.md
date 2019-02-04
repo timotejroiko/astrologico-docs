@@ -22,6 +22,7 @@ There are two differences between `GET` requests and `POST` requests. In `GET` r
 | ```?field=value1\|value2\|value3&key=APIKEY```  | ```header: {Authorization:APIKEY}, body: {field:[value1,value2,value3]}``` |
 
 
+
 ## Rate Limits & Request Type
 
 Depending on the endpoint and the parameters used, a request can become a `type1` request or a `type2` request. `type1` requests are simpler and have higher rate limits, while `type2` requests require more resources, and as such have lower rate limits.
@@ -35,10 +36,25 @@ Our current Rate limits are as follows:
 | 250/day | 50/day |
 
 
+
 ## Sample requests
 
 ```
 GET
 
 https://api.astrologico.org/chart?utcdate=25|10|2003|12|30|0&location=51.5074|0.1278&planets=P0|P1|P2
+```
+
+```
+POST
+
+url: "https://api.astrologico.org/chart",
+header: {
+  "Authorization": APIKEY
+},
+body: {
+  "utcdate":[25,10,2003,12,30,0],
+  "location":[51.5074,0.1278],
+  "planets":["P0","P1","P2"]
+}
 ```
