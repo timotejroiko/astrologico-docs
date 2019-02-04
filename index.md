@@ -24,6 +24,7 @@ There are two differences between `GET` requests and `POST` requests. In `GET` r
 \\
 \\
 \\
+\
 
 ## Rate Limits & Request Type
 
