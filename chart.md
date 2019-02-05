@@ -9,6 +9,9 @@ navigation: 3
 		color: royalblue;
 		font-weight: bold;
 	}
+	.inner code {
+		font-size: 100%;
+	}
 </style>
 
 <br>
