@@ -23,7 +23,7 @@ These are the currently available endpoints
 | Endpoint | Description | Request Type
 |---|---|---|
 | [/v1/chart](/astrologico/chart.html) | Astrological data for a given time and place, including planets, houses, stars, and other objects | Type1/Type2* |
-| [/v1/ephemeris](/astrologico/ephemeris.html) |  Astrological data for a time range. Returns arrays of values instead of single values | Type2 |
+| [/v1/ephemerides](/astrologico/ephemerides.html) |  Astrological data for a time range. Returns arrays of values instead of single values | Type2 |
 | [/v1/search](/astrologico/search.html) | Find object information by name | Type1 |
 | [/v1/dateconversion](/astrologico/dateconversion.html) | Date conversion between local time, utc time, julian dates and unix timestamps | Type2 |
 | [/v1/location](/astrologico/location.html) | Find coordinates by name (geocoding) | Type2 |
