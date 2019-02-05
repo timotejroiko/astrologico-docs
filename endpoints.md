@@ -19,8 +19,8 @@ These are the currently available endpoints
 
 | Endpoint | Description | Request Type
 |---|---|---|
-| /v1/chart | Astrological data for a given time and place, including planets, houses, stars, and other objects | Type1/Type2 |
-| /v1/ephemeris |  Astrological data for a time range. Returns arrays of values instead of single values | Type2 |
+| [/v1/chart](/astrologico/chart.html) | Astrological data for a given time and place, including planets, houses, stars, and other objects | Type1/Type2 |
+| [/v1/ephemeris](/astrologico/ephemeris.html) |  Astrological data for a time range. Returns arrays of values instead of single values | Type2 |
 | /v1/search | Find object information by name | Type1 |
 | /v1/dateconversion | Date conversion between local time, utc time, julian dates and unix timestamps | Type2 |
 | /v1/location | Find coordinates by name (geocoding) | Type2 |
