@@ -15,22 +15,29 @@ navigation: 3
 
 ## Chart
 
-This is the primary endpoint through which you can retrieve everything you need to generate accurate astrological charts of various types.
+This is the primary endpoint through which you can retrieve everything you need to generate accurate astrological charts of various types. All parameters are optional, check each parameter's documentation for default values and additional information.
 
 ### Parameters
 
 | Parameter | Type | Descripton |
 |---|---|---|
-| timestamp | number | Set date using a unix timestamp |
-| jdet | number | Set date using Julian Day Ephemeris Time |
-| jdut | number | Set date using Julian Day Univeral Time |
-| utcdate | array | Set date using UTC date and time |
-| localdate | array | Set date using local date and time |
-| location | array | Set location using decimal coordinates |
-| querylocation | array | Set location using a search string |
-| options | array | Set calculation options |
-| display | array | Set values to return |
-| planets | array | Set objects to calculate |
-| houses | string | Set house system and display houses |
+| [[Date Parameter](/astrologico/param_date.html)] | - | Set date using one of the available date parameters. |
+| [[Location Parameter](/astrologico/param_location.html)] | - | Set location using one of the available location parameters. |
+| [options](/astrologico/param_options.html) | array | Set calculation options |
+| [display](/astrologico/param_display.html) | array | Set values to return |
+| [planets](/astrologico/param_planets.html) | array | Set objects to calculate |
+| [houses](/astrologico/param_houses.html) | string | Set house system and display houses |
+
+<br>
+
+### Response Structure
+
+| key | Type | Description |
+|---|---|---|
+| STATUS | string | Contains `OK`, `ERROR` or `RATELIMITED` |
+| ERROR | string | Error message, returned only when STATUS is `ERROR` |
+| [metadata](/astrologico/res_metadata.html) | object | Contains the date, location and options used |
+| [houses](/astrologico/res_houses.html) | object | Contains data for houses, returned only when a house system is selected |
+| [planets](/astrologico/res_planets.html) | object | Contains data for planets |
 
 <br><br><br>
