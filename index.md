@@ -29,8 +29,6 @@ There are two differences between `GET` requests and `POST` requests. In `GET` r
 | --- | --- |
 | ?field=value1\|value2\|value3&key=APIKEY  | header: { Authorization: APIKEY },<br>body: { field: [value1,value2,value3] } |
 
-Premium rate limits and pricing will be available soon.
-
 <br>
 
 ## Rate Limits & Request Type
@@ -44,6 +42,8 @@ Our current Rate limits are as follows:
 | Type1  | Type2 |
 | --- | --- |
 | 250/day | 50/day |
+
+Premium options and pricing for higher rate limits will be available soon.
 
 <br>
 
