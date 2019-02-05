@@ -28,8 +28,7 @@ These are the currently available endpoints
 | [/v1/zeropoint](/astrologico/zeropoint.html) | Find the direction switch date of an object | Type2 |
 | [/v1/cycles](/astrologico/cycles.html) | Find the return date of an object | Type2 |
 
-\* becomes a Type2 request if one of the following parameters is used: `localdate` `querylocation` `options=utctolocal`
-
+\* becomes a Type2 request if one of the following parameters is used: `localdate` `querylocation` `options=utctolocal`\\
 \*\* becomes a Type2 request if a mode other than `mode=0` is used
 
 <br><br><br>
