@@ -19,20 +19,24 @@ This is the primary endpoint through which you can retrieve everything you need 
 
 ### Parameters
 
-| Parameter | Type | Descripton |
+| Parameter | Type | Default | Descripton |
 |---|---|---|---|
-| Date Parameter | - | A [date](test) parameter. If none is supplied, the current date is used. |
-| Location Parameter | - | A [location](test) parameter |
+| [Date](/astrologico/param_date.html) | multi | no | current date | A [date](test) parameter. If none is supplied, the current date is used. |
+| [Location](/astrologico/param_location.html) | multi | no |  | A [location](test) parameter |
 
+^
 
-
-| timestamp* | number | current date | Unix timestamp |
-| jdet* | number | current date | Julian Day Ephemeris Time |
-| jdut* | number | current date | Julian Day Univeral Time |
-| utcdate* | array | current date | Date array in UTC |
-| localdate* | array | current date | Date array in Local Time. Requires location or timezone options |
-| location** | array | [0,0,0] | Location array |
-| querylocation** | array | [0,0,0] | location |
+| Parameter | Type | Default | Descripton |
+| date parameters |
+| timestamp | number | current date | Set date using a unix timestamp |
+| jdet | number | current date | Set date using Julian Day Ephemeris Time |
+| jdut | number | current date | Set date using Julian Day Univeral Time |
+| utcdate | array | current date | Set date using day,month,year,hour,minute,second in UTC |
+| localdate | array | current date | Set date using day,month,year,hour,minute,second in local time |
+| location parameters |
+| location | array | [0,0,0] | Set location using longitude,latitude,elevation in decimal coordinates |
+| querylocation | array | [] | Set location using a search string |
+| other parameters |
 | timestamp | number | current date | A unix timestamp |
 | timestamp | number | current date | A unix timestamp |
 | timestamp | number | current date | A unix timestamp |
