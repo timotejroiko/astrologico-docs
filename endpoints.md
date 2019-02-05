@@ -29,7 +29,7 @@ These are the currently available endpoints
 | [/v1/cycles](/astrologico/cycles.html) | Find the return date of an object | Type2 |
 
 \* becomes a Type2 request if one of the following parameters is used:<br>`localdate` `querylocation` `options=utctolocal`
-<br>
+<br><br>
 \*\* becomes a Type2 request if a mode other than `mode=0` is used
 
 <br><br><br>
