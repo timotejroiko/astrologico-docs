@@ -49,7 +49,7 @@ This endpoint is used to find the correct code points of supported objects, incl
 |---|---|---|
 | [STATUS](/astrologico/res_status.html) | string | Contains the response status |
 | display | string | Displayed results and total results |
-| result | array | Array of results (max 100) |
+| results | array | Array of results (max 100) |
 
 <br>
 
