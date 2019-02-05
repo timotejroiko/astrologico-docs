@@ -5,8 +5,8 @@ navigation: 3
 ---
 
 <style>
-	a {
-		color: blue;
+	.inner a {
+		color: royalblue;
 		font-weight: bold;
 	}
 </style>
