@@ -91,7 +91,7 @@ body: {
 
 ### Sample Response
 
-```llvm
+```LLVM
 {
 	"status": "OK",
 	"display": "14 of 14",
