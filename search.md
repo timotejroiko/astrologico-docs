@@ -63,7 +63,29 @@ This endpoint is used to find the correct code points of supported objects, incl
 | formula | string | The object formula* |
 | reverse | boolean | Whether the formula is automatically reversed for night charts* |
 
-\* Returned fpr arabic parts/lots only
+\* Returned for arabic parts/lots only
+
+<br>
+
+### Sample Request
+
+```
+GET
+
+https://api.astrologico.org/v1/search?key=APIKEY&query=eris
+```
+
+```
+POST
+
+url: "https://api.astrologico.org/v1/search",
+header: {
+	Authorization: APIKEY
+}
+body: {
+	query: "eris"
+}
+```
 
 <br>
 
