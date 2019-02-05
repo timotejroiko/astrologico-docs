@@ -60,8 +60,10 @@ This endpoint is used to find the correct code points of supported objects, incl
 | name | string | Object name |
 | code | string | Object code point to use with other endpoints |
 | type | string | Object type |
-| formula | string | Arabic parts/lots only. The object formula |
-| reverse | boolean | Arabic parts/lots only. Whether the formula is automatically reversed for night charts |
+| formula | string | The object formula* |
+| reverse | boolean | Whether the formula is automatically reversed for night charts* |
+
+\* Returned fpr arabic parts/lots only
 
 <br>
 
