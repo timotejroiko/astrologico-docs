@@ -26,7 +26,7 @@ The same as the [Chart](/astrologico/chart.html) endpoint but returns arrays of 
 |---|---|---|
 | [Date Parameter](/astrologico/param_date.html) | - | Set date using one of the available date parameters. |
 | [Location Parameter](/astrologico/param_location.html) | - | Set location using one of the available location parameters. |
-| [range](/astrologico/param_range.html) | array | Set the time range for the ephemeris |
+| [range](/astrologico/param_range.html) | array | Set the time range for the ephemerides |
 | [options](/astrologico/param_options.html) | array | Set calculation options |
 | [display](/astrologico/param_display.html) | array | Set values to return |
 | [planets](/astrologico/param_planets.html) | array | Set objects to display |
