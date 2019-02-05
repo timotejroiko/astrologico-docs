@@ -4,6 +4,13 @@ title: Endpoints
 navigation: 2
 ---
 
+<style>
+	.inner a {
+		color: royalblue;
+		font-weight: bold;
+	}
+</style>
+
 <br>
 
 ## Endpoints
