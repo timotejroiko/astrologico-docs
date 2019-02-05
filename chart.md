@@ -20,6 +20,7 @@ This is the primary endpoint through which you can retrieve everything you need 
 ### Parameters
 
 | Parameter | Type | Descripton |
+|---|---|---|
 | timestamp | number | Set date using a unix timestamp |
 | jdet | number | Set date using Julian Day Ephemeris Time |
 | jdut | number | Set date using Julian Day Univeral Time |
