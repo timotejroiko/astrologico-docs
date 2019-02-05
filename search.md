@@ -61,7 +61,7 @@ This endpoint is used to find the correct code points of supported objects, incl
 | code | string | Object code point to use with other endpoints |
 | type | string | Object type |
 | formula | string | Arabic parts/lots only. The object formula |
-| reverse | string | Arabic parts/lots only. Whether the formula is automatically reversed for night charts |
+| reverse | boolean | Arabic parts/lots only. Whether the formula is automatically reversed for night charts |
 
 <br>
 
