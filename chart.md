@@ -21,12 +21,12 @@ This is the primary endpoint through which you can retrieve everything you need 
 
 | Parameter | Type | Descripton |
 |---|---|---|
-| [[Date Parameter](/astrologico/param_date.html)] | - | Set date using one of the available date parameters. |
-| [[Location Parameter](/astrologico/param_location.html)] | - | Set location using one of the available location parameters. |
+| [[Date Parameter]](/astrologico/param_date.html) | - | Set date using one of the available date parameters. |
+| [[Location Parameter]](/astrologico/param_location.html) | - | Set location using one of the available location parameters. |
 | [options](/astrologico/param_options.html) | array | Set calculation options |
 | [display](/astrologico/param_display.html) | array | Set values to return |
-| [planets](/astrologico/param_planets.html) | array | Set objects to calculate |
-| [houses](/astrologico/param_houses.html) | string | Set house system and display houses |
+| [planets](/astrologico/param_planets.html) | array | Set objects to display |
+| [houses](/astrologico/param_houses.html) | string | Set house system to display |
 
 <br>
 
