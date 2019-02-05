@@ -20,12 +20,16 @@ navigation: 5
 
 This endpoint is used to find the correct code points of supported objects, including planets, asteroids, stars, hypotheticals, arabic parts, and more
 
+<br>
+
 ### Parameters
 
 | Parameter | Type | Descripton |
 |---|---|---|
 | query | string | The search term |
 | type | string | Optional. Filter results by object type |
+
+<br>
 
 ### Object Types
 
@@ -47,6 +51,8 @@ This endpoint is used to find the correct code points of supported objects, incl
 | display | string | Displayed results and total results |
 | result | array | Array of results (max 100) |
 
+<br>
+
 ### Result
 
 | key | Type | Description |
@@ -56,6 +62,8 @@ This endpoint is used to find the correct code points of supported objects, incl
 | type | string | Object type |
 | formula | string | Arabic parts/lots only. The object formula |
 | reverse | string | Arabic parts/lots only. Whether the formula is automatically reversed for night charts |
+
+<br>
 
 ### Sample Response
 
