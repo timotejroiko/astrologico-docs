@@ -4,6 +4,13 @@ title: Getting Started
 navigation: 1
 ---
 
+<style>
+	.inner a {
+		color: royalblue;
+		font-weight: bold;
+	}
+</style>
+
 <br>
 
 # Astrologico API
