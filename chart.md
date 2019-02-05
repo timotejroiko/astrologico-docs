@@ -13,7 +13,7 @@ navigation: 3
 		font-size: 100%;
 	}
 </style>
- 
+
 <br>
 
 ## Chart
