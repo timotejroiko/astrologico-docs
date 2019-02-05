@@ -69,13 +69,13 @@ This endpoint is used to find the correct code points of supported objects, incl
 
 ### Sample Request
 
-```
+```perl
 GET
 
 https://api.astrologico.org/v1/search?key=APIKEY&query=eris
 ```
 
-```
+```js
 POST
 
 url: "https://api.astrologico.org/v1/search",
@@ -91,7 +91,7 @@ body: {
 
 ### Sample Response
 
-```json
+```elixir
 {
 	"status": "OK",
 	"display": "14 of 14",
