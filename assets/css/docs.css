@@ -1,9 +1,0 @@
----
----
-
-@import "{{ site.theme }}";
-
-a {
-    color: blue;
-    font-weight: bold;
-}
