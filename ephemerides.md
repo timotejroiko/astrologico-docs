@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Endpoints - /v1/ephemeris
+title: Endpoints - /v1/ephemerides
 navigation: 4
 ---
 
@@ -16,7 +16,7 @@ navigation: 4
 
 <br>
 
-## Ephemeris
+## Ephemerides
 
 The same as the [Chart](/astrologico/chart.html) endpoint but returns arrays of values, instead of single values, corresponding to a time range.
 
