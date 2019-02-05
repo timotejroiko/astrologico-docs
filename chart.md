@@ -4,6 +4,13 @@ title: /v1/chart
 navigation: 3
 ---
 
+<style>
+	a {
+		color: blue;
+		font-weight: bold;
+	}
+</style>
+
 <br>
 
 ## Chart
