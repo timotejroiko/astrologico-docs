@@ -31,7 +31,7 @@ This endpoint is used to find the correct code points of supported objects, incl
 
 <br>
 
-### Object Types
+### Parameters - Type
 
 | Type | Descripton |
 |---|---|
@@ -43,7 +43,7 @@ This endpoint is used to find the correct code points of supported objects, incl
 
 <br>
 
-### Response Structure
+### Response
 
 | key | Type | Description |
 |---|---|---|
@@ -53,7 +53,7 @@ This endpoint is used to find the correct code points of supported objects, incl
 
 <br>
 
-### Result
+### Response - Result
 
 | key | Type | Description |
 |---|---|---|
