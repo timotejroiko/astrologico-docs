@@ -8,6 +8,24 @@ navigation: 2
 
 ## Endpoints
 
+These are the currently available endpoints
+
+<br>
+
+### Chart
+`/v1/chart`
+`type1` or `type2`
+
+Primary endpoint, retrieves astrological and astronomical data for a given time and place.
+
+<br>
+
+### Ephemeris
+`/v1/chart`
+`type2`
+
+<br>
+
 | Endpoint | Description | Request Type
 |---|---|---|
 | `/v1/chart` | Main endpoint. Get astrological data for a given time and place, including planets, houses, stars, and other objects | Type1 or Type2 |
