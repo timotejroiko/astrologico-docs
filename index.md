@@ -27,7 +27,7 @@ There are two differences between `GET` requests and `POST` requests. In `GET` r
 
 | GET  | POST |
 | --- | --- |
-| ?field=value1|value2|value3&key=APIKEY  | header: { Authorization: APIKEY },<br>body: { field: [value1,value2,value3] } |
+| ?field=value1\|value2\|value3&key=APIKEY  | header: { Authorization: APIKEY },<br>body: { field: [value1,value2,value3] } |
 
 <br>
 
