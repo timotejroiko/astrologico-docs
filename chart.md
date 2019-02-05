@@ -19,26 +19,17 @@ This is the primary endpoint through which you can retrieve everything you need 
 
 ### Parameters
 
-| Parameter | Type | Default | Descripton |
-|---|---|---|---|
-| [Date](/astrologico/param_date.html) | multi | no | current date | A [date](test) parameter. If none is supplied, the current date is used. |
-| [Location](/astrologico/param_location.html) | multi | no |  | A [location](test) parameter |
-
-^
-
-| Parameter | Type | Default | Descripton |
-| date parameters |
-| timestamp | number | current date | Set date using a unix timestamp |
-| jdet | number | current date | Set date using Julian Day Ephemeris Time |
-| jdut | number | current date | Set date using Julian Day Univeral Time |
-| utcdate | array | current date | Set date using day,month,year,hour,minute,second in UTC |
-| localdate | array | current date | Set date using day,month,year,hour,minute,second in local time |
-| location parameters |
-| location | array | [0,0,0] | Set location using longitude,latitude,elevation in decimal coordinates |
-| querylocation | array | [] | Set location using a search string |
-| other parameters |
-| timestamp | number | current date | A unix timestamp |
-| timestamp | number | current date | A unix timestamp |
-| timestamp | number | current date | A unix timestamp |
+| Parameter | Type | Descripton |
+| timestamp | number | Set date using a unix timestamp |
+| jdet | number | Set date using Julian Day Ephemeris Time |
+| jdut | number | Set date using Julian Day Univeral Time |
+| utcdate | array | Set date using UTC date and time |
+| localdate | array | Set date using local date and time |
+| location | array | Set location using decimal coordinates |
+| querylocation | array | Set location using a search string |
+| options | array | Set calculation options |
+| display | array | Set values to return |
+| planets | array | Set objects to calculate |
+| houses | string | Set house system and display houses |
 
 <br><br><br>
