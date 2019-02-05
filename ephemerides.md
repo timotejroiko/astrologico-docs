@@ -41,7 +41,7 @@ The same as the [Chart](/astrologico/chart.html) endpoint but returns arrays of 
 | [STATUS](/astrologico/res_status.html) | string | Contains the response status |
 | [metadata](/astrologico/res_metadata.html) | object | Contains the configuration used for the calculations |
 | [houses](/astrologico/res_houses.html) | object | Contains data for houses, returned only when a house system is selected |
-| [planets](/astrologico/res_planets.html) | object | Contains data for planets |
+| [planets](/astrologico/res_planets.html) | object | Contains data for planets and other objects |
 
 <br>
 
