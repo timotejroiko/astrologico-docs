@@ -32,11 +32,12 @@ There are several Date parameters which are mutually exclusive, you only need to
 | jdet | float | UTC | Julian day in ephemeris time or terrestrial time |
 | jdut | float | UTC | Julian day in universal time |
 | utcdate | array | UTC | Sorted date/time array in UTC |
-| localdate | array | LOCAL | Sorted date/time array in local time |
+| [localdate](#datearray){:target="_blank"} | array | LOCAL | Sorted date/time array in local time |
 
 <br>
 
 ### Parameters - utcdate/localdate
+{:hreflang="de"}
 
 | Index | Type | Required | Default | Descripton |
 |---|---|---|---|---|
