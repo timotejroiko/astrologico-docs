@@ -25,7 +25,6 @@ This endpoint is a standalone version of the  `querylocation` parameter included
 | Parameter | Type | Descripton |
 |---|---|---|
 | query | string | Name to lookup |
-| lang | string | Optional. Language to localize the result |
 
 <br>
 
