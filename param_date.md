@@ -31,13 +31,13 @@ There are several Date parameters which are mutually exclusive, you only need to
 | timestamp | Integer | UTC | Unix timestamp in milliseconds |
 | jdet | float | UTC | Julian day in ephemeris time or terrestrial time |
 | jdut | float | UTC | Julian day in universal time |
-| utcdate | array | UTC | Sorted date/time array in UTC |
-| [localdate](#datearray){:target="_blank"} | array | LOCAL | Sorted date/time array in local time |
+| [utcdate](#datearray) | array | UTC | Sorted date/time array in UTC |
+| [localdate](#datearray) | array | LOCAL | Sorted date/time array in local time |
 
 <br>
 
 ### Parameters - utcdate/localdate
-{:hreflang="de"}
+{:name="datearray"}
 
 | Index | Type | Required | Default | Descripton |
 |---|---|---|---|---|
