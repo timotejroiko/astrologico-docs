@@ -28,9 +28,9 @@ There are several Date parameters which are mutually exclusive, you only need to
 
 | Parameter | Type | Input Type | Descripton |
 |---|---|---|
-| timestamp | number | UTC | Unix timestamp in milliseconds |
-| jdet | number | UTC | Julian day in ephemeris time or terrestrial time |
-| jdut | number | UTC | Julian day in universal time |
+| timestamp | Integer | UTC | Unix timestamp in milliseconds |
+| jdet | float | UTC | Julian day in ephemeris time or terrestrial time |
+| jdut | float | UTC | Julian day in universal time |
 | utcdate | array | UTC | Sorted date/time array in UTC |
 | localdate | array | LOCAL | Sorted date/time array in local time |
 
