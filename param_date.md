@@ -26,7 +26,7 @@ navigation: 9
 
 There are several Date parameters which are mutually exclusive, you only need to use one of them. If none are used, the request will default to the current date and time.
 
-| Parameter | Type | Date Type | Descripton |
+| Parameter | Type | Input Type | Descripton |
 |---|---|---|
 | timestamp | number | UTC | Unix timestamp in milliseconds |
 | jdet | number | UTC | Julian day in ephemeris time or terrestrial time |
