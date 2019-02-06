@@ -27,7 +27,7 @@ navigation: 9
 There are several Date parameters which are mutually exclusive, you only need to use one of them. If none are used, the request will default to the current date and time.
 
 | Parameter | Type | Input Type | Descripton |
-|---|---|---|
+|---|---|---|---|
 | timestamp | Integer | UTC | Unix timestamp in milliseconds |
 | jdet | float | UTC | Julian day in ephemeris time or terrestrial time |
 | jdut | float | UTC | Julian day in universal time |
@@ -39,7 +39,7 @@ There are several Date parameters which are mutually exclusive, you only need to
 ### Parameters - utcdate/localdate
 
 | Index | Type | Required | Default | Descripton |
-|---|---|---|
+|---|---|---|---|---|
 | 0 | Integer | yes | - | Day |
 | 1 | Integer | yes | - | Month |
 | 2 | Integer | yes | - | Full year |
@@ -48,5 +48,17 @@ There are several Date parameters which are mutually exclusive, you only need to
 | 5 | Float | no | 0 | second |
 
 The `localdate` parameter uses a [Location Parameter](/astrologico/param_location.html) to obtain the correct timezone. Optionally, a custom timezone can be provided using the [Options](/astrologico/param_options.html) parameter. `localdate` turns a `Type1` request into a `Type2` request.
+
+### Parameters - Date Parameters Examples
+
+Here's an example of how each parameter should be used to generate a chart for `February 15, 1995 - 1:53pm, in New York USA` (with `localdate` using the exact coordinates for New York)
+
+| Parameter | GET Request | POST Request
+|---|---|---|
+| timestamp | timestamp=792856380000 | timestamp:792856380000 |
+| jdet | jdet=2449764.0791803706 | jdet:2449764.0791803706 |
+| jdut | jdut=2449764.0784755815 | jdut:2449764.0784755815 |
+| utcdate | utcdate=15\|2\|1995\|13\|53 | utcdate:[15,2,1995,13,53] |
+| localdate | localdate=15\|2\|1995\|8\|53&location=40.7127753\|-74.0059728\|13.36520862579346 | localdate:[15,2,1995,8,53],<br>location:[40.7127753,-74.0059728,13.36520862579346] |
 
 <br><br><br>
