@@ -31,10 +31,10 @@ This endpoint is a standalone version of the date conversion functions included 
 | Parameter | Type | Descripton |
 |---|---|---|
 | [Date Parameter](/astrologico/param_date.html) | - | Set date using one of the available date parameters. |
-| [Location Parameter](/astrologico/param_location.html) | - | Set location using one of the available location parameters. |
-| [options](/astrologico/param_options.html) | array | Set calculation options |
+| [Location Parameter](/astrologico/param_location.html) | - | Optional. Find timezone using one of the available location parameters. |
+| [options](/astrologico/param_options.html) | array | Optional. Set manual timezone options |
 
-If Date Parameter is an UTC-based parameter, the option `options=utctolocal` is enabled by default.
+If Date Parameter is a UTC-based parameter, the option `options=utctolocal` is enabled by default.
 
 <br>
 
