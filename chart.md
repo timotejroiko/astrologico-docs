@@ -12,6 +12,12 @@ navigation: 3
 	.inner code {
 		font-size: 100%;
 	}
+	.sidebar {
+		width: 30%
+	}
+	.navigation li {
+		padding: 5px;
+	}
 </style>
 
 <br>
