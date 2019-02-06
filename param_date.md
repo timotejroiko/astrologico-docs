@@ -37,7 +37,7 @@ There are several Date parameters which are mutually exclusive, you only need to
 <br>
 
 ### Parameters - utcdate/localdate
-{:name="datearray"}
+{:id="datearray"}
 
 | Index | Type | Required | Default | Descripton |
 |---|---|---|---|---|
