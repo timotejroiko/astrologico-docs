@@ -23,7 +23,7 @@ navigation: 5
 <script>
 	if (location.hash) {
 		let target = location.hash;
-		window.scrollTop = document.querySelector(target).offsetTop;
+		document.querySelector(".content").scroll({top:document.querySelector(target).offsetTop,behavior:"smooth"})
 	}
 </script>
 
