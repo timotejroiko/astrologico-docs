@@ -36,6 +36,7 @@ These are the currently available endpoints
 | [/v1/designdate](/astrologico/designdate.html) | Find the design date for human design system charts | Type1/Type2* |
 | /v1/zeropoint | Find the direction switch date of an object. Coming Soon | Type2 |
 | /v1/cycles | Find the return date of an object. Coming Soon | Type2 |
+| /v1/findtransit | Find the date an object reaches a certain degree. Coming Soon | Type2 |
 
 \* becomes a Type2 request if one of the following parameters is used:<br>`localdate` `querylocation` `options=utctolocal`
 
