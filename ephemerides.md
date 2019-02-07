@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Endpoints - /v1/ephemerides
-navigation: 4
+navigation: 3
 ---
 
 <style>
