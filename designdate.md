@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Endpoints - /v1/designdate
-navigation: 8
+navigation: 2
 ---
 
 <style>
