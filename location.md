@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Endpoints - /v1/location
-navigation: 7
+navigation: 3
 ---
 
 <style>
