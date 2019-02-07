@@ -54,15 +54,15 @@ The `localdate` parameter uses a [Location Parameter](/astrologico/param_locatio
 
 ### Parameters - Date Parameters Examples
 
-Here's an example of how each parameter should be used to generate a chart for `February 15, 1995 - 1:53pm, in New York USA`
+Here's an example of how each parameter should be used to generate a chart for `February 15, 1995 - 1:53pm (local time), in New York City`
 
 | Parameter | GET Request | POST Request
 |---|---|---|
 | timestamp | `timestamp=792856380000` | `timestamp:792856380000` |
 | jdet | `jdet=2449764.0791803706` | `jdet:2449764.0791803706` |
 | jdut | `jdut=2449764.0784755815` | `jdut:2449764.0784755815` |
-| utcdate | `utcdate=15|2|1995|13|53` | `utcdate:[15,2,1995,13,53]` |
-| localdate | `localdate=15|2|1995|8|53` | `localdate:[15,2,1995,8,53]` |
+| utcdate | `utcdate=15|2|1995|18|53` | `utcdate:[15,2,1995,18,53]` |
+| localdate | `localdate=15|2|1995|13|53` | `localdate:[15,2,1995,13,53]` |
 
 For `localdate` to get the correct timezone, it should be used together with a correct [Location Parameter](/astrologico/param_location.html) for the city of New York, or used together with the [Options](/astrologico/param_options.html) parameter specifying New York's timezone.
 
