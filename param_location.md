@@ -20,6 +20,13 @@ navigation: 5
 	}
 </style>
 
+<script>
+	if (location.hash) {
+		let target = location.hash;
+		window.scrollTop = document.querySelector(target).offsetTop;
+	}
+</script>
+
 <br>
 
 ## Parameters - Location Parameters
