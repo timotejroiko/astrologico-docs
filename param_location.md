@@ -51,4 +51,13 @@ Using `querylocation` turns the request into a `Type2` request.
 | 1 | Float | yes | 0 | Latitude (decimal) |
 | 2 | Float | no | 0 | Elevation (meters) |
 
+### Parameters - Location Parameters Examples
+
+Here's an example of how each parameter should be used to generate a chart for `February 15, 1995 - 1:53pm, in New York USA`
+
+| Parameter | GET Request | POST Request
+|---|---|---|
+| location | `location=40.7127|-74.0059|13` | `location:[40.7127,-74.0059,13]` |
+| querylocation | `querylocation=new york` | `querylocation:"new york"` |
+
 <br><br><br>
