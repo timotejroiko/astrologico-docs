@@ -21,9 +21,11 @@ navigation: 5
 </style>
 
 <script>
-	if (location.hash) {
-		let target = location.hash;
-		document.querySelector(".content").scroll({top:document.querySelector(target).offsetTop,behavior:"smooth"})
+	window.onload = function(){
+		if (location.hash) {
+			let target = location.hash;
+			document.querySelector(".content").scroll({top:document.querySelector(target).offsetTop,behavior:"smooth"})
+		}
 	}
 </script>
 
