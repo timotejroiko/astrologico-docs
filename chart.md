@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Endpoints - /v1/chart
-navigation: 3
+navigation: 2
 ---
 
 <style>
