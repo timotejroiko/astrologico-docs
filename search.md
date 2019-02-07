@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Endpoints - /v1/search
-navigation: 5
+navigation: 3
 ---
 
 <style>
