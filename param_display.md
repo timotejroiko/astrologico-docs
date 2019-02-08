@@ -60,7 +60,7 @@ An array of planetary values that should be returned. If none is specified, it d
 
 Example for retrieving `Longitude`, `Latitude` and `Declination` values:
 
-| GET Example | POST Example |
+| GET | POST |
 |---|---|
 |`display=LONGITUDE|LATITUDE|DECLINATION`|`display:["LONGITUDE","LATITUDE","DECLINATION"]`|
 
