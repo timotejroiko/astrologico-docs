@@ -114,7 +114,7 @@ When [Display](/astrologico/param_display.html) includes Stations, `true` is ret
 
 |GET Example|POST Example|Description|
 |---|---|---|
-|`&options=STATIONS:2`|`body:{options:["STATIONS:2"]}`|Consider an object "stationary" if within 2 days of its zero point|
+|`options=STATIONS:2`|`options:["STATIONS:2"]`|Consider an object "stationary" if within 2 days of its zero point|
 
 <br>
 
@@ -125,7 +125,7 @@ Allows you to specify a manual timezone when calculating between Local and UTC d
 
 |GET Example|POST Example|Description|
 |---|---|---|
-|`&options=TZ:America/New_York`|`body:{options:["TZ:America/New_York"]}`|Set timezone to America/New_York|
-|`&options=TZ:+300`|`body:{options:["TZ:+300"]}`|Set timezone to 300 minutes ahead of UTC|
+|`options=TZ:America/New_York`|`options:["TZ:America/New_York"]`|Set timezone to America/New_York|
+|`options=TZ:+300`|`options:["TZ:+300"]`|Set timezone to 300 minutes ahead of UTC|
 
 <br><br><br>
