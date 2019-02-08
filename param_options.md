@@ -53,7 +53,7 @@ An array of options to configure several chart generation settings, timezones, e
 ### Parameters - Options - Sidereal
 {:id="sidereal"}
 
-the Sidereal option can be used to create sidreal and vedic charts. It offers several built in Ayanamsas, as well as an option to set a custom Ayanamsa. If no Ayanamsa is specified, it defaults to 0 (Fagan/Bradley).
+The Sidereal option can be used to create sidreal and vedic charts. It offers several built in Ayanamsas, as well as an option to set a custom Ayanamsa. If no Ayanamsa is specified, it defaults to 0 (Fagan/Bradley).
 
 | N | Type | Ayanamsa |
 |---|---|---|
@@ -98,7 +98,12 @@ the Sidereal option can be used to create sidreal and vedic charts. It offers se
 | 38 | Integer | Babylonian/Britton |
 | reference,initial | String | Custom Ayanamsa |
 
-A custom ayanamsa can be set by specifying a reference date and an initial value. Reference date should be in Julian Days ET (Ephemeris Time) and the initial value should be the Ayanamsa value in decimal (number of degrees difference from Tropical)
+A custom ayanamsa can be set by specifying a reference date and an initial value. Reference date should be in Julian Days UT (Universal Time) and the initial value should be the Ayanamsa value in decimal (number of degrees difference from Tropical)
+
+|GET Example|POST Example|Description|
+|---|---|---|
+|`&options=SIDEREAL:5`|`body:{options:["SIDEREAL:5"]}`|Set Ayanamsa to Krishnamurti|
+|`&options=SIDEREAL:2451545,25`|`body:{options:["SIDEREAL:2451545,25"]}`|Set Ayanamsa to 25 degrees at J2000 (January 1st, 2000)|
 
 <br>
 
@@ -107,20 +112,20 @@ A custom ayanamsa can be set by specifying a reference date and an initial value
 
 When [Display](/astrologico/param_display.html) includes Stations, `true` is returned if the object is within 1 day of its zero point (when it switches directions). This option can be used to change the amount of days an object should be considered "Stationary".
 
-| N | Type |
-|---|---|
-| number of days | Float |
+|GET Example|POST Example|Description|
+|---|---|---|
+|`&options=STATIONS:2`|`body:{options:["STATIONS:2"]}`|Consider an object "stationary" if within 2 days of its zero point|
 
 <br>
 
 ### Parameters - Options - TZ
 {:id="timezone"}
 
-Allows you to specify a manual timezone when calculating between Local and UTC dates.
+Allows you to specify a manual timezone when calculating between Local and UTC dates. Timezone can be set as an offset in minutes (amount of minutes difference from UTC) or as a timezone string according to the [TZdata specification](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 
-| N | Type | Description |
+|GET Example|POST Example|Description|
 |---|---|---|
-| number | Integer | Number of minutes to offset by |
-| timezone | String | Timezone identifier string as per [TZdata specification](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) |
+|`&options=TZ:America/New_York`|`body:{options:["TZ:America/New_York"]}`|Set timezone to America/New_York|
+|`&options=TZ:+300`|`body:{options:["TZ:+300"]}`|Set timezone to 300 minutes ahead of UTC|
 
 <br><br><br>
