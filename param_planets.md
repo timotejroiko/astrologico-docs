@@ -37,9 +37,9 @@ An array of code points specifying the objects that should be calculated. The co
 
 | Example | Descripton |
 |---|---|
-|`P0`|Planet number 0 (sun)|
-|`S156`|Star number 156 (regulus)|
-|`A3`|Asteroid number 3 (juno)|
+|P0|Planet number 0 (sun)|
+|S156|Star number 156 (regulus)|
+|A3|Asteroid number 3 (juno)|
 
 <br>
 
