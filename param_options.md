@@ -98,12 +98,12 @@ The Sidereal option can be used to create sidreal and vedic charts. It offers se
 | 38 | Integer | Babylonian/Britton |
 | reference,initial | String | Custom Ayanamsa |
 
-A custom ayanamsa can be set by specifying a reference date and an initial value. Reference date should be in Julian Days UT (Universal Time) and the initial value should be the Ayanamsa value in decimal (number of degrees difference from Tropical)
+A custom ayanamsa can be set by specifying a reference date and an initial value. Reference date should be in Julian Days ET/TT (Ephemeris/Terrestrial Time) and the initial value should be the Ayanamsa value in decimal (number of degrees difference from Tropical)
 
 |GET Example|POST Example|Description|
 |---|---|---|
 |`&options=SIDEREAL:5`|`body:{options:["SIDEREAL:5"]}`|Set Ayanamsa to Krishnamurti|
-|`&options=SIDEREAL:2451545,25`|`body:{options:["SIDEREAL:2451545,25"]}`|Set Ayanamsa to 25 degrees at J2000 (January 1st, 2000)|
+|`&options=SIDEREAL:2451545,25`|`body:{options:["SIDEREAL:2451545,25"]}`|Set Ayanamsa to 25 degrees at J2000 (noon of January 1st, 2000)|
 
 <br>
 
