@@ -22,9 +22,9 @@ navigation: 1
 
 <br>
 
-# Astrologico API
+# Astrologico API (beta)
 
-Astrologico API is a fully featured microservice for retrieving astrological calculations and data. All endpoints are `HTTPS` only and available via `GET` and `POST`. Automated key generation is currently not available but you can request a key at our [Discord server](https://discord.gg/jtaCURK){:target="_blank"}
+Astrologico API is a fully featured microservice for retrieving astrological calculations and data. All endpoints are `HTTPS` only and available via `GET` or `POST`. The API is nearly production ready but we encourage you to experiment with it and help us weed out any remaining bugs, inconsistencies or incorrect data. You can get and API key at our [Discord server](https://discord.gg/jtaCURK){:target="_blank"}
 
 The API's base url is `https://api.astrologico.org`.
 
@@ -32,7 +32,7 @@ The API's base url is `https://api.astrologico.org`.
   
 ## GET vs POST
 
-There are two differences between `GET` requests and `POST` requests. In `GET` requests, array parameters should be pipe-delimited query strings, and the API key should be a query-string as well. In `POST` requests, array parameters should be JSON arrays, and the API key should be in the `Authorization` header.
+There are two differences between `GET` and `POST` requests. In `GET` requests, array parameters should be pipe-delimited query strings, and the API key should be a query-string as well. In `POST` requests, array parameters should be JSON arrays, and the API key should be in the `Authorization` header.
 
 | GET  | POST |
 | --- | --- |
@@ -40,11 +40,11 @@ There are two differences between `GET` requests and `POST` requests. In `GET` r
 
 <br>
 
-## Rate Limits & Request Type
+## Request Type & Rate Limits
 
-Depending on the endpoint and the parameters used, a request can become a `type1` request or a `type2` request. `type1` requests are simpler and have higher rate limits, while `type2` requests require more resources, and as such have lower rate limits.
+Depending on the endpoint and the parameters used, a request can become a `type1` request or a `type2` request. `type1` requests are simpler and require less resources, while `type2` requests require more resources and as such have lower rate limits.
 
-When the rate limits are reached, subsequent requests will have a 5 second delay added to them before a response is returned. Our API will continue to be available even if you go over our rate limits, but we advise you to upgrade your key to avoid slowing down your application.
+When the limits are hit, subsequent requests will have a scaling delay added to them before a response is returned. Our API will continue to be available even if you go over our rate limits, but we advise you to upgrade your key to avoid slowing down your application. Limits reset at midnight UTC.
 
 Our current Rate limits are as follows:
 
