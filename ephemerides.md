@@ -63,7 +63,7 @@ The range parameter is a sorted array containing the amount of dates to calculat
 | range=12\|1M | range:[12,\"1M\"] | Return 12 dates in 1 month intervals |
 | range=10\|1d | range:[10,\"-1d\"] | Return 10 dates in 1 day intervals backwards in time |
 
-Interval supports years (y), months (M), weeks (w), days (d), hours (h), minutes (m), seconds (s), milliseconds (ms)
+Interval supports years `y`, months `M`, weeks `w`, days `d`, hours `h`, minutes `m`, seconds `s`, milliseconds `ms`
 
 <br>
 
