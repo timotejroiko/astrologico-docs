@@ -43,7 +43,7 @@ The same as the [Chart](/astrologico/chart.html) endpoint but returns arrays of 
 ### Parameters - Range
 {:id="range"}
 
-The range parameter is a sorted array containing the amount of dates to calculate and the interval of each calculation:
+The range parameter is a sorted array containing the amount of dates to calculate and the interval of each calculation.
 
 | Index | Type | Description |
 |---|---|---|
@@ -62,6 +62,8 @@ The range parameter is a sorted array containing the amount of dates to calculat
 | range=100\|30m | range:[100,\"30m\"] | Return 100 dates in 30 minute intervals |
 | range=12\|1M | range:[12,\"1M\"] | Return 12 dates in 1 month intervals |
 | range=10\|1d | range:[10,\"-1d\"] | Return 10 dates in 1 day intervals backwards in time |
+
+Interval supports years (y), months (M), weeks (w), days (d), hours (h), minutes (m), seconds (s), milliseconds (ms)
 
 <br>
 
