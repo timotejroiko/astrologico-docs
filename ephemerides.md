@@ -56,12 +56,12 @@ The range parameter is a sorted array containing the amount of dates to calculat
 
 | GET | POST | Description |
 |---|---|---|
-| range=10\|1d | range:[10,"1d"] | Return 10 dates in 1 day intervals |
-| range=50\|5h | range:[50,"5h"] | Return 50 dates in 5 hour intervals |
-| range=5\|1y | range:[5,"1y"] | Return 5 dates in 1 year intervals |
-| range=100\|30m | range:[100,"30m"] | Return 100 dates in 30 minute intervals |
-| range=12\|1M | range:[12,"1M"] | Return 12 dates in 1 month intervals |
-| range=10\|1d | range:[10,"-1d"] | Return 10 dates in 1 day intervals backwards in time |
+| range=10\|1d | range:[10,\"1d\"] | Return 10 dates in 1 day intervals |
+| range=50\|5h | range:[50,\"5h\"] | Return 50 dates in 5 hour intervals |
+| range=5\|1y | range:[5,\"1y\"] | Return 5 dates in 1 year intervals |
+| range=100\|30m | range:[100,\"30m\"] | Return 100 dates in 30 minute intervals |
+| range=12\|1M | range:[12,\"1M\"] | Return 12 dates in 1 month intervals |
+| range=10\|1d | range:[10,\"-1d\"] | Return 10 dates in 1 day intervals backwards in time |
 
 <br>
 
