@@ -32,11 +32,36 @@ The same as the [Chart](/astrologico/chart.html) endpoint but returns arrays of 
 |---|---|---|
 | [Date Parameter](/astrologico/param_date.html) | - | Set date using one of the available date parameters. |
 | [Location Parameter](/astrologico/param_location.html) | - | Set location using one of the available location parameters. |
-| [range](/astrologico/param_range.html) | array | Set the time range for the ephemerides |
+| [range](#range) | array | Set the time range for the ephemerides |
 | [options](/astrologico/param_options.html) | array | Set calculation options |
 | [display](/astrologico/param_display.html) | array | Set values to return |
 | [planets](/astrologico/param_planets.html) | array | Set objects to display |
 | [houses](/astrologico/param_houses.html) | string | Set house system to display |
+
+<br>
+
+### Parameters - Range
+{:id="range"}
+
+The range parameter is a sorted array containing the amount of dates to calculate and the interval of each calculation:
+
+| Index | Type | Description |
+|---|---|---|
+| 0 | integer | Amount of calculations |
+| 1 | string | Interval between each calculation |
+
+<br>
+
+### Parameters - Range Examples
+
+| GET | POST | Description |
+|---|---|---|
+| range=10\|1d | range:[10,"1d"] | Return 10 dates in 1 day intervals |
+| range=50\|5h | range:[50,"5h"] | Return 50 dates in 5 hour intervals |
+| range=5\|1y | range:[5,"1y"] | Return 5 dates in 1 year intervals |
+| range=100\|30m | range:[100,"30m"] | Return 100 dates in 30 minute intervals |
+| range=12\|1M | range:[12,"1M"] | Return 12 dates in 1 month intervals |
+| range=10\|1d | range:[10,"-1d"] | Return 10 dates in 1 day intervals backwards in time |
 
 <br>
 
@@ -51,7 +76,7 @@ The same as the [Chart](/astrologico/chart.html) endpoint but returns arrays of 
 
 <br>
 
-## Sample request
+### Sample request
 
 ```
 GET
@@ -76,7 +101,7 @@ body: {
 
 <br>
 
-## Sample response
+### Sample response
 
 ```
 {
