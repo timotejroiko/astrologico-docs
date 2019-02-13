@@ -47,7 +47,7 @@ The range parameter is a sorted array containing the amount of dates to calculat
 
 | Index | Type | Description |
 |---|---|---|
-| 0 | integer | Amount of calculations |
+| 0 | integer | Amount of calculations (max 1000) |
 | 1 | string | Interval between each calculation |
 
 <br>
