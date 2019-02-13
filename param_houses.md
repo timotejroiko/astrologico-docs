@@ -35,7 +35,7 @@ navigation: 5
 
 A house system identifier to display Houses and related points.
 
-| Identifier | Descripton |
+| Identifier | House System |
 |---|---|
 | B | Alcabitus |
 | C | Campanus |
