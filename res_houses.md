@@ -43,6 +43,7 @@ The houses field contains the calculated data for all the house cusps and angles
 <br>
 
 ### Response - Houses - Houses
+{:id="houses"}
 
 The inner houses field contains the calculated house cusps for the selected house system. When using Gauquelin Sectors the number of house cusps returned is 36 instead of 12. Gauquelin Sectors cusps are also clockwise instead of counterclockwise.
 
