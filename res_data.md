@@ -26,13 +26,13 @@ navigation: 6
 
 ## Response - Data
 
-This object contains all the calculated data for each requested value.
+This object contains all the calculated data. These can be enabled by using [Display Options](/astrologico/param_display.html).
 
 | Value | Type | Descripton |
 |---|---|
 | name | string | Object name (not returned for houses) |
-| formula | string | Object's formula (returned only for arabic parts) |
-| reversed | string | Whether the formula was reversed (returned only for arabic parts) |
+| formula | string | Object's formula (always enabled, returned only for arabic parts) |
+| reversed | string | Whether the formula was reversed (always enabled, returned only for arabic parts) |
 | longitude | float | The object's ecliptic longitude in decimal degrees |
 | latitude | float | The object's ecliptic latitude in decimal degrees (always 0 for houses) |
 | distance | float | The object's distance in AU (always 0 for houses and arabic parts) |
