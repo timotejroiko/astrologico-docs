@@ -45,7 +45,7 @@ If Date Parameter is an UTC-based parameter, the option `utctolocal` is enabled 
 | key | Type | Description |
 |---|---|---|
 | [status](/astrologico/res_status.html) | string | Contains the response status |
-| [date](/astrologico/res_metadata.html) | object | Contains the date object |
+| [date](/astrologico/res_metadata.html#date) | object | Contains the date object |
 
 <br>
 
