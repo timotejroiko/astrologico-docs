@@ -91,7 +91,8 @@ body: {
 		"displayOptions": [
 			"LONGITUDE",
 			"LONGITUDE_SPEED"
-		]
+		],
+		"obliquity": 23.4323924352284
 	},
 	"location": {
 		"latitude": 51.5074,
@@ -117,7 +118,8 @@ body: {
 			"julianDayET": 2452938.021576204,
 			"julianDayUT": 2452938.0208290154
 		},
-		"siderealTime": "14:43:55"
+		"siderealTime": "14:43:55",
+		"localSiderealTime": "14:44:37"
 	}
 },
 "planets": {

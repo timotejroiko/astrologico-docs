@@ -54,12 +54,12 @@ The same as the [Chart](/astrologico/chart.html) endpoint but returns arrays of 
 ### Parameters - Range
 {:id="range"}
 
-The range parameter is a sorted array containing the amount of dates to calculate and the interval of each calculation.
+The range parameter is a sorted array containing the amount of dates to calculate and the interval between each date.
 
 | Index | Type | Description |
 |---|---|---|
 | 0 | integer | Amount of calculations (max 1000) |
-| 1 | string | Interval between each calculation |
+| 1 | string | Interval between each calculation  |
 
 <br>
 
@@ -123,14 +123,15 @@ body: {
 		"options": {
 			"zodiacType": "Tropical",
 			"zodiacName": "Tropical",
-			"ayanamsa": 0,
+			"ayanamsa": [23.961449584015742,23.961449604415805,23.961449616148894,23.961449619446338,23.961449614543525,23.96144960167958,23.961449581097032,23.961449553042396,23.61449517765576,23.961449475520137],
 			"positions": "Apparent",
 			"coordinates": "Geocentric",
 			"houseSystem": false,
 			"displayOptions": [
 				"LONGITUDE",
 				"LONGITUDE_SPEED"
-			]
+			],
+			"obliquity": [23.43743183392756,23.437431819085912,23.43743180424426,23.4374317894026,23.43743177456095,23.437431759719296,23.437431744877646,23.43743173003599,23.437431715194332,23.437431700352683]
 		},
 		"location": {
 			"latitude": 51.5074,
@@ -156,7 +157,8 @@ body: {
 				"julianDayET": [2452938.021576204,2452939.021576204,2452940.021576204,2452941.021576204,2452942.021576204,2452943.021576204,2452944.021576204,2452945.021576204,2452946.021576204,2452947.021576204],
 				"julianDayUT": [2452938.0208290154,2452939.020829012,2452940.0208290094,2452941.0208290066,2452942.020829004,2452943.020829001,2452944.020828998,2452945.0208289954,2452946.0208289926,2452947.02082899]
 			},
-			"siderealTime": ["14:43:55","14:47:52","14:51:48","14:55:45","14:59:42","15:03:38","15:07:35","15:11:31","15:15:28","15:19:24"]
+			"siderealTime": ["14:43:55","14:47:52","14:51:48","14:55:45","14:59:42","15:03:38","15:07:35","15:11:31","15:15:28","15:19:24"],
+			"localSiderealTime": ["17:48:55","17:52:52","17:56:48","18:00:45","18:05:42","18:10:38","18:12:35","18:16:31","18:20:28","18:24:24"]
 		}
 	},
 	"planets": {

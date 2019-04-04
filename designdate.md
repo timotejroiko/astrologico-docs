@@ -35,7 +35,7 @@ navigation: 3
 
 ## Design Date
 
-This endpoint is used to find the "design date" of a human design chart. The design date can then used together with the birth date to obtain the two charts that make up the human design system.
+This endpoint is used to find the "design date" of a human design chart and other derived dates. The design date can then used together with the birth date to obtain the two charts that make up the human design system.
 
 ### Parameters
 
@@ -44,7 +44,7 @@ This endpoint is used to find the "design date" of a human design chart. The des
 | [Date Parameter](/astrologico/param_date.html) | - | Set date using one of the available date parameters. |
 | [Location Parameter](/astrologico/param_location.html) | - | Find timezone using one of the available location parameters. |
 | [options](/astrologico/param_options.html) | array | Set timezone using manual options |
-| [mode](#mode) | Number | Optional. Set the design date type |
+| [mode](#mode) | integer | Optional. Set the design date type |
 
 <br>
 
@@ -69,7 +69,7 @@ This endpoint is used to find the "design date" of a human design chart. The des
 | key | Type | Description |
 |---|---|---|
 | [status](/astrologico/res_status.html) | string | Contains the response status |
-| [date](/astrologico/res_metadata.html) | object | Contains the date object |
+| [date](/astrologico/res_metadata.html#date) | object | Contains the date object |
 
 <br>
 
@@ -78,13 +78,13 @@ This endpoint is used to find the "design date" of a human design chart. The des
 ```
 GET
 
-https://api.astrologico.org/v1/dateconversion?utcdate=10|3|1991|12&key=APIKEY
+https://api.astrologico.org/v1/designdate?utcdate=10|3|1991|12&key=APIKEY
 ```
 
 ```
 POST
 
-url: "https://api.astrologico.org/v1/dateconversion",
+url: "https://api.astrologico.org/v1/designdate",
 header: {
 	"Authorization": APIKEY
 },
@@ -119,7 +119,8 @@ body: {
 			"julianDayET": 2448239.1927314005,
 			"julianDayUT": 2448239.1920655635
 		},
-		"siderealTime": "22:04:59"
+		"siderealTime": "22:04:59",
+		"localSiderealTime": "22:04:59"
 	}
 }
 ```

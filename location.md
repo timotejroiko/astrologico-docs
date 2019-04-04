@@ -26,7 +26,7 @@ navigation: 3
 
 ## Location
 
-This endpoint is a standalone version of the  `querylocation` parameter included in the main endpoints.
+This endpoint is a standalone version of the `querylocation` parameter included in the main endpoints.
 
 ### Parameters
 
@@ -41,7 +41,7 @@ This endpoint is a standalone version of the  `querylocation` parameter included
 | key | Type | Description |
 |---|---|---|
 | [status](/astrologico/res_status.html) | string | Contains the response status |
-| [location](/astrologico/res_metadata.html) | object | Contains the location object |
+| [location](/astrologico/res_metadata.html#location) | object | Contains the location object |
 
 <br>
 

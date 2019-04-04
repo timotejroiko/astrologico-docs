@@ -110,7 +110,8 @@ body: {
 			"julianDayET": 2440619.7513034344,
 			"julianDayUT": 2440619.7508373726
 		},
-		"siderealTime": "14:49:16"
+		"siderealTime": "14:49:16",
+		"localSiderealTime": "19:15:06"
 	}
 }
 ```

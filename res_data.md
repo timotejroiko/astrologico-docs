@@ -31,23 +31,35 @@ This object contains all the calculated data. These can be enabled by using [Dis
 | Value | Type | Descripton |
 |---|---|
 | name | string | Object name (not returned for houses) |
-| formula | string | Object's formula (always enabled, returned only for arabic parts) |
-| reversed | string | Whether the formula was reversed (always enabled, returned only for arabic parts) |
+| formula | string | Object's formula * |
+| reversed | string | Whether the formula was reversed * |
 | longitude | float | The object's ecliptic longitude in decimal degrees |
-| latitude | float | The object's ecliptic latitude in decimal degrees (always 0 for houses) |
-| distance | float | The object's distance in AU (always 0 for houses and arabic parts) |
-| longitudeSpeed | float | The object's longitude speed in decimal degrees per day (not returned for arabic parts) |
-| latitudeSpeed | float | The object's latitude speed in decimal degrees per day (always 0 for houses, not returned for arabic parts) |
-| distanceSpeed | float | The object's distance changes in AU per day (always 0 for houses, not returned for arabic parts) |
+| latitude | float | The object's ecliptic latitude in decimal degrees **** |
+| distance | float | The object's distance in AU **** |
+| longitudeSpeed | float | The object's longitude speed in decimal degrees per day ** |
+| latitudeSpeed | float | The object's latitude speed in decimal degrees per day ** **** |
+| distanceSpeed | float | The object's distance changes in AU per day ** **** |
 | hds | string | The objects gate, line, color, tone and base position for the Human Design System |
-| stationary | boolean | Whether the object is considered "stationary" (not returned for houses and arabic parts) |
+| stationary | boolean | Whether the object is considered "stationary" ** *** |
 | declination | float | The object's celestial declination in decimal degrees |
 | rightAscension | float | The object's right ascension in decimal degrees |
-| declinationSpeed | float | The object's declination speed in decimal degrees per day (returns full traveled distance for houses, not returned for arabic parts) |
-| rightAscensionSpeed | float | The object's right ascension speed in decimal degrees per day (not returned arabic parts) |
-| magnitude | float | The object's magnitude (always 0 for hypotheticals, apsides and special points, not returned for houses and arabic parts) |
-| angularDiameter | float | The object's angular diameter in decimal degrees (always 0 for stars, hypotheticals, apsides and special points, not returned for houses arabic parts) |
+| declinationSpeed | float | The object's declination speed in decimal degrees per day ** ***** |
+| rightAscensionSpeed | float | The object's right ascension speed in decimal degrees per day ** |
+| magnitude | float | The object's magnitude ** *** ****** |
+| angularDiameter | float | The object's angular diameter in decimal degrees ** *** ****** |
 | azimuth | float | The object's azimuth decimal degrees |
 | altitude | float | The object's altitude in decimal degrees |
+
+\* returned only for arabic parts (always enabled)
+
+\*\* not returned for arabic parts
+
+\*\*\* not returned for houses
+
+\*\*\*\* always 0 for houses
+
+\*\*\*\*\* returns full traveled distance for houses, ie: goes to down to -23 and up to +23 in one day.
+
+\*\*\*\*\*\* always 0 for non-physical objects, in addition, angularDiameter is always 0 for stars.
 
 <br><br><br>

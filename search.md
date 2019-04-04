@@ -35,15 +35,16 @@ This endpoint is used to find the correct code points of supported objects, incl
 | Parameter | Type | Descripton |
 |---|---|---|
 | query | string | The search term |
-| type | string | Optional. Filter results by object type |
+| [type](#type) | string | Optional. Filter results by object type |
 
 <br>
 
 ### Parameters - Type
+{:id="type"}
 
 | Type | Descripton |
 |---|---|
-| P | Planets, lunar nodes/apsides, and other objects |
+| P | Planets, lunar nodes and other objects |
 | A | Asteroids |
 | S | Stars |
 | H | Hypothetical planets |
@@ -57,11 +58,14 @@ This endpoint is used to find the correct code points of supported objects, incl
 |---|---|---|
 | [status](/astrologico/res_status.html) | string | Contains the response status |
 | display | string | Number of displayed results and total results |
-| results | array | Array of results (max 100) |
+| [results](#results) | array | Array of results (max 100) |
 
 <br>
 
-### Response - Result
+### Response - Results
+{:id="results"}
+
+The results field is an array of objects which contain the following fields.
 
 | key | Type | Description |
 |---|---|---|

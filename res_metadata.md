@@ -90,7 +90,7 @@ Metadata contains information about the returned results such as house system, c
 | [timezone](#tz) | object | Object containing timezone details (returned only when doing non-UTC operations) |
 | [JD](#jd) | object | Object containing date in Julian Days (both variants) |
 | siderealTime | string/array* | Sidereal time at longitude 0 (Greenwich meridian) |
-| localSiderealTime | string/array* | Sidereal time at the selected coordinates |
+| localSiderealTime | string/array* | Sidereal time at the selected coordinates (same as siderealTime if no location was supplied) |
 
 \* Returns array of values corresponding to the array of dates when using the `ephemerides` endpoint.
 
