@@ -12,11 +12,13 @@ navigation: 3
 	.inner code {
 		font-size: 100%;
 	}
-	.sidebar {
-		width: 30%
-	}
 	.navigation li {
 		padding: 5px;
+	}
+	@media (min-width: 745px) {
+		.sidebar {
+			width: 30%;
+		}
 	}
 </style>
 
@@ -53,7 +55,7 @@ This endpoint is used to find the correct code points of supported objects, incl
 
 | key | Type | Description |
 |---|---|---|
-| [STATUS](/astrologico/res_status.html) | string | Contains the response status |
+| [status](/astrologico/res_status.html) | string | Contains the response status |
 | display | string | Number of displayed results and total results |
 | results | array | Array of results (max 100) |
 

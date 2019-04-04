@@ -12,28 +12,21 @@ navigation: 5
 	.inner code {
 		font-size: 100%;
 	}
-	.sidebar {
-		width: 30%
-	}
 	.navigation li {
 		padding: 5px;
 	}
-</style>
-
-<script>
-	window.onload = function(){
-		if (location.hash) {
-			let target = location.hash;
-			document.querySelector(".content").scroll({top:document.querySelector(target).offsetTop,behavior:"smooth"})
+	@media (min-width: 745px) {
+		.sidebar {
+			width: 30%;
 		}
 	}
-</script>
+</style>
 
 <br>
 
 ## Parameters - Display
 
-An array of planetary values that should be returned. If none is specified, it defaults to `LONGITUDE` and `LONGITUDE_SPEED`.
+An array of planetary values that the request should return. If none is specified, it defaults to `LONGITUDE` and `LONGITUDE_SPEED`.
 
 | option | Descripton |
 |---|---|

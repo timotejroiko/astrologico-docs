@@ -12,11 +12,13 @@ navigation: 5
 	.inner code {
 		font-size: 100%;
 	}
-	.sidebar {
-		width: 30%
-	}
 	.navigation li {
 		padding: 5px;
+	}
+	@media (min-width: 745px) {
+		.sidebar {
+			width: 30%;
+		}
 	}
 </style>
 
@@ -43,8 +45,8 @@ An array of options to configure several chart generation settings, timezones, e
 | ASTROMETRIC | Return Astrometric positions (disable Aberration of Light and Gravitational Deflection) |
 | [SIDEREAL:N](#sidereal) | Return Sidereal positions instead of Tropical by specifying an Ayanamsa |
 | [STATIONS:N](#stations) | Number of days an object should be considered "stationary" when stations are enabled |
-| JULIAN | Use Julian calendar instead of auto |
-| GREGORIAN | Use Gregorian calendar instead of auto |
+| JULIAN | Use Julian calendar instead of automatic |
+| GREGORIAN | Use Gregorian calendar instead of automatic |
 | UTCTOLOCAL | Return Local Date when input is a UTC date (becomes a `Type2` request) |
 | [TZ:N](#timezone) | Set a custom timezone |
 
@@ -102,8 +104,8 @@ A custom ayanamsa can be set by specifying a reference date and an initial value
 
 |GET Example|POST Example|Description|
 |---|---|---|
-|`&options=SIDEREAL:5`|`body:{options:["SIDEREAL:5"]}`|Set Ayanamsa to Krishnamurti|
-|`&options=SIDEREAL:2451545,25`|`body:{options:["SIDEREAL:2451545,25"]}`|Set Ayanamsa to 25 degrees at J2000 (noon of January 1st, 2000)|
+|`options=SIDEREAL:5`|`options:["SIDEREAL:5"]`|Set Ayanamsa to Krishnamurti|
+|`options=SIDEREAL:2451545,25`|`options:["SIDEREAL:2451545,25"]`|Set Ayanamsa to 25 degrees at J2000 (noon of January 1st, 2000)|
 
 <br>
 
@@ -121,7 +123,7 @@ When [Display](/astrologico/param_display.html) includes Stations, `true` is ret
 ### Parameters - Options - TZ
 {:id="timezone"}
 
-Allows you to specify a manual timezone when calculating between Local and UTC dates. Timezone can be set as an offset in minutes (amount of minutes difference from UTC) or as a timezone string according to the [TZdata specification](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+Allows you to specify a manual timezone when calculating between Local and UTC dates. Timezone can be set as an offset in minutes or as a timezone string according to the [TZdata specification](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 
 |GET Example|POST Example|Description|
 |---|---|---|

@@ -12,22 +12,15 @@ navigation: 5
 	.inner code {
 		font-size: 100%;
 	}
-	.sidebar {
-		width: 30%
-	}
 	.navigation li {
 		padding: 5px;
 	}
-</style>
-
-<script>
-	window.onload = function(){
-		if (location.hash) {
-			let target = location.hash;
-			document.querySelector(".content").scroll({top:document.querySelector(target).offsetTop,behavior:"smooth"})
+	@media (min-width: 745px) {
+		.sidebar {
+			width: 30%;
 		}
 	}
-</script>
+</style>
 
 <br>
 
@@ -62,8 +55,8 @@ An array of code points specifying the objects that should be calculated. The co
 | FP | Planet's Second Focus |
 | FA | Asteroid's Second Focus |
 | L | Arabic parts/lots |
-| DL | Arabic parts/lots (no reverse) |
-| NL | Arabic parts/lots (force reverse) |
+| DL | Arabic parts/lots day (no reverse) |
+| NL | Arabic parts/lots night (force reverse) |
 
 <br>
 

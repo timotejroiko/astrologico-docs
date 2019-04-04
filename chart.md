@@ -12,11 +12,13 @@ navigation: 3
 	.inner code {
 		font-size: 100%;
 	}
-	.sidebar {
-		width: 30%
-	}
 	.navigation li {
 		padding: 5px;
+	}
+	@media (min-width: 745px) {
+		.sidebar {
+			width: 30%;
+		}
 	}
 </style>
 
@@ -32,10 +34,10 @@ This is the primary endpoint through which you can retrieve everything you need 
 |---|---|---|
 | [Date Parameter](/astrologico/param_date.html) | - | Set date using one of the available date parameters. |
 | [Location Parameter](/astrologico/param_location.html) | - | Set location using one of the available location parameters. |
-| [options](/astrologico/param_options.html) | array | Set calculation options |
-| [display](/astrologico/param_display.html) | array | Set values to return |
 | [planets](/astrologico/param_planets.html) | array | Set objects to display |
 | [houses](/astrologico/param_houses.html) | string | Set houses to display |
+| [display](/astrologico/param_display.html) | array | Set values to display |
+| [options](/astrologico/param_options.html) | array | Set calculation options |
 
 <br>
 
@@ -43,7 +45,7 @@ This is the primary endpoint through which you can retrieve everything you need 
 
 | key | Type | Description |
 |---|---|---|
-| [STATUS](/astrologico/res_status.html) | string | Contains the response status |
+| [status](/astrologico/res_status.html) | string | Contains the response status |
 | [metadata](/astrologico/res_metadata.html) | object | Contains the configuration used for the returned data |
 | [houses](/astrologico/res_houses.html) | object | Contains data for houses and related points |
 | [planets](/astrologico/res_planets.html) | object | Contains data for planets and other objects |

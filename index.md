@@ -12,11 +12,13 @@ navigation: 1
 	.inner code {
 		font-size: 100%;
 	}
-	.sidebar {
-		width: 30%
-	}
 	.navigation li {
 		padding: 5px;
+	}
+	@media (min-width: 745px) {
+		.sidebar {
+			width: 30%;
+		}
 	}
 </style>
 

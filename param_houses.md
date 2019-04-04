@@ -12,54 +12,55 @@ navigation: 5
 	.inner code {
 		font-size: 100%;
 	}
-	.sidebar {
-		width: 30%
-	}
 	.navigation li {
 		padding: 5px;
 	}
-</style>
-
-<script>
-	window.onload = function(){
-		if (location.hash) {
-			let target = location.hash;
-			document.querySelector(".content").scroll({top:document.querySelector(target).offsetTop,behavior:"smooth"})
+	@media (min-width: 745px) {
+		.sidebar {
+			width: 30%;
 		}
 	}
-</script>
+</style>
 
 <br>
 
 ## Parameters - Houses
 
-A house system identifier to display Houses and related points.
+A house system number to display Houses, Ascendant, Midheaven and other related points.
 
-| Identifier | House System |
+| Number | House System |
 |---|---|
-| B | Alcabitus |
-| C | Campanus |
-| D | Equal (10th house = midheaven) |
-| E | Equal (1st house = ascendant) |
-| F | Carter / Poli-Equatorial |
-| G | Gauquelin Sectors |
-| H | Azimuthal / Horizontal |
-| I | Sunshine / Makransky (solution Treindl) |
-| J | Sunshine / Makransky (solution Makransky) |
-| K | Koch |
-| L | Pullen SD (sinusoidal delta) / Neo-Porphyry |
-| M | Morinus |
-| N | Equal (1st house = 0 aries) |
-| O | Porphyrius / Porphyry |
-| P | Placidus |
-| Q | Pullen SR (sinusoidal ratio) |
-| R | Regiomontanus |
-| S | Sripati |
-| T | Polich / Page / Topocentric |
-| U | Krusinski / Pisa / Goelzer |
-| V | Vehlow Equal (middle of 1st house = ascendant) |
-| W | Whole Sign |
-| X | Axial Rotation / Meridian / Zariel |
-| Y | APC |
+| 0 | Alcabitus |
+| 1 | APC |
+| 2 | Axial Rotation / Meridian / Zariel |
+| 3 | Azimuthal / Horizontal |
+| 4 | Campanus |
+| 5 | Carter / Poli-Equatorial |
+| 6 | Equal (1st house = ascendant) |
+| 7 | Equal (10th house = midheaven) |
+| 8 | Equal (1st house = 0 aries) |
+| 9 | Gauquelin Sectors |
+| 10 | Sunshine / Makransky (solution Treindl) |
+| 11 | Sunshine / Makransky (solution Makransky) |
+| 12 | Koch |
+| 13 | Krusinski / Pisa / Goelzer |
+| 14 | Morinus |
+| 15 | Placidus |
+| 16 | Polich / Page / Topocentric |
+| 17 | Porphyrius / Porphyry |
+| 18 | Pullen SD (sinusoidal delta) / Neo-Porphyry |
+| 19 | Pullen SR (sinusoidal ratio) |
+| 20 | Regiomontanus |
+| 21 | Sripati |
+| 22 | Vehlow Equal (middle of 1st house = ascendant) |
+| 23 | Whole Sign |
+
+### Parameters - Houses Examples
+
+Example for retrieving houses, Ascendant, Midheaven and other related points using Placidus:
+
+| GET | POST |
+|---|---|
+|`houses=15`|`houses:15`|
 
 <br><br><br>

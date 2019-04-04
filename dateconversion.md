@@ -12,11 +12,13 @@ navigation: 3
 	.inner code {
 		font-size: 100%;
 	}
-	.sidebar {
-		width: 30%
-	}
 	.navigation li {
 		padding: 5px;
+	}
+	@media (min-width: 745px) {
+		.sidebar {
+			width: 30%;
+		}
 	}
 </style>
 
@@ -31,10 +33,10 @@ This endpoint is a standalone version of the date conversion functions included 
 | Parameter | Type | Descripton |
 |---|---|---|
 | [Date Parameter](/astrologico/param_date.html) | - | Set date using one of the available date parameters. |
-| [Location Parameter](/astrologico/param_location.html) | - | Optional. Find timezone using one of the available location parameters. |
-| [options](/astrologico/param_options.html) | array | Optional. Set manual timezone options |
+| [Location Parameter](/astrologico/param_location.html) | - | Find timezone using one of the available location parameters. |
+| [options](/astrologico/param_options.html) | array | Set timezone using manual options |
 
-If Date Parameter is a UTC-based parameter, the option `options=utctolocal` is enabled by default.
+If Date Parameter is an UTC-based parameter, the option `utctolocal` is enabled by default.
 
 <br>
 
@@ -42,7 +44,7 @@ If Date Parameter is a UTC-based parameter, the option `options=utctolocal` is e
 
 | key | Type | Description |
 |---|---|---|
-| [STATUS](/astrologico/res_status.html) | string | Contains the response status |
+| [status](/astrologico/res_status.html) | string | Contains the response status |
 | [date](/astrologico/res_metadata.html) | object | Contains the date object |
 
 <br>

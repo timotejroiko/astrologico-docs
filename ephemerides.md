@@ -12,13 +12,24 @@ navigation: 3
 	.inner code {
 		font-size: 100%;
 	}
-	.sidebar {
-		width: 30%
-	}
 	.navigation li {
 		padding: 5px;
 	}
+	@media (min-width: 745px) {
+		.sidebar {
+			width: 30%;
+		}
+	}
 </style>
+
+<script>
+	window.onload = function(){
+		if (location.hash) {
+			let target = location.hash;
+			document.querySelector(".content").scroll({top:document.querySelector(target).offsetTop,behavior:"smooth"})
+		}
+	}
+</script>
 
 <br>
 
@@ -33,10 +44,10 @@ The same as the [Chart](/astrologico/chart.html) endpoint but returns arrays of 
 | [Date Parameter](/astrologico/param_date.html) | - | Set date using one of the available date parameters. |
 | [Location Parameter](/astrologico/param_location.html) | - | Set location using one of the available location parameters. |
 | [range](#range) | array | Set the time range for the ephemerides |
-| [options](/astrologico/param_options.html) | array | Set calculation options |
-| [display](/astrologico/param_display.html) | array | Set values to return |
 | [planets](/astrologico/param_planets.html) | array | Set objects to display |
-| [houses](/astrologico/param_houses.html) | string | Set house system to display |
+| [houses](/astrologico/param_houses.html) | string | Set houses to display |
+| [display](/astrologico/param_display.html) | array | Set values to display |
+| [options](/astrologico/param_options.html) | array | Set calculation options |
 
 <br>
 
@@ -63,7 +74,7 @@ The range parameter is a sorted array containing the amount of dates to calculat
 | range=12\|1M | range:[12,\"1M\"] | Return 12 dates in 1 month intervals |
 | range=10\|1d | range:[10,\"-1d\"] | Return 10 dates in 1 day intervals backwards in time |
 
-Interval supports years `y`, months `M`, weeks `w`, days `d`, hours `h`, minutes `m`, seconds `s`, milliseconds `ms`
+Interval supports years `y`, months `M`, weeks `w`, days `d`, hours `h`, minutes `m`, seconds `s` and milliseconds `ms`
 
 <br>
 
@@ -71,7 +82,7 @@ Interval supports years `y`, months `M`, weeks `w`, days `d`, hours `h`, minutes
 
 | key | Type | Description |
 |---|---|---|
-| [STATUS](/astrologico/res_status.html) | string | Contains the response status |
+| [status](/astrologico/res_status.html) | string | Contains the response status |
 | [metadata](/astrologico/res_metadata.html) | object | Contains the configuration used for the calculations |
 | [houses](/astrologico/res_houses.html) | object | Contains data for houses, returned only when a house system is selected |
 | [planets](/astrologico/res_planets.html) | object | Contains data for planets and other objects |
@@ -142,8 +153,8 @@ body: {
 				"milisecond": [0,0,0,0,0,0,0,0,0,0]
 			},
 			"JD": {
-			"julianDayET": [2452938.021576204,2452939.021576204,2452940.021576204,2452941.021576204,2452942.021576204,2452943.021576204,2452944.021576204,2452945.021576204,2452946.021576204,2452947.021576204],
-			"julianDayUT": [2452938.0208290154,2452939.020829012,2452940.0208290094,2452941.0208290066,2452942.020829004,2452943.020829001,2452944.020828998,2452945.0208289954,2452946.0208289926,2452947.02082899]
+				"julianDayET": [2452938.021576204,2452939.021576204,2452940.021576204,2452941.021576204,2452942.021576204,2452943.021576204,2452944.021576204,2452945.021576204,2452946.021576204,2452947.021576204],
+				"julianDayUT": [2452938.0208290154,2452939.020829012,2452940.0208290094,2452941.0208290066,2452942.020829004,2452943.020829001,2452944.020828998,2452945.0208289954,2452946.0208289926,2452947.02082899]
 			},
 			"siderealTime": ["14:43:55","14:47:52","14:51:48","14:55:45","14:59:42","15:03:38","15:07:35","15:11:31","15:15:28","15:19:24"]
 		}

@@ -1,0 +1,46 @@
+---
+layout: page
+title: Response - Status
+navigation: 6
+---
+
+<style>
+	.inner a {
+		color: royalblue;
+		font-weight: bold;
+	}
+	.inner code {
+		font-size: 100%;
+	}
+	.navigation li {
+		padding: 5px;
+	}
+	@media (min-width: 745px) {
+		.sidebar {
+			width: 30%;
+		}
+	}
+</style>
+
+<br>
+
+## Response - Status
+
+All requests return a `status` field which returns one of the following string values:
+
+| Value | Descripton |
+|---|---|
+| OK | Request completed successfully |
+| RATELIMIT | Rate limit has been reached and the request was throttled |
+| ERROR | An error occured and the request was interrupted |
+
+If `status` returns `ERROR`, an aditional `error` field will be returned with a brief description of the issue. Example:
+
+```
+{
+	"status": "ERROR",
+	"error": "invalid date - day must be from 1 to 31"
+}
+```
+
+<br><br><br>

@@ -12,11 +12,13 @@ navigation: 5
 	.inner code {
 		font-size: 100%;
 	}
-	.sidebar {
-		width: 30%
-	}
 	.navigation li {
 		padding: 5px;
+	}
+	@media (min-width: 745px) {
+		.sidebar {
+			width: 30%;
+		}
 	}
 </style>
 
@@ -37,7 +39,7 @@ There are two Location parameters which are mutually exclusive, you only need to
 
 | Parameter | Type | Descripton |
 |---|---|---|---|
-| [location](#location) | array | Sorted coordinates array |
+| [location](#location) | array | Sorted array of coordinates |
 | querylocation | string | Search term to obtain coordinates |
 
 Using `querylocation` turns the request into a `Type2` request.
@@ -51,7 +53,9 @@ Using `querylocation` turns the request into a `Type2` request.
 |---|---|---|---|---|
 | 0 | Float | yes | 0 | Longitude (decimal) |
 | 1 | Float | yes | 0 | Latitude (decimal) |
-| 2 | Float | no | 0 | Elevation (meters) |
+| 2 | Float | no | 0 | Elevation (meters)* |
+
+\* Elevation is only needed for certain types of calculations and can safely be omitted or set to 0 in most cases.
 
 <br>
 

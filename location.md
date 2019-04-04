@@ -12,11 +12,13 @@ navigation: 3
 	.inner code {
 		font-size: 100%;
 	}
-	.sidebar {
-		width: 30%
-	}
 	.navigation li {
 		padding: 5px;
+	}
+	@media (min-width: 745px) {
+		.sidebar {
+			width: 30%;
+		}
 	}
 </style>
 
@@ -38,7 +40,7 @@ This endpoint is a standalone version of the  `querylocation` parameter included
 
 | key | Type | Description |
 |---|---|---|
-| [STATUS](/astrologico/res_status.html) | string | Contains the response status |
+| [status](/astrologico/res_status.html) | string | Contains the response status |
 | [location](/astrologico/res_metadata.html) | object | Contains the location object |
 
 <br>
@@ -69,13 +71,13 @@ body: {
 
 ```
 {
-  "status": "OK",
-  "location": {
-    "queryResult": "New York, NY, USA",
-    "latitude": 40.7127753,
-    "longitude": -74.0059728,
-    "elevation": 13.36520862579346
-  }
+	"status": "OK",
+	"location": {
+		"queryResult": "New York, NY, USA",
+		"latitude": 40.7127753,
+		"longitude": -74.0059728,
+		"elevation": 13.36520862579346
+	}
 }
 ```
 

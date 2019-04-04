@@ -12,19 +12,30 @@ navigation: 5
 	.inner code {
 		font-size: 100%;
 	}
-	.sidebar {
-		width: 30%
-	}
 	.navigation li {
 		padding: 5px;
 	}
+	@media (min-width: 745px) {
+		.sidebar {
+			width: 30%;
+		}
+	}
 </style>
+
+<script>
+	window.onload = function(){
+		if (location.hash) {
+			let target = location.hash;
+			document.querySelector(".content").scroll({top:document.querySelector(target).offsetTop,behavior:"smooth"})
+		}
+	}
+</script>
 
 <br>
 
 ## Parameters - Date Parameters
 
-There are several Date parameters which are mutually exclusive, you only need to use one of them. If none are used, the request will default to the current date and time.
+There are several Date parameters available, you only need to use one of them. If none are used, the request will default to the current date and time.
 
 | Parameter | Type | Input Type | Descripton |
 |---|---|---|---|
@@ -43,12 +54,12 @@ There are several Date parameters which are mutually exclusive, you only need to
 |---|---|---|---|---|
 | 0 | Integer | yes | - | Day |
 | 1 | Integer | yes | - | Month |
-| 2 | Integer | yes | - | Full year |
+| 2 | Integer | yes | - | Full Year |
 | 3 | Integer | no | 12 | Hour (in 24h format) |
 | 4 | Integer | no | 0 | minute |
-| 5 | Float | no | 0 | second (milliseconds in decimal) |
+| 5 | Float | no | 0 | second and millisecond |
 
-The `localdate` parameter uses a [Location Parameter](/astrologico/param_location.html) to obtain the correct timezone. Optionally, a custom timezone can be provided using the [Options](/astrologico/param_options.html) parameter. `localdate` turns a `Type1` request into a `Type2` request.
+The `localdate` parameter uses a [Location Parameter](/astrologico/param_location.html) to obtain the correct timezone. Optionally, a manual timezone can be provided using the [Options](/astrologico/param_options.html) parameter. Using `localdate` turns a `Type1` request into a `Type2` request.
 
 <br>
 
