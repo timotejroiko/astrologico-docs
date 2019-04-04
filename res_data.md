@@ -31,6 +31,8 @@ This object contains all the calculated data for each requested value.
 | Value | Type | Descripton |
 |---|---|
 | name | string | Object name (not returned for houses) |
+| formula | string | Object's formula (returned only for arabic parts) |
+| reversed | string | Whether the formula was reversed (returned only for arabic parts) |
 | longitude | float | The object's ecliptic longitude in decimal degrees |
 | latitude | float | The object's ecliptic latitude in decimal degrees (always 0 for houses) |
 | distance | float | The object's distance in AU (always 0 for houses and arabic parts) |
