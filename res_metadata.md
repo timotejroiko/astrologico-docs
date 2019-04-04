@@ -40,7 +40,7 @@ Metadata contains information about the returned results such as house system, c
 | Value | Type | Descripton |
 |---|---|
 | [options](#options) | object | Settings and options information |
-| [location](#location) | object | Geographic coordinates and information |
+| [location](#location) | object | Geographic coordinates information |
 | [date](#date) | object | Date and time information |
 
 <br>
@@ -56,7 +56,7 @@ Metadata contains information about the returned results such as house system, c
 | positions | string | Planetary positions (apparent / true / astrometric) |
 | coordinates | string | Coordinates system (geocentric / topocentric / heliocentric) |
 | houseSystem | string | House system (returns `false` if houses were not enabled) |
-| displayOptions | array | Array of values that were enabled |
+| displayOptions | array | Array of values to be calculated |
 | obliquity | float/array* | Obliquity of the ecliptic in decimal degrees |
 
 \* Returns array of values corresponding to the array of dates when using the `ephemerides` endpoint.
@@ -68,9 +68,9 @@ Metadata contains information about the returned results such as house system, c
 
 | Value | Type | Descripton |
 |---|---|---|
-| latitude | float | Geographic latitude |
-| longitude | float | Geographic longitude |
-| elevation | float | Elevation above sea level |
+| latitude | float | Geographic latitude in decimal degrees |
+| longitude | float | Geographic longitude in decimal degrees |
+| elevation | float | Elevation above sea level in meters |
 | queryResult | string | Resulting location (returned only when using `querylocation`) |
 
 <br>
@@ -85,9 +85,9 @@ Metadata contains information about the returned results such as house system, c
 | accuracy | integer | Date accuracy level from 1 to 5 (increases when date is more specific, ie: contains hour, minute, etc...) |
 | ISO | string/array* | Date in ISO format |
 | UNIX | integer/array* | Date in unix timestamp format |
-| [UTCDate](#dateobj) | object | Date object containing individual date values in UTC |
-| [localDate](#dateobj) | object | Date object containing individual date values in local time (returned only when doing non-UTC operations) |
-| [timezone](#tz) | object | Timezone object containing timezone details (returned only when doing non-UTC operations) |
+| [UTCDate](#dateobj) | object | Object containing individual date values in UTC |
+| [localDate](#dateobj) | object | Object containing individual date values in local time (returned only when doing non-UTC operations) |
+| [timezone](#tz) | object | Object containing timezone details (returned only when doing non-UTC operations) |
 | [JD](#jd) | object | Object containing date in Julian Days (both variants) |
 | siderealTime | string/array* | Sidereal time at longitude 0 (Greenwich meridian) |
 | localSiderealTime | string/array* | Sidereal time at the selected coordinates |

@@ -26,7 +26,7 @@ navigation: 6
 
 ## Response - Status
 
-All requests return a `status` field which returns one of the following string values:
+All requests return a `status` field which contains one of the following string values:
 
 | Value | Descripton |
 |---|---|
