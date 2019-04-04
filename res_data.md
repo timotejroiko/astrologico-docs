@@ -43,7 +43,7 @@ This object contains all the calculated data. These can be enabled by using [Dis
 | stationary | boolean | Whether the object is considered "stationary" (not returned for houses and arabic parts) |
 | declination | float | The object's celestial declination in decimal degrees |
 | rightAscension | float | The object's right ascension in decimal degrees |
-| declinationSpeed | float | The object's declination speed in decimal degrees per day (not returned arabic parts) |
+| declinationSpeed | float | The object's declination speed in decimal degrees per day (returns full traveled distance for houses, not returned for arabic parts) |
 | rightAscensionSpeed | float | The object's right ascension speed in decimal degrees per day (not returned arabic parts) |
 | magnitude | float | The object's magnitude (always 0 for hypotheticals, apsides and special points, not returned for houses and arabic parts) |
 | angularDiameter | float | The object's angular diameter in decimal degrees (always 0 for stars, hypotheticals, apsides and special points, not returned for houses arabic parts) |
