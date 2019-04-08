@@ -49,6 +49,9 @@ The houses field contains the calculated data for all the house cusps and angles
 | [munkaseyCoAscendant](/astrologico/res_data.html) | object | Munkasey co-Ascendant |
 | [munkaseyPolarAscendant](/astrologico/res_data.html) | object | Munkasey Polar Ascendant |
 | chartType | string | Whether its a Day chart or a Night chart |
+| error | string | error message* |
+
+\* If an error occurs, an error message is displayed here and no other fields are returned.
 
 <br>
 

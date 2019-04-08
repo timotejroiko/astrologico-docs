@@ -49,6 +49,7 @@ This object contains all the calculated data. These can be enabled by using [Dis
 | angularDiameter | float | The object's angular diameter in decimal degrees \*\* \*\*\* \*\*\*\*\*\* |
 | azimuth | float | The object's azimuth decimal degrees |
 | altitude | float | The object's altitude in decimal degrees |
+| error | string | error message \*\*\*\*\*\*\* |
 
 \* returned only for arabic parts (always enabled)
 
@@ -58,8 +59,10 @@ This object contains all the calculated data. These can be enabled by using [Dis
 
 \*\*\*\* always 0 for houses
 
-\*\*\*\*\* returns full traveled distance for houses, ie: goes to down to -23 and up to +23 in one day.
+\*\*\*\*\* returns full traveled distance for houses, ie: goes to down to -23 and up to +23 in one day. To get daily change subtract the value of `obliquity` four times.
 
 \*\*\*\*\*\* always 0 for non-physical objects, in addition, angularDiameter is always 0 for stars.
+
+\*\*\*\*\*\*\* if an error occurs, an error message is displayed here and no other fields are returned.
 
 <br><br><br>
