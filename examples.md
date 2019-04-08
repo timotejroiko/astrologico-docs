@@ -27,7 +27,9 @@ navigation: 7
 ### Usage Examples - Western Chart
 
 Casting a western chart for `June 25th 1994 at 18:30 (6:30pm) in Miami, Florida` using `Placidus` houses, local time and location by name.
+
 Omitting `planets` will return a default selection as mentioned in [Planets](astrologico/param_planets.html).
+
 Because `localdate` and/or `querylocation` are used, this is a `Type2` request.
 
 ```
@@ -55,6 +57,7 @@ body: {
 ### Usage Examples - Vedic Chart
 
 Casting a "vedic" chart for `May 14th 1987 at 8:43 (8:43am) in London, United Kingdom` using only classic planets plus "mean" rahu & ketu, `Whole Signs` houses, Lahiri sidereal zodiac, UTC time and location by coordinates.
+
 Because neither `localdate` nor `querylocation` are used, this is a `Type1` request.
 
 ```
@@ -84,6 +87,7 @@ body: {
 ### Usage Examples - Human Design System
 
 Casting a "human design system" chart for `December 1st 2001 at 21:21 (9:21pm) in Lisbon, Portugal` using local time and location by name.
+
 Since a human design combines two charts, it requires multiple requests to be made. This example uses 1 `Type2` and 2 `Type1` requests.
 
 ```
@@ -142,7 +146,9 @@ POST
 
 ### Usage Examples - Zodiac Sign Degrees
 
-All longitudes are returned in 360 decimal degrees. The easiest way to get zodiac signs and degrees is to use the modulo operator present in most programming languages. To obtain degrees, minutes and seconds, some further math is required. here's a simple javascript example.
+All longitudes are returned in 360 decimal degrees. The easiest way to get zodiac signs and degrees is to use the modulo operator present in most programming languages.
+
+To obtain degrees, minutes and seconds, some further math is required. here's a simple javascript example.
 
 ```js
 let longitude = planets.P0.longitude; // longitude received form the api, ie: 265.78468274
