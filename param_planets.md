@@ -27,6 +27,7 @@ navigation: 5
 ## Parameters - Planets
 
 An array of code points specifying the objects that should be calculated. The code point format should be a type identifier followed by a number.
+If omitted, it defaults to P0 P1 P2 P3 P4 P5 P6 P7 P8 P9 P11.
 
 | Example | Descripton |
 |---|---|
