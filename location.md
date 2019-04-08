@@ -50,13 +50,13 @@ This endpoint is a standalone version of the `querylocation` parameter included 
 ```
 GET
 
-https://api.astrologico.org/v1/dateconversion?query=new%20york&key=APIKEY
+https://api.astrologico.org/v1/location?query=new%20york&key=APIKEY
 ```
 
 ```
 POST
 
-url: "https://api.astrologico.org/v1/dateconversion",
+url: "https://api.astrologico.org/v1/location",
 header: {
 	"Authorization": APIKEY
 },

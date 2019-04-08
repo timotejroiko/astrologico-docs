@@ -94,13 +94,13 @@ Interval supports years `y`, months `M`, weeks `w`, days `d`, hours `h`, minutes
 ```
 GET
 
-https://api.astrologico.org/v1/chart?utcdate=25|10|2003|12|30|0&location=51.5074|0.1278&planets=P0|P1|P2&range=10|1d&key=APIKEY
+https://api.astrologico.org/v1/ephemerides?utcdate=25|10|2003|12|30|0&location=51.5074|0.1278&planets=P0|P1|P2&range=10|1d&key=APIKEY
 ```
 
 ```
 POST
 
-url: "https://api.astrologico.org/v1/chart",
+url: "https://api.astrologico.org/v1/ephemerides",
 header: {
 	"Authorization": APIKEY
 },

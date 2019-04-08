@@ -35,7 +35,7 @@ navigation: 5
 
 ## Parameters - Location Parameters
 
-There are two Location parameters which are mutually exclusive, you only need to use one of them. If none are used, the request will default to Longitude 0, Latitude 0, Elevation 0.
+There are two Location parameters which are mutually exclusive, you only need to use one of them. If none are used, the request will default to Latitude 0, Longitude 0, Elevation 0.
 
 | Parameter | Type | Descripton |
 |---|---|---|---|
@@ -51,11 +51,11 @@ Using `querylocation` turns the request into a `Type2` request.
 
 | Index | Type | Required | Default | Descripton |
 |---|---|---|---|---|
-| 0 | Float | yes | 0 | Longitude (decimal) |
-| 1 | Float | yes | 0 | Latitude (decimal) |
+| 0 | Float | yes | 0 | Latitude (decimal) |
+| 1 | Float | yes | 0 | Longitude (decimal) |
 | 2 | Float | no | 0 | Elevation (meters)* |
 
-\* Elevation is only needed for certain types of calculations and can safely be omitted or set to 0 in most cases.
+\* Elevation is only needed for certain types of calculations (ie: topocentric coordinates) and may safely be omitted or set to 0 in most cases.
 
 <br>
 
