@@ -28,7 +28,7 @@ navigation: 7
 
 Casting a western chart for `June 25th 1994 at 18:30 (6:30pm) in Miami, Florida` using `Placidus` houses, local time and location by name.
 
-Omitting `planets` will return a default selection as mentioned in [Planets](astrologico/param_planets.html).
+Omitting `planets` will return a default selection as mentioned in [Planets](/astrologico/param_planets.html).
 
 Because `localdate` and/or `querylocation` are used, this is a `Type2` request.
 
