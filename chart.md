@@ -32,8 +32,8 @@ This is the primary endpoint through which you can retrieve everything you need 
 
 | Parameter | Type | Descripton |
 |---|---|---|
-| [<Date Parameter>](/astrologico/param_date.html) | number/array | Set date using one of the available date parameters. |
-| [<Location Parameter>](/astrologico/param_location.html) | number/array | Set location using one of the available location parameters. |
+| <[Date Parameter](/astrologico/param_date.html)> | number/array | Set date using one of the available date parameters. |
+| <[Location Parameter](/astrologico/param_location.html)> | number/array | Set location using one of the available location parameters. |
 | [planets](/astrologico/param_planets.html) | array | Set objects to display |
 | [houses](/astrologico/param_houses.html) | string | Set houses to display |
 | [display](/astrologico/param_display.html) | array | Set values to display |

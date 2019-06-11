@@ -41,8 +41,8 @@ The same as the [Chart](/astrologico/chart.html) endpoint but returns arrays of 
 
 | Parameter | Type | Descripton |
 |---|---|---|
-| [<Date Parameter>](/astrologico/param_date.html) | number/array | Set date using one of the available date parameters. |
-| [<Location Parameter>](/astrologico/param_location.html) | number/array | Set location using one of the available location parameters. |
+| <[Date Parameter](/astrologico/param_date.html)> | number/array | Set date using one of the available date parameters. |
+| <[Location Parameter](/astrologico/param_location.html)> | number/array | Set location using one of the available location parameters. |
 | [range](#range) | array | Set the time range |
 | [planets](/astrologico/param_planets.html) | array | Set objects to display |
 | [houses](/astrologico/param_houses.html) | string | Set houses to display |

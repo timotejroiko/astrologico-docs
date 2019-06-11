@@ -32,8 +32,8 @@ This endpoint is a standalone version of the date parameters and date conversion
 
 | Parameter | Type | Descripton |
 |---|---|---|
-| <[Date Param...](/astrologico/param_date.html)> | number/array | Set date using one of the available date parameters. |
-| <[Location Param...](/astrologico/param_location.html)> | number/array | Find timezone using one of the available location parameters. |
+| <[Date](/astrologico/param_date.html)> | number/array | Set date using one of the available date parameters. |
+| <[Location](/astrologico/param_location.html)> | number/array | Find timezone using one of the available location parameters. |
 | [options](/astrologico/param_options.html) | array | Set manual timezone settings |
 
 If Date is in UTC, the option `utctolocal` is enabled by default.
