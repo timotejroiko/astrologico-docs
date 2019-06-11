@@ -46,7 +46,7 @@ Astrologico API's features include:
 * Specialized tools such as stations, motion changes, transits and ephemerides
 * All major planets, hypothetical planets, thousands of asteroids and hundreds of arabic parts/lots
 * Nodes and Apsides for all major planets and asteroids
-* Over 7000 stars and the ability to query the simbad database, granting access to millions of stars and stellar objects
+* Thousands of stars and the ability to query the simbad database, granting access to millions of stars and stellar objects
 * Available data includes Longitude, Latitude, Declination, Right Ascension, Altitude, Azimuth, Distance, Speeds, Human Design and more
 
 <br>
