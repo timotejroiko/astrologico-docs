@@ -35,31 +35,33 @@ navigation: 3
 
 ## Ephemerides
 
-The same as the [Chart](/astrologico/chart.html) endpoint but returns arrays of values, instead of single values, corresponding to a time range.
+The same as the [Chart](/astrologico/chart.html) endpoint but returns arrays of values corresponding to a time range.
 
 ### Parameters
 
 | Parameter | Type | Descripton |
 |---|---|---|
-| [Date Parameter](/astrologico/param_date.html) | - | Set date using one of the available date parameters. |
-| [Location Parameter](/astrologico/param_location.html) | - | Set location using one of the available location parameters. |
-| [range](#range) | array | Set the time range for the ephemerides |
+| [<Date Parameter>](/astrologico/param_date.html) | number/array | Set date using one of the available date parameters. |
+| [<Location Parameter>](/astrologico/param_location.html) | number/array | Set location using one of the available location parameters. |
+| [range](#range) | array | Set the time range |
 | [planets](/astrologico/param_planets.html) | array | Set objects to display |
 | [houses](/astrologico/param_houses.html) | string | Set houses to display |
 | [display](/astrologico/param_display.html) | array | Set values to display |
 | [options](/astrologico/param_options.html) | array | Set calculation options |
+| [derived](/astrologico/param_derived.html) | array | Create a derived chart |
+| [progression](/astrologico/param_progression.html) | array | Create a progressed chart |
 
 <br>
 
 ### Parameters - Range
 {:id="range"}
 
-The range parameter is a sorted array containing the amount of dates to calculate and the interval between each date.
+The range parameter is an indexed array containing the amount of dates to calculate and the interval between each date.
 
 | Index | Type | Description |
 |---|---|---|
-| 0 | integer | Amount of calculations (max 1000) |
-| 1 | string | Interval between each calculation  |
+| 0 | integer | Amount of calculations/dates (max 1000) |
+| 1 | string | Interval/step between each calculation/date |
 
 <br>
 
@@ -67,12 +69,12 @@ The range parameter is a sorted array containing the amount of dates to calculat
 
 | GET | POST | Description |
 |---|---|---|
-| range=10\|1d | range:[10,\"1d\"] | Return 10 dates in 1 day intervals |
-| range=50\|5h | range:[50,\"5h\"] | Return 50 dates in 5 hour intervals |
-| range=5\|1y | range:[5,\"1y\"] | Return 5 dates in 1 year intervals |
-| range=100\|30m | range:[100,\"30m\"] | Return 100 dates in 30 minute intervals |
-| range=12\|1M | range:[12,\"1M\"] | Return 12 dates in 1 month intervals |
-| range=10\|1d | range:[10,\"-1d\"] | Return 10 dates in 1 day intervals backwards in time |
+| &range=10\|1d | range:[10,\"1d\"] | Return 10 dates in 1 day intervals |
+| &range=50\|5h | range:[50,\"5h\"] | Return 50 dates in 5 hour intervals |
+| &range=5\|1y | range:[5,\"1y\"] | Return 5 dates in 1 year intervals |
+| &range=100\|30m | range:[100,\"30m\"] | Return 100 dates in 30 minute intervals |
+| &range=12\|1M | range:[12,\"1M\"] | Return 12 dates in 1 month intervals |
+| &range=10\|1d | range:[10,\"-1d\"] | Return 10 dates in 1 day intervals backwards in time |
 
 Interval supports years `y`, months `M`, weeks `w`, days `d`, hours `h`, minutes `m`, seconds `s` and milliseconds `ms`
 
@@ -83,8 +85,9 @@ Interval supports years `y`, months `M`, weeks `w`, days `d`, hours `h`, minutes
 | key | Type | Description |
 |---|---|---|
 | [status](/astrologico/res_status.html) | string | Contains the response status |
-| [metadata](/astrologico/res_metadata.html) | object | Contains the configuration used for the calculations |
-| [houses](/astrologico/res_houses.html) | object | Contains data for houses, returned only when a house system is selected |
+| [error](/astrologico/res_status.html) | string | Contains the error message in case of error |
+| [metadata](/astrologico/res_metadata.html) | object | Contains information about the data |
+| [houses](/astrologico/res_houses.html) | object | Contains data for houses and related points |
 | [planets](/astrologico/res_planets.html) | object | Contains data for planets and other objects |
 
 <br>
@@ -122,16 +125,19 @@ body: {
 	"metadata": {
 		"options": {
 			"zodiacType": "Tropical",
-			"zodiacName": "Tropical",
-			"ayanamsa": [23.961449584015742,23.961449604415805,23.961449616148894,23.961449619446338,23.961449614543525,23.96144960167958,23.961449581097032,23.961449553042396,23.61449517765576,23.961449475520137],
+			"zodiacName": false,
 			"positions": "Apparent",
 			"coordinates": "Geocentric",
+			"astrometric": false,
 			"houseSystem": false,
+			"progressed": false,
+			"derived": false,
+			"planetsDate": "date",
+			"housesDate": "date",
 			"displayOptions": [
 				"LONGITUDE",
 				"LONGITUDE_SPEED"
-			],
-			"obliquity": [23.43743183392756,23.437431819085912,23.43743180424426,23.4374317894026,23.43743177456095,23.437431759719296,23.437431744877646,23.43743173003599,23.437431715194332,23.437431700352683]
+			]
 		},
 		"location": {
 			"latitude": 51.5074,
@@ -158,7 +164,10 @@ body: {
 				"julianDayUT": [2452938.0208290154,2452939.020829012,2452940.0208290094,2452941.0208290066,2452942.020829004,2452943.020829001,2452944.020828998,2452945.0208289954,2452946.0208289926,2452947.02082899]
 			},
 			"siderealTime": ["14:43:55","14:47:52","14:51:48","14:55:45","14:59:42","15:03:38","15:07:35","15:11:31","15:15:28","15:19:24"],
-			"localSiderealTime": ["17:48:55","17:52:52","17:56:48","18:00:45","18:05:42","18:10:38","18:12:35","18:16:31","18:20:28","18:24:24"]
+			"localSiderealTime": ["17:48:55","17:52:52","17:56:48","18:00:45","18:05:42","18:10:38","18:12:35","18:16:31","18:20:28","18:24:24"],
+			"obliquity": [23.440476763803645,23.44045713805244,23.440436567877978,23.440419941964763,23.440410665623396,23.44040965574477,23.440415460603322,23.44042518643726,23.440435584277044,23.440443819641295],
+			"ascendant": [277.785832095783,278.79625355976304,279.8215768997102,280.8624265747237,281.91945027117686,282.993324563501,284.0847591177119,285.1944980184321,286.3233187600409,287.47203033888024],
+			"sun": [211.67580106071702,212.67309288480732,213.6709264383752,214.6692739871689,215.668105926189,216.66739545106427,217.66712256134699,218.66727592543532,219.66785247437463,220.66885567306372]
 		}
 	},
 	"planets": {

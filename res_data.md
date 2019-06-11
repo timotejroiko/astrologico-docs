@@ -28,9 +28,11 @@ navigation: 6
 
 This object contains all the calculated data. These can be enabled by using [Display Options](/astrologico/param_display.html).
 
+All fields (except `name`, `formula` and `error`) are arrays when using the `ephemerides` endpoint.
+
 | Value | Type | Descripton |
 |---|---|
-| name | string | Object name (not returned for houses) |
+| name | string | Object name \*\*\* |
 | formula | string | Object's formula \* |
 | reversed | string | Whether the formula was reversed \* |
 | longitude | float | The object's ecliptic longitude in decimal degrees |

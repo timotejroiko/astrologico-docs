@@ -32,12 +32,14 @@ This is the primary endpoint through which you can retrieve everything you need 
 
 | Parameter | Type | Descripton |
 |---|---|---|
-| [Date Parameter](/astrologico/param_date.html) | - | Set date using one of the available date parameters. |
-| [Location Parameter](/astrologico/param_location.html) | - | Set location using one of the available location parameters. |
+| [<Date Parameter>](/astrologico/param_date.html) | number/array | Set date using one of the available date parameters. |
+| [<Location Parameter>](/astrologico/param_location.html) | number/array | Set location using one of the available location parameters. |
 | [planets](/astrologico/param_planets.html) | array | Set objects to display |
 | [houses](/astrologico/param_houses.html) | string | Set houses to display |
 | [display](/astrologico/param_display.html) | array | Set values to display |
 | [options](/astrologico/param_options.html) | array | Set calculation options |
+| [derived](/astrologico/param_derived.html) | array | Create a derived chart |
+| [progression](/astrologico/param_progression.html) | array | Create a progressed chart |
 
 <br>
 
@@ -46,7 +48,8 @@ This is the primary endpoint through which you can retrieve everything you need 
 | key | Type | Description |
 |---|---|---|
 | [status](/astrologico/res_status.html) | string | Contains the response status |
-| [metadata](/astrologico/res_metadata.html) | object | Contains the configuration used for the returned data |
+| [error](/astrologico/res_status.html) | string | Contains the error message in case of error |
+| [metadata](/astrologico/res_metadata.html) | object | Contains information about the data |
 | [houses](/astrologico/res_houses.html) | object | Contains data for houses and related points |
 | [planets](/astrologico/res_planets.html) | object | Contains data for planets and other objects |
 
@@ -83,16 +86,19 @@ body: {
 "metadata": {
 	"options": {
 		"zodiacType": "Tropical",
-		"zodiacName": "Tropical",
-		"ayanamsa": 0,
+		"zodiacName": false,
 		"positions": "Apparent",
 		"coordinates": "Geocentric",
+		"astrometric": false,
 		"houseSystem": false,
+		"progressed": false,
+		"derived": false,
+		"planetsDate": "date",
+		"housesDate": "date",
 		"displayOptions": [
 			"LONGITUDE",
 			"LONGITUDE_SPEED"
-		],
-		"obliquity": 23.4323924352284
+		]
 	},
 	"location": {
 		"latitude": 51.5074,
@@ -119,7 +125,10 @@ body: {
 			"julianDayUT": 2452938.0208290154
 		},
 		"siderealTime": "14:43:55",
-		"localSiderealTime": "14:44:37"
+		"localSiderealTime": "14:44:26",
+		"obliquity": 23.440476763803645,
+		"ascendant": 277.785832095783,
+		"sun": 211.67580106071702
 	}
 },
 "planets": {

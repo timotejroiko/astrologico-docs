@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Endpoints - /v1/designdate
+title: Endpoints - /v1/derived
 navigation: 3
 ---
 
@@ -33,9 +33,9 @@ navigation: 3
 
 <br>
 
-## Design Date
+## Derived Chart
 
-This endpoint is used to find the "design date" of a human design chart and other derived dates. The design date can then used together with the birth date to obtain the two charts that make up the human design system.
+This endpoint is used to cast a secondary or derived chart.
 
 ### Parameters
 

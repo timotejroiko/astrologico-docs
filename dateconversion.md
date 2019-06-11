@@ -26,17 +26,17 @@ navigation: 3
 
 ## Date Conversion
 
-This endpoint is a standalone version of the date conversion functions included in the main endpoints.
+This endpoint is a standalone version of the date parameters and date conversion functions included in the main endpoints.
 
 ### Parameters
 
 | Parameter | Type | Descripton |
 |---|---|---|
-| [Date Parameter](/astrologico/param_date.html) | - | Set date using one of the available date parameters. |
-| [Location Parameter](/astrologico/param_location.html) | - | Find timezone using one of the available location parameters. |
-| [options](/astrologico/param_options.html) | array | Set timezone using manual options |
+| [<Date Parameter>](/astrologico/param_date.html) | number/array | Set date using one of the available date parameters. |
+| [<Location Parameter>](/astrologico/param_location.html) | number/array | Find timezone using one of the available location parameters. |
+| [options](/astrologico/param_options.html) | array | Set manual timezone settings |
 
-If Date Parameter is an UTC-based parameter, the option `utctolocal` is enabled by default.
+If <Date Parameter> is in UTC, the option `utctolocal` is enabled by default.
 
 <br>
 
@@ -45,6 +45,7 @@ If Date Parameter is an UTC-based parameter, the option `utctolocal` is enabled 
 | key | Type | Description |
 |---|---|---|
 | [status](/astrologico/res_status.html) | string | Contains the response status |
+| [error](/astrologico/res_status.html) | string | Contains the error message in case of error |
 | [date](/astrologico/res_metadata.html#date) | object | Contains the date object |
 
 <br>
@@ -111,7 +112,10 @@ body: {
 			"julianDayUT": 2440619.7508373726
 		},
 		"siderealTime": "14:49:16",
-		"localSiderealTime": "19:15:06"
+		"localSiderealTime": "19:15:06",
+		"obliquity": 23.445560341475534,
+		"ascendant": 65.81278581163468,
+		"sun": 312.9816150772079
 	}
 }
 ```

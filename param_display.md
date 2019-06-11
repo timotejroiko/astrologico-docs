@@ -46,6 +46,7 @@ An array of planetary values that the request should return. If none is specifie
 | ASCENSION_SPEED | Right Ascension speed (degrees per day) |
 | DECLINATION_SPEED | Declination speed (degrees per day) |
 | DISTANCE_SPEED | Distance speed (AU per day) |
+| ALL | All of the above |
 
 <br>
 

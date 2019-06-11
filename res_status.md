@@ -48,7 +48,7 @@ Occasionally when our server goes through changes or updates, a small downtime c
 ```
 {
 	"status": "ERROR",
-	"error": "Temporarily unavailable"
+	"error": "temporarily unavailable"
 }
 ```
 

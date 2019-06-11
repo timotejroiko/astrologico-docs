@@ -42,8 +42,8 @@ There are several Date parameters available, you only need to use one of them. I
 | timestamp | Integer | UTC | Unix timestamp in milliseconds |
 | jdet | float | UTC | Julian day in ephemeris time or terrestrial time |
 | jdut | float | UTC | Julian day in universal time |
-| [utcdate](#datearray) | array | UTC | Sorted date/time array in UTC |
-| [localdate](#datearray) | array | LOCAL | Sorted date/time array in local time |
+| [utcdate](#datearray) | array | UTC | Indexed date/time array in UTC |
+| [localdate](#datearray) | array | LOCAL | Indexed date/time array in local time |
 
 <br>
 
@@ -59,7 +59,7 @@ There are several Date parameters available, you only need to use one of them. I
 | 4 | Integer | no | 0 | minute |
 | 5 | Float | no | 0 | second and millisecond |
 
-The `localdate` parameter uses a [Location Parameter](/astrologico/param_location.html) to obtain the correct timezone. Optionally, a manual timezone can be provided using the [Options](/astrologico/param_options.html) parameter. Using `localdate` turns a `Type1` request into a `Type2` request.
+The `localdate` parameter uses a [Location Parameter](/astrologico/param_location.html) to obtain the correct timezone. Optionally, a manual timezone can be provided using the [Options](/astrologico/param_options.html#timezone) parameter. Using `localdate` turns a `Type1` request into a `Type2` request.
 
 <br>
 
@@ -75,6 +75,6 @@ Here's an example of how each parameter should be used to generate a chart for `
 | utcdate | `utcdate=15|2|1995|18|53` | `utcdate:[15,2,1995,18,53]` |
 | localdate | `localdate=15|2|1995|13|53` | `localdate:[15,2,1995,13,53]` |
 
-For `localdate` to get the correct timezone, it should be used together with a correct [Location Parameter](/astrologico/param_location.html) for the city of New York, or used together with the [Options](/astrologico/param_options.html) parameter specifying New York's timezone.
+For `localdate` to get the correct timezone, it should be used together with a correct [Location Parameter](/astrologico/param_location.html) for the city of New York, or used together with the [Options](/astrologico/param_options.html#timezone) parameter specifying New York's timezone.
 
 <br><br><br>

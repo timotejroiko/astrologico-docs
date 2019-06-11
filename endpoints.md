@@ -35,12 +35,14 @@ These are the currently available and also future endpoints:
 | [/v1/search](/astrologico/search.html) | Find object information by name | Type1 |
 | [/v1/dateconversion](/astrologico/dateconversion.html) | Date conversion between local time, utc time, julian dates and unix timestamps | Type2 |
 | [/v1/location](/astrologico/location.html) | Find coordinates by location name (geocoding) | Type2 |
-| [/v1/designdate](/astrologico/designdate.html) | Find the design date for human design system charts | Type1/Type2* |
+
 | /v1/zeropoint (soon) | Find the date an object changes motion | Type2 |
 | /v1/cycles (soon) | Find the date an object returns to its original position | Type2 |
 | /v1/findtransit (soon) | Find the date an object reaches a certain position | Type2 |
 | /v1/averagespeed (soon) | Find an object's average speed during a specific year | Type2 |
+| [/v1/derived](/astrologico/derived.html) | Astrological data for a derived/secondary time and place | Type1/Type2* |
+| /v1/progressions (soon) | Astrological data for progressed time and place | Type1 |
 
-\* becomes a Type2 request if one of the following parameters is used:<br>`localdate` `querylocation` `options=utctolocal`
+\* becomes a Type2 request if certain settings are enabled
 
 <br><br><br>

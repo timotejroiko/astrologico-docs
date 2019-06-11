@@ -26,15 +26,34 @@ navigation: 1
 
 # Astrologico API (beta)
 
-Astrologico API is a fully featured microservice for retrieving astrological calculations and data. All endpoints are `HTTPS` only and available via `GET` or `POST`. The API is nearly production ready but we encourage you to experiment with it and help us weed out any remaining bugs, inconsistencies or incorrect data. You can get and API key at our [Discord server](https://discord.gg/jtaCURK){:target="_blank"}
+Astrologico API is a fully featured microservice for retrieving astrological calculations and data. All endpoints are `HTTPS` only and available via `GET` or `POST`. The API is nearly production ready and we encourage you to experiment with it and help us weed out any remaining bugs, inconsistencies or incorrect data. You can get an API key at our [Discord server](https://discord.gg/jtaCURK){:target="_blank"}
 
 The API's base url is `https://api.astrologico.org`.
+
+<br>
+
+## Features
+
+Astrologico API's features include:
+
+* Covers a time range of over 10000 years
+* Built in date, time and location converters
+* Tropical and sidereal zodiacs with over 30 ayanamsas and custom ayanamsas
+* Over 20 astrological house systems
+* Derived data such as persona charts and the human design system
+* Progressed charts with several different methods
+* Solar Returns and Returns for other objects
+* Specialized tools such as stations, motion changes, transits and ephemerides
+* All major planets, hypothetical planets, thousands of asteroids and hundreds of arabic parts/lots
+* Nodes and Apsides for all major planets and asteroids
+* Over 7000 stars and the ability to query the simbad database, granting access to millions of stars and stellar objects
+* Available data includes Longitude, Latitude, Declination, Right Ascension, Altitude, Azimuth, Distance, Speeds, Human Design and more
 
 <br>
   
 ## GET vs POST
 
-There are two differences between `GET` and `POST` requests. In `GET` requests, array parameters should be pipe-delimited query strings, and the API key should be a query-string as well. In `POST` requests, array parameters should be JSON arrays, and the API key should be in the `Authorization` header.
+There are two differences between `GET` and `POST` requests. In `GET` requests, array parameters should be pipe-delimited query strings, and the API key should be a query-string as well. In `POST` requests, array parameters should be JSON arrays, and the API key should be in an `Authorization` header.
 
 | GET  | POST |
 | --- | --- |
@@ -44,15 +63,15 @@ There are two differences between `GET` and `POST` requests. In `GET` requests, 
 
 ## Request Type & Rate Limits
 
-Depending on the endpoint and the parameters used, a request can become a `type1` request or a `type2` request. `type1` requests are simpler and require less resources, while `type2` requests require more resources and as such have lower rate limits.
+Depending on the endpoint and the parameters used, a request can be `type1` or `type2`. `type1` requests require less resources, while `type2` requests require more resources and as such have lower rate limits.
 
 When the limits are hit, subsequent requests will have a scaling delay added to them before a response is returned. Our API will continue to be available even if you go over our rate limits, but we advise you to upgrade your key to avoid slowing down your application. Limits reset at midnight UTC.
 
 Our current Rate limits are as follows:
 
-| Type1  | Type2 |
-| --- | --- |
-| 250/day | 50/day |
+| Pricing | Type1  | Type2 |
+| --- | --- | --- |
+| Free | 250/day | 50/day |
 
 Premium options and pricing for higher rate limits will be available soon.
 

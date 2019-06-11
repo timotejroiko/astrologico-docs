@@ -41,6 +41,7 @@ This endpoint is a standalone version of the `querylocation` parameter included 
 | key | Type | Description |
 |---|---|---|
 | [status](/astrologico/res_status.html) | string | Contains the response status |
+| [error](/astrologico/res_status.html) | string | Contains the error message in case of error |
 | [location](/astrologico/res_metadata.html#location) | object | Contains the location object |
 
 <br>
