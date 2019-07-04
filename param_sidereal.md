@@ -22,15 +22,6 @@ navigation: 5
 	}
 </style>
 
-<script>
-	window.onload = function(){
-		if (location.hash) {
-			let target = location.hash;
-			document.querySelector(".content").scroll({top:document.querySelector(target).offsetTop,behavior:"smooth"})
-		}
-	}
-</script>
-
 <br>
 
 ## Sidereal
@@ -86,7 +77,11 @@ The Sidereal option can be used to create sidreal and vedic charts. It offers se
 
 A custom ayanamsa can be set by specifying a reference date and an initial value. Reference date should be in Julian Days ET/TT (Ephemeris/Terrestrial Time) and the initial value should be the Ayanamsa value in decimal (number of degrees difference from Tropical)
 
-|GET Example|POST Example|Description|
+<br>
+
+### Example
+
+|GET|POST|Description|
 |---|---|---|
 |`sidereal=6`|`sidereal:6`|Set Ayanamsa to Krishnamurti|
 |`sidereal=2451545|25.5`|`sidereal:[2451545,25.5]`|Set Ayanamsa to 25.5 (25 deg 30 min) degrees at julian day 2451545 (J2000 / noon of January 1st, 2000)|

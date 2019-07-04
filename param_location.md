@@ -38,7 +38,7 @@ navigation: 5
 There are two Location parameters which are mutually exclusive, you only need to use one of them. If none are used, the request will default to Latitude 0, Longitude 0, Elevation 0.
 
 | Parameter | Type | Descripton |
-|---|---|---|---|
+|---|---|---|
 | [location](#location) | array | Indexed array of coordinates |
 | querylocation | string | Search term to obtain coordinates |
 

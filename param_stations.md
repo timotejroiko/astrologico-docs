@@ -22,15 +22,6 @@ navigation: 5
 	}
 </style>
 
-<script>
-	window.onload = function(){
-		if (location.hash) {
-			let target = location.hash;
-			document.querySelector(".content").scroll({top:document.querySelector(target).offsetTop,behavior:"smooth"})
-		}
-	}
-</script>
-
 <br>
 
 ## Stations
@@ -41,3 +32,5 @@ When [Display](/astrologico/param_display.html) includes Stations, `true` is ret
 |---|---|---|
 |`stations=2|days`|`options:[2,"days"]`| Consider an object "stationary" if within 2 days of its zero point |
 |`stations=3|%`|`options:[3,"%"]`| Consider an object "stationary" if its speed is below 3% of its absolute average speed that year |
+
+<br><br><br>

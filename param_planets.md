@@ -22,6 +22,15 @@ navigation: 5
 	}
 </style>
 
+<script>
+	window.onload = function(){
+		if (location.hash) {
+			let target = location.hash;
+			document.querySelector(".content").scroll({top:document.querySelector(target).offsetTop,behavior:"smooth"})
+		}
+	}
+</script>
+
 <br>
 
 ## Planets
@@ -58,7 +67,7 @@ If omitted, it defaults to `P0 P1 P2 P3 P4 P5 P6 P7 P8 P9 P11`.
 | L | Arabic parts/lots |
 | DL | Arabic parts/lots day (no reverse) |
 | NL | Arabic parts/lots night (force reverse) |
-| QS: | Get an object from the simbad database |
+| [QS:](#simbad) | Get an object from the simbad database |
 
 <br>
 
@@ -109,6 +118,7 @@ Asteroid IDs follow the same numbering as their official designation. Other obje
 <br>
 
 ### Simbad Integration
+{:id="simbad"}
 
 When working with stars and stellar objects, If our database does not contain the object you're looking for, it is possible to retrieve it directly from the simbad database using the following format:
 

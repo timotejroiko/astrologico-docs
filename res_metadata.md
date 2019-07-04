@@ -42,6 +42,11 @@ Metadata contains information about the returned results such as house system, c
 | [options](#options) | object | Settings and options information |
 | [location](#location) | object | Geographic coordinates information |
 | [date](#date) | object | Date and time information |
+| [referenceDate](#date) | object | Reference date (returned only when doing operations that require a reference chart) |
+| [derivedDate](#date) | object | Derived date (returned only when using derived chart options) |
+| [progressedPlanetsDate](#date) | object | Progressed date for planets (returned only when using progressed chart options) |
+| [progressedHousesDate](#date) | object | Progressed date for houses (returned only when using progressed chart options) |
+| [returnDate](#date) | object | Return date (returned only when using return chart options) |
 
 <br>
 
@@ -89,11 +94,6 @@ Metadata contains information about the returned results such as house system, c
 | UNIX | integer/array* | Date in unix timestamp format |
 | [UTCDate](#dateobj) | object | Object containing individual date values in UTC |
 | [localDate](#dateobj) | object | Object containing individual date values in local time (returned only when using non-UTC dates) |
-| [referenceDate](#dateobj) | object | Reference date (returned only when doing operations that require a reference chart) |
-| [derivedDate](#dateobj) | object | Derived date (returned only when using derived chart options) |
-| [progressedPlanetsDate](#dateobj) | object | Progressed date for planets (returned only when using progressed chart options) |
-| [progressedHousesDate](#dateobj) | object | Progressed date for houses (returned only when using progressed chart options) |
-| [returnDate](#dateobj) | object | Return date (returned only when using return chart options) |
 | [timezone](#tz) | object | Object containing timezone details (returned only when using non-UTC dates) |
 | [JD](#jd) | object | Object containing date in Julian Days (both variants) |
 | siderealTime | string/array* | Sidereal time at longitude 0 (Greenwich meridian) |

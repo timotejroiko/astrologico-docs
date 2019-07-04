@@ -22,15 +22,6 @@ navigation: 5
 	}
 </style>
 
-<script>
-	window.onload = function(){
-		if (location.hash) {
-			let target = location.hash;
-			document.querySelector(".content").scroll({top:document.querySelector(target).offsetTop,behavior:"smooth"})
-		}
-	}
-</script>
-
 <br>
 
 ## Timezone
