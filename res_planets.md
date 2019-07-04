@@ -13,12 +13,11 @@ navigation: 6
 		font-size: 100%;
 	}
 	.navigation li {
-		padding: 5px;
+		padding: 0.3vh;
 	}
-	@media (min-width: 745px) {
-		.sidebar {
-			width: 30%;
-		}
+	.sidebar .sidebar-main {
+	    height: calc(100% - 50px);
+	    overflow-y: scroll;
 	}
 </style>
 
