@@ -15,9 +15,12 @@ navigation: 6
 	.navigation li {
 		padding: 0.3vh;
 	}
+	.sidebar {
+		min-width: 300px;
+	}
 	.sidebar .sidebar-main {
 	    height: calc(100% - 50px);
-	    overflow-y: scroll;
+	    overflow-y: auto;
 	}
 </style>
 
