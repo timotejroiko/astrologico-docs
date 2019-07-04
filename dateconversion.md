@@ -34,7 +34,7 @@ This endpoint is a standalone version of the date parameters and date conversion
 |---|---|---|
 | <[Date](/astrologico/param_date.html)> | number/array | Set date using one of the available date parameters. |
 | <[Location](/astrologico/param_location.html)> | number/array | Find timezone using one of the available location parameters. |
-| [options](/astrologico/param_options.html) | array | Set manual timezone settings |
+| [timezone](/astrologico/param_timezone.html) | array | Optional. Set timezone manually |
 
 If Date is in UTC, the option `utctolocal` is enabled by default.
 
@@ -114,8 +114,9 @@ body: {
 		"siderealTime": "14:49:16",
 		"localSiderealTime": "19:15:06",
 		"obliquity": 23.445560341475534,
-		"ascendant": 65.81278581163468,
-		"sun": 312.9816150772079
+		"sun": 312.98161507720755,
+		"moon": 256.4926824963518,
+		"ascendant": 65.81278581163468
 	}
 }
 ```

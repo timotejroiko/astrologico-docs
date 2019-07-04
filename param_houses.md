@@ -24,43 +24,43 @@ navigation: 5
 
 <br>
 
-## Parameters - Houses
+## Houses
 
-A house system number to display Houses, Ascendant, Midheaven and other related points.
+A house system ID to display Houses, Ascendant, Midheaven and other related points.
 
-| Number | House System |
+| ID | House System |
 |---|---|
-| 0 | Alcabitus |
-| 1 | APC |
-| 2 | Axial Rotation / Meridian / Zariel |
-| 3 | Azimuthal / Horizontal |
-| 4 | Campanus |
-| 5 | Carter / Poli-Equatorial |
-| 6 | Equal (1st house = ascendant) |
-| 7 | Equal (10th house = midheaven) |
-| 8 | Equal (1st house = 0 aries) |
-| 9 | Gauquelin Sectors |
-| 10 | Sunshine / Makransky (solution Treindl) |
-| 11 | Sunshine / Makransky (solution Makransky) |
-| 12 | Koch |
-| 13 | Krusinski / Pisa / Goelzer |
-| 14 | Morinus |
-| 15 | Placidus |
-| 16 | Polich / Page / Topocentric |
-| 17 | Porphyrius / Porphyry |
-| 18 | Pullen SD (sinusoidal delta) / Neo-Porphyry |
-| 19 | Pullen SR (sinusoidal ratio) |
-| 20 | Regiomontanus |
-| 21 | Sripati |
-| 22 | Vehlow Equal (middle of 1st house = ascendant) |
-| 23 | Whole Sign |
+| 1 | Alcabitus |
+| 2 | APC |
+| 3 | Axial Rotation / Meridian / Zariel |
+| 4 | Azimuthal / Horizontal |
+| 5 | Campanus |
+| 6 | Carter / Poli-Equatorial |
+| 7 | Equal (1st house = ascendant) |
+| 8 | Equal (10th house = midheaven) |
+| 9 | Equal (1st house = 0 aries) |
+| 10 | Gauquelin Sectors |
+| 11 | Sunshine / Makransky (solution Treindl) |
+| 12 | Sunshine / Makransky (solution Makransky) |
+| 13 | Koch |
+| 14 | Krusinski / Pisa / Goelzer |
+| 15 | Morinus |
+| 16 | Placidus |
+| 17 | Polich / Page / Topocentric |
+| 18 | Porphyrius / Porphyry |
+| 19 | Pullen SD (sinusoidal delta) / Neo-Porphyry |
+| 20 | Pullen SR (sinusoidal ratio) |
+| 21 | Regiomontanus |
+| 22 | Sripati |
+| 23 | Vehlow Equal (middle of 1st house = ascendant) |
+| 24 | Whole Sign |
 
-### Parameters - Houses Examples
+### Example
 
-Example for retrieving houses, Ascendant, Midheaven and other related points using Placidus:
+Retrieving houses, Ascendant, Midheaven and other related points using Placidus:
 
 | GET | POST |
 |---|---|
-|`houses=15`|`houses:15`|
+|`houses=16`|`houses:16`|
 
 <br><br><br>

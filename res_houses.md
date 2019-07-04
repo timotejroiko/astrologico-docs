@@ -33,7 +33,7 @@ navigation: 6
 
 <br>
 
-## Response - Houses
+## Houses
 
 The houses field contains the calculated data for all the house cusps and angles using the specified house system.
 
@@ -48,17 +48,16 @@ The houses field contains the calculated data for all the house cusps and angles
 | [kochCoAscendant](/astrologico/res_data.html) | object | Koch co-Ascendant |
 | [munkaseyCoAscendant](/astrologico/res_data.html) | object | Munkasey co-Ascendant |
 | [munkaseyPolarAscendant](/astrologico/res_data.html) | object | Munkasey Polar Ascendant |
-| chartType | string | Whether its a Day chart or a Night chart |
 | error | string | error message* |
 
 \* If an error occurs, an error message is displayed here and no other fields are returned.
 
 <br>
 
-### Response - Houses - Houses
+### Houses - Houses
 {:id="houses"}
 
-The inner houses field contains the calculated house cusps for the selected house system. When using Gauquelin Sectors the number of house cusps returned is 36 instead of 12. Gauquelin Sectors cusps are also clockwise instead of counterclockwise.
+The inner houses field contains the calculated house cusps for the selected house system. When using Gauquelin Sectors the number of house cusps returned is 36 instead of 12, and the house cusps are clockwise instead of counterclockwise.
 
 | Value | Type | Descripton |
 |---|---|

@@ -24,7 +24,7 @@ navigation: 5
 
 <br>
 
-## Parameters - Display
+## Display
 
 An array of planetary values that the request should return. If none is specified, it defaults to `LONGITUDE` and `LONGITUDE_SPEED`.
 
@@ -48,11 +48,9 @@ An array of planetary values that the request should return. If none is specifie
 | DISTANCE_SPEED | Distance speed (AU per day) |
 | ALL | All of the above |
 
-<br>
+### Example
 
-### Parameters - Display Examples
-
-Example for retrieving `Longitude`, `Latitude` and `Declination` values:
+Retrieving `Longitude`, `Latitude` and `Declination` values:
 
 | GET | POST |
 |---|---|

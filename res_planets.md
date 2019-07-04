@@ -24,16 +24,16 @@ navigation: 6
 
 <br>
 
-## Response - Planets
+## Planets
 
-The planets field contains all the calculated planetary data organized by code points.
+The planets field contains all the calculated planetary data organized by Object IDs.
 
 | Value | Type | Descripton |
 |---|---|
-| [code point](astrologico/res_data.html) | object | Object containing planetary data for the specified object |
+| [Object ID](astrologico/res_data.html) | object | Object containing planetary data for the specified object |
 | ... | object | etc... |
 
-For example, the code point for the Sun is `P0`, the response for the sun data will be:
+For example, the ID for the Sun is `P0`, the response for the sun data will be:
 
 ```
 {

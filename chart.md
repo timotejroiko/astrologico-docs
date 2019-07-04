@@ -34,12 +34,13 @@ This is the primary endpoint through which you can retrieve everything you need 
 |---|---|---|
 | <[Date](/astrologico/param_date.html)> | number/array | Set date using one of the available date parameters. |
 | <[Location](/astrologico/param_location.html)> | number/array | Set location using one of the available location parameters. |
-| [planets](/astrologico/param_planets.html) | array | Set objects to display |
+| [planets](/astrologico/param_planets.html) | array | Set planets and objects to display |
 | [houses](/astrologico/param_houses.html) | string | Set houses to display |
 | [display](/astrologico/param_display.html) | array | Set values to display |
 | [options](/astrologico/param_options.html) | array | Set calculation options |
-| [derived](/astrologico/param_derived.html) | array | Obtain derived data |
-| [progression](/astrologico/param_progression.html) | array | Obtain progressed data |
+| [derived](/astrologico/param_derived.html) | array | Create a derived chart |
+| [progression](/astrologico/param_progression.html) | array | Create a progressed chart |
+| [return](/astrologico/param_return.html) | array | Create a return chart |
 
 <br>
 
@@ -93,6 +94,7 @@ body: {
 		"houseSystem": false,
 		"progressed": false,
 		"derived": false,
+		"return": false,
 		"planetsDate": "date",
 		"housesDate": "date",
 		"displayOptions": [
@@ -125,10 +127,10 @@ body: {
 			"julianDayUT": 2452938.0208290154
 		},
 		"siderealTime": "14:43:55",
-		"localSiderealTime": "14:44:26",
 		"obliquity": 23.440476763803645,
-		"ascendant": 277.785832095783,
-		"sun": 211.67580106071702
+		"sun": 211.67580106071668,
+		"moon": 211.47772385703783,
+		"ascendant": 277.785832095783
 	}
 },
 "planets": {

@@ -48,8 +48,8 @@ The same as the [Chart](/astrologico/chart.html) endpoint but returns arrays of 
 | [houses](/astrologico/param_houses.html) | string | Set houses to display |
 | [display](/astrologico/param_display.html) | array | Set values to display |
 | [options](/astrologico/param_options.html) | array | Set calculation options |
-| [derived](/astrologico/param_derived.html) | array | Obtain derived data |
-| [progression](/astrologico/param_progression.html) | array | Obtain progressed data |
+| [derived](/astrologico/param_derived.html) | array | Ephemeris for a derived chart |
+| [progression](/astrologico/param_progression.html) | array | Ephemeris for a progressed chart |
 
 <br>
 
@@ -60,12 +60,10 @@ The range parameter is an indexed array containing the amount of dates to calcul
 
 | Index | Type | Description |
 |---|---|---|
-| 0 | integer | Amount of calculations/dates (max 1000) |
-| 1 | string | Interval/step between each calculation/date |
+| 0 | integer | Amount of dates (max 1000) |
+| 1 | string | Interval between each date. See examples |
 
-<br>
-
-### Parameters - Range Examples
+Here are a few examples:
 
 | GET | POST | Description |
 |---|---|---|
@@ -97,13 +95,13 @@ Interval supports years `y`, months `M`, weeks `w`, days `d`, hours `h`, minutes
 ```
 GET
 
-https://api.astrologico.org/v1/ephemerides?utcdate=25|10|2003|12|30|0&location=51.5074|0.1278&planets=P0|P1|P2&range=10|1d&key=APIKEY
+https://api.astrologico.org/v1/ephemeris?utcdate=25|10|2003|12|30|0&location=51.5074|0.1278&planets=P0|P1|P2&range=10|1d&key=APIKEY
 ```
 
 ```
 POST
 
-url: "https://api.astrologico.org/v1/ephemerides",
+url: "https://api.astrologico.org/v1/ephemeris",
 header: {
 	"Authorization": APIKEY
 },
@@ -132,6 +130,7 @@ body: {
 			"houseSystem": false,
 			"progressed": false,
 			"derived": false,
+			"return": false,
 			"planetsDate": "date",
 			"housesDate": "date",
 			"displayOptions": [
@@ -164,10 +163,11 @@ body: {
 				"julianDayUT": [2452938.0208290154,2452939.020829012,2452940.0208290094,2452941.0208290066,2452942.020829004,2452943.020829001,2452944.020828998,2452945.0208289954,2452946.0208289926,2452947.02082899]
 			},
 			"siderealTime": ["14:43:55","14:47:52","14:51:48","14:55:45","14:59:42","15:03:38","15:07:35","15:11:31","15:15:28","15:19:24"],
-			"localSiderealTime": ["17:48:55","17:52:52","17:56:48","18:00:45","18:05:42","18:10:38","18:12:35","18:16:31","18:20:28","18:24:24"],
 			"obliquity": [23.440476763803645,23.44045713805244,23.440436567877978,23.440419941964763,23.440410665623396,23.44040965574477,23.440415460603322,23.44042518643726,23.440435584277044,23.440443819641295],
-			"ascendant": [277.785832095783,278.79625355976304,279.8215768997102,280.8624265747237,281.91945027117686,282.993324563501,284.0847591177119,285.1944980184321,286.3233187600409,287.47203033888024],
-			"sun": [211.67580106071702,212.67309288480732,213.6709264383752,214.6692739871689,215.668105926189,216.66739545106427,217.66712256134699,218.66727592543532,219.66785247437463,220.66885567306372]
+			"sun": [211.67580106071702,212.67309288480732,213.6709264383752,214.6692739871689,215.668105926189,216.66739545106427,217.66712256134699,218.66727592543532,219.66785247437463,220.66885567306372],
+			"moon": [211.47772385703783,226.55818307300166,241.61644875672698,256.5130728317905,271.13767388720777,285.41835762679926,299.3221257347152,312.8487438679878,326.02153348514264,338.8779927610498],
+			"ascendant": [277.785832095783,278.79625355976304,279.8215768997102,280.8624265747237,281.91945027117686,282.993324563501,284.0847591177119,285.1944980184321,286.3233187600409,287.47203033888024]
+			
 		}
 	},
 	"planets": {

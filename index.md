@@ -36,18 +36,17 @@ The API's base url is `https://api.astrologico.org`.
 
 Astrologico API's features include:
 
-* Covers a time range of over 10000 years
-* Built in date, time and location converters
-* Tropical and sidereal zodiacs with over 30 ayanamsas and custom ayanamsas
+* Covers a time range of over 20000 years
+* Built-in date, time and location converters
+* Tropical and sidereal zodiacs, over 40 ayanamsas and the ability to define custom ayanamsas
 * Over 20 astrological house systems
 * Derived data such as persona charts and the human design system
 * Progressed charts with several different methods
 * Solar Returns and Returns for other objects
-* Specialized tools such as stations, motion changes, transits and ephemerides
-* All major planets, hypothetical planets, thousands of asteroids and hundreds of arabic parts/lots
-* Nodes and Apsides for all major planets and asteroids
-* Thousands of stars and the ability to query the simbad database, granting access to millions of stars and stellar objects
-* Available data includes Longitude, Latitude, Declination, Right Ascension, Altitude, Azimuth, Distance, Speeds, Human Design and more
+* Specialized tools such as stations, motion changes, aspect/transit lookup, ephemerides and more
+* Includes major planets, hypothetical planets, over 500000 asteroids, over 100 arabic parts/lots, Planetary Nodes, Apsides and more
+* Over 7000 built-in stars and access to millions of stars and stellar objects through our integration with the simbad database
+* Several types of information including Longitude, Latitude, Declination, Right Ascension, Altitude, Azimuth, Distance, Speeds, Human Design and more
 
 <br>
   
@@ -61,7 +60,7 @@ There are two differences between `GET` and `POST` requests. In `GET` requests, 
 
 <br>
 
-## Request Type & Rate Limits
+## Request Type, Rate Limits & Pricing
 
 Depending on the endpoint and the parameters used, a request can be `type1` or `type2`. `type1` requests require less resources, while `type2` requests require more resources and as such have lower rate limits.
 

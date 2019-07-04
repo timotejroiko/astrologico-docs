@@ -33,21 +33,21 @@ navigation: 5
 
 <br>
 
-## Parameters - Date Parameters
+## Date Parameters
 
 There are several Date parameters available, you only need to use one of them. If none are used, the request will default to the current date and time.
 
 | Parameter | Type | Input Type | Descripton |
 |---|---|---|---|
 | timestamp | Integer | UTC | Unix timestamp in milliseconds |
-| jdet | float | UTC | Julian day in ephemeris time or terrestrial time |
-| jdut | float | UTC | Julian day in universal time |
+| jdet | Float | UTC | Julian day in ephemeris time or terrestrial time |
+| jdut | Float | UTC | Julian day in universal time |
 | [utcdate](#datearray) | array | UTC | Indexed date/time array in UTC |
 | [localdate](#datearray) | array | LOCAL | Indexed date/time array in local time |
 
 <br>
 
-### Parameters - utcdate/localdate
+### utcdate/localdate
 {:id="datearray"}
 
 | Index | Type | Required | Default | Descripton |
@@ -59,15 +59,15 @@ There are several Date parameters available, you only need to use one of them. I
 | 4 | Integer | no | 0 | minute |
 | 5 | Float | no | 0 | second and millisecond |
 
-The `localdate` parameter uses a [Location Parameter](/astrologico/param_location.html) to obtain the correct timezone. Optionally, a manual timezone can be provided using the [Options](/astrologico/param_options.html#timezone) parameter. Using `localdate` turns a `Type1` request into a `Type2` request.
+The `localdate` parameter uses a [Location Parameter](/astrologico/param_location.html) to obtain the correct timezone. Optionally, a manual timezone can be provided using the [Timezone](/astrologico/param_timezone) parameter. Using `localdate` turns a `Type1` request into a `Type2` request.
 
 <br>
 
-### Parameters - Date Parameters Examples
+### Examples
 
 Here's an example of how each parameter should be used to generate a chart for `February 15, 1995 - 1:53pm (local time), in New York City`
 
-| Parameter | GET Request | POST Request
+| Parameter | GET | POST
 |---|---|---|
 | timestamp | `timestamp=792856380000` | `timestamp:792856380000` |
 | jdet | `jdet=2449764.0791803706` | `jdet:2449764.0791803706` |
@@ -75,6 +75,6 @@ Here's an example of how each parameter should be used to generate a chart for `
 | utcdate | `utcdate=15|2|1995|18|53` | `utcdate:[15,2,1995,18,53]` |
 | localdate | `localdate=15|2|1995|13|53` | `localdate:[15,2,1995,13,53]` |
 
-For `localdate` to get the correct timezone, it should be used together with a correct [Location Parameter](/astrologico/param_location.html) for the city of New York, or used together with the [Options](/astrologico/param_options.html#timezone) parameter specifying New York's timezone.
+For `localdate` to get the correct timezone, it should be used together with a correct [Location Parameter](/astrologico/param_location.html) for the city of New York, or used together with the [Timezone](/astrologico/param_timezone) parameter specifying New York's timezone.
 
 <br><br><br>

@@ -24,24 +24,24 @@ navigation: 5
 
 <br>
 
-## Parameters - Planets
+## Planets
 
-An array of code points specifying the objects that should be calculated. The code point format should be a type identifier followed by a number.
-If omitted, it defaults to P0 P1 P2 P3 P4 P5 P6 P7 P8 P9 P11.
+An array of IDs specifying the objects that should be calculated. The ID format consists of a type identifier followed by an object number.
+If omitted, it defaults to `P0 P1 P2 P3 P4 P5 P6 P7 P8 P9 P11`.
 
 | Example | Descripton |
 |---|---|
 |P0|Planet number 0 (sun)|
-|S156|Star number 156 (regulus)|
+|S1351|Star number 1351 (regulus)|
 |A3|Asteroid number 3 (juno)|
 
 <br>
 
-### Parameters - Planets - Object Type
+### Object Type
 
 | Object Type | Descripton |
 |---|---|
-| P | Planets and specific objects |
+| P | Planets and special objects |
 | A | Asteroids |
 | S | Stars |
 | H | Hypothetical Planets |
@@ -58,12 +58,13 @@ If omitted, it defaults to P0 P1 P2 P3 P4 P5 P6 P7 P8 P9 P11.
 | L | Arabic parts/lots |
 | DL | Arabic parts/lots day (no reverse) |
 | NL | Arabic parts/lots night (force reverse) |
+| QS: | Get an object from the simbad database |
 
 <br>
 
-### Parameters - Planets - Code Points
+### Main IDs
 
-Asteroids's code points follow the same numbering as their official designation. Other code points do not follow any specific numbering system, but you can use the [Search](/astrologico/search.html) endpoint to lookup objects by name and get their code points. Here are the code points for some of the most used objects:
+Asteroid IDs follow the same numbering as their official designation. Other objects are either numbered alphabetically or follow a special order, but you can use the [Search](/astrologico/search.html) endpoint to lookup objects by name and get their IDs. Here are the IDs for some of the most used objects:
 
 | Code point | Object |
 |---|---|
@@ -99,10 +100,21 @@ Asteroids's code points follow the same numbering as their official designation.
 | H6 | Poseidon |
 | L118 | Part of Fortune |
 | L119 | Part of Spirit |
-| S186 | Aldebaran |
-| S156 | Regulus |
-| S120 | Sirius |
-| S161 | Vega |
-| S195 | Spica |
+| S3071 | Aldebaran |
+| S1351 | Regulus |
+| S3099 | Sirius |
+| S1224 | Vega |
+| S2665 | Spica |
+
+<br>
+
+### Simbad Integration
+
+When working with stars and stellar objects, If our database does not contain the object you're looking for, it is possible to retrieve it directly from the simbad database using the following format:
+
+| Example | Descripton |
+|---|---|
+|QS:HD 25452| Get Object HD 25452 (Star)|
+|QS:NGC 3726| Get Object NGC 3726 (Galaxy)|
 
 <br><br><br>

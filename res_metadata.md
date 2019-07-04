@@ -33,7 +33,7 @@ navigation: 6
 
 <br>
 
-## Response - Metadata
+## Metadata
 
 Metadata contains information about the returned results such as house system, coordinates used, location, date, etc...
 
@@ -45,25 +45,27 @@ Metadata contains information about the returned results such as house system, c
 
 <br>
 
-### Parameters - options
+### Metadata - options
 {:id="options"}
 
 | Value | Type | Descripton |
 |---|---|---|
 | zodiacType | string | Zodiac type (tropical or sidereal) |
-| zodiacName | string | Zodiac name (tropical or name of the selected ayanamsa) |
-| ayanamsa | float/array* | Value of the selected ayanamsa in decimal degrees |
-| positions | string | Planetary positions (apparent / true / astrometric) |
+| zodiacName | string | Zodiac name when using sidereal (returns `false` if tropical) |
+| positions | string | Planetary positions (apparent / true) |
 | coordinates | string | Coordinates system (geocentric / topocentric / heliocentric) |
-| houseSystem | string | House system (returns `false` if houses were not enabled) |
+| astrometric | boolean | Whether astrometric positions are enabled or not |
+| houseSystem | string/boolean | House system (returns `false` if houses were not enabled) |
+| progressed | boolean | Whether progressed date is being used or not |
+| derived | boolean | Whether a derived date is being used or not |
+| return | boolean | Whether a return date is being used or not |
+| planetsDate | string | The date object used for planets |
+| housesDate | string | The date object used for houses |
 | displayOptions | array | Array of values to be calculated |
-| obliquity | float/array* | Obliquity of the ecliptic in decimal degrees |
-
-\* Returns array of values corresponding to the array of dates when using the `ephemerides` endpoint.
 
 <br>
 
-### Parameters - Location
+### Metadata - Location
 {:id="location"}
 
 | Value | Type | Descripton |
@@ -75,7 +77,7 @@ Metadata contains information about the returned results such as house system, c
 
 <br>
 
-### Parameters - Date
+### Metadata - Date
 {:id="date"}
 
 | Value | Type | Descripton |
@@ -86,17 +88,27 @@ Metadata contains information about the returned results such as house system, c
 | ISO | string/array* | Date in ISO format |
 | UNIX | integer/array* | Date in unix timestamp format |
 | [UTCDate](#dateobj) | object | Object containing individual date values in UTC |
-| [localDate](#dateobj) | object | Object containing individual date values in local time (returned only when doing non-UTC operations) |
-| [timezone](#tz) | object | Object containing timezone details (returned only when doing non-UTC operations) |
+| [localDate](#dateobj) | object | Object containing individual date values in local time (returned only when using non-UTC dates) |
+| [referenceDate](#dateobj) | object | Reference date (returned only when doing operations that require a reference chart) |
+| [derivedDate](#dateobj) | object | Derived date (returned only when using derived chart options) |
+| [progressedPlanetsDate](#dateobj) | object | Progressed date for planets (returned only when using progressed chart options) |
+| [progressedHousesDate](#dateobj) | object | Progressed date for houses (returned only when using progressed chart options) |
+| [returnDate](#dateobj) | object | Return date (returned only when using return chart options) |
+| [timezone](#tz) | object | Object containing timezone details (returned only when using non-UTC dates) |
 | [JD](#jd) | object | Object containing date in Julian Days (both variants) |
 | siderealTime | string/array* | Sidereal time at longitude 0 (Greenwich meridian) |
-| localSiderealTime | string/array* | Sidereal time at the selected coordinates (same as siderealTime if no location was supplied) |
+| localSiderealTime | string/array* | Sidereal time at specified location (returned only when using non-UTC dates) |
+| obliquity | string/array* | Obliquity of the ecliptic |
+| ayanamsa | string/array* | Value of specified Ayanamsa (returned only when using sidereal) |
+| sun | string/array* | Longitude of the Sun |
+| moon | string/array* | Longitude of the Moon |
+| ascendant | string/array* | Longitude of the Ascendant |
 
-\* Returns array of values corresponding to the array of dates when using the `ephemerides` endpoint.
+\* Returns array of values when using the `ephemeris` endpoint.
 
 <br>
 
-### Parameters - Date - UTCDate/localDate
+### Metadata - Date - Date object
 {:id="dateobj"}
 
 | Value | Type | Descripton |
@@ -111,18 +123,18 @@ Metadata contains information about the returned results such as house system, c
 
 <br>
 
-### Parameters - Date - Timezone
+### Metadata - Date - Timezone
 {:id="tz"}
 
 | Value | Type | Descripton |
 |---|---|---|
-| name | string | Timezone identifier according to the IANA TZ Database |
+| name | string | Timezone identifier according to the tz-database (if available) |
 | offsetString | string | Timezone offset in HH:MM:SS |
 | offsetMinutes | integer | Timezone offset in minutes |
 
 <br>
 
-### Parameters - Date - Julian Day
+### Metadata - Date - Julian Day
 {:id="jd"}
 
 | Value | Type | Descripton |

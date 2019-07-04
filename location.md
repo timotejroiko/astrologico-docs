@@ -33,6 +33,7 @@ This endpoint is a standalone version of the `querylocation` parameter included 
 | Parameter | Type | Descripton |
 |---|---|---|
 | query | string | Name to lookup |
+| lang | string | Optional. Get localized result (if available) using a 2-digit language code |
 
 <br>
 
@@ -74,10 +75,10 @@ body: {
 {
 	"status": "OK",
 	"location": {
-		"queryResult": "New York, NY, USA",
-		"latitude": 40.7127753,
-		"longitude": -74.0059728,
-		"elevation": 13.36520862579346
+		"queryResult": "New York, New York, United States",
+		"longitude": -73.9808,
+		"latitude": 40.7648,
+		"elevation": 30
 	}
 }
 ```
