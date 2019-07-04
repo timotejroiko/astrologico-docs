@@ -19,6 +19,11 @@ navigation: 1
 	    height: calc(100% - 50px);
 	    overflow-y: scroll;
 	}
+	@media (max-width: 745px) {
+		.sidebar .sidebar-main {
+		    height: calc(100% - 320px);
+		}
+	}
 </style>
 
 <br>

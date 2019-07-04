@@ -22,6 +22,11 @@ navigation: 7
 	    height: calc(100% - 50px);
 	    overflow-y: auto;
 	}
+	@media (max-width: 745px) {
+		.sidebar .sidebar-main {
+		    height: calc(100% - 320px);
+		}
+	}
 </style>
 
 <br>
