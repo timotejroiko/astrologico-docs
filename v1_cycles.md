@@ -41,9 +41,9 @@ This is endpoint is a standalone version of the [Return](/astrologico/param_retu
 |---|---|---|
 | <[Date](/astrologico/param_date.html)> | number/array | Set date using one of the available date parameters. |
 | <[Location](/astrologico/param_location.html)> | number/array | Set location using one of the available location parameters. |
+| [planet](/astrologico/param_planets.html) | number | Object ID |
 | range | number | Amount of cycles to return (default 5, max 20) |
 | reference | number | Reference/base chart in unix timestamp |
-| planet | number | Object ID |
 
 <br>
 
@@ -82,7 +82,7 @@ https://api.astrologico.org/v1/cycles?planet=P0&utcdate=10|10|2015&reference=739
 ```
 POST
 
-url: "https://api.astrologico.org/v1/chart",
+url: "https://api.astrologico.org/v1/cycles",
 header: {
 	"Authorization": APIKEY
 },

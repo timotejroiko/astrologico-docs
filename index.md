@@ -42,7 +42,7 @@ Astrologico API's features include:
 
 * Covers a time range of over 20000 years
 * Built-in date, time and location converters
-* Tropical and sidereal zodiacs, over 40 ayanamsas and the ability to define custom ayanamsas
+* Tropical and sidereal zodiacs, over 40 built-in ayanamsas and the ability to define custom ayanamsas
 * Over 20 astrological house systems
 * Derived data such as persona charts and the human design system
 * Progressed charts with several different methods

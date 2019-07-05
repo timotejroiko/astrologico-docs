@@ -42,8 +42,7 @@ navigation: 5
 
 ## Planets
 
-An array of IDs specifying the objects that should be calculated. The ID format consists of a type identifier followed by an object number.
-If omitted, it defaults to `P0 P1 P2 P3 P4 P5 P6 P7 P8 P9 P11`.
+An array of IDs specifying the objects to calculate. The ID format consists of a type identifier followed by an object number. Currently a maximum of 100 objects can be requested at a time. If omitted, it defaults to `P0 P1 P2 P3 P4 P5 P6 P7 P8 P9 P11`.
 
 | Example | Descripton |
 |---|---|
@@ -127,7 +126,7 @@ Asteroid IDs follow the same numbering as their official designation. Other obje
 ### Simbad Integration
 {:id="simbad"}
 
-When working with stars and stellar objects, If our database does not contain the object you're looking for, it is possible to retrieve it directly from the simbad database using the following format:
+When working with stars and stellar objects, if our database does not contain the object you're looking for, it is possible to retrieve it directly from the simbad database using any simbad-compatible identifier in the following format:
 
 | Example | Descripton |
 |---|---|

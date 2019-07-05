@@ -42,7 +42,7 @@ These are the currently available and also future endpoints:
 | [/v1/search](/astrologico/search.html) | Search for objects by name | Type1 |
 | [/v1/dateconversion](/astrologico/dateconversion.html) | Convert between local and universal time in multiple formats | Type2 |
 | [/v1/location](/astrologico/location.html) | Find coordinates by location name (geocoding) | Type2 |
-| [/v1/speeds](/astrologico/motion.html) | View an object's average speeds during a given year | Type2 |
+| [/v1/velocity](/astrologico/velocity.html) | View an object's average speeds during a given year | Type2 |
 | [/v1/cycles](/astrologico/cycles.html) | View the dates an object returns to its original position | Type2 |
 
 | /v1/motion (soon) | Find the dates an object changes motion | Type2 |
