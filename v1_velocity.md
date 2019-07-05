@@ -66,7 +66,7 @@ This is endpoint lets you examine the average speeds and other related data for 
 
 <br>
 
-### Response - <Year>
+### Response - Year
 {:id="year"}
 
 | key | Type | Description |
@@ -75,7 +75,7 @@ This is endpoint lets you examine the average speeds and other related data for 
 
 <br>
 
-### Response - <Value>
+### Response - Value
 {:id="value"}
 
 | key | Type | Description |
