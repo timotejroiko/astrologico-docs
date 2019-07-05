@@ -52,7 +52,7 @@ This is endpoint lets you examine the average speeds and other related data for 
 |---|---|---|
 | [status](/astrologico/res_status.html) | string | Contains the response status |
 | [error](/astrologico/res_status.html) | string | Contains the error message in case of error |
-| [result](/#result) | object | Object containing the results |
+| [result](#result) | object | Object containing the results |
 
 <br>
 
