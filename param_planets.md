@@ -60,6 +60,7 @@ An array of IDs specifying the objects to calculate. The ID format consists of a
 | A | Asteroids |
 | S | Stars |
 | H | Hypothetical Planets |
+| C | Comets |
 | AP | Planet's Aphelion |
 | AA | Asteroid's Aphelion |
 | PP | Planet's Perihelion |
@@ -106,13 +107,13 @@ Asteroid IDs follow the same numbering as their official designation. Other obje
 | A2 | Pallas |
 | A3 | Juno |
 | A4 | Vesta |
-| H0 | Cupido |
-| H1 | Hades |
-| H2 | Kronos |
-| H3 | Apollon |
-| H4 | Admetos |
-| H5 | Vulkanus |
-| H6 | Poseidon |
+| H1 | Cupido |
+| H2 | Hades |
+| H3 | Kronos |
+| H4 | Apollon |
+| H5 | Admetos |
+| H6 | Vulkanus |
+| H7 | Poseidon |
 | L118 | Part of Fortune |
 | L119 | Part of Spirit |
 | S3071 | Aldebaran |

@@ -55,6 +55,7 @@ This endpoint is used to find information and the correct IDs of supported objec
 | A | Asteroids |
 | S | Stars |
 | H | Hypothetical planets |
+| C | Comets |
 | L | Arabic parts/lots |
 
 <br>
