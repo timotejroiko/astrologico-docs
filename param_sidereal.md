@@ -80,6 +80,8 @@ The Sidereal option can be used to create sidreal and vedic charts. It offers se
 | 41 | Integer | Cochrane/Galactic Center = 0 Capricorn |
 | 42 | Integer | Galactic Equator (Fiorenza) |
 | 43 | Integer | Vettius Valens |
+| 44 | Integer | Sheratan = 2°15' Aries |
+| 45 | Integer | Vasilis Kanatas |
 | [reference,initial] | Array | Custom Ayanamsa |
 
 A custom ayanamsa can be set by specifying a reference date and an initial value. Reference date should be in Julian Days ET/TT (Ephemeris/Terrestrial Time) and the initial value should be the Ayanamsa value in decimal (number of degrees difference from Tropical)
