@@ -135,9 +135,12 @@ Metadata contains information about the returned results such as house system, c
 
 | Value | Type | Descripton |
 |---|---|---|
-| name | string | Timezone identifier according to the tz-database (if available) |
+| name | string | Timezone identifier according to the tz-database \* |
+| abbr | string | Timezone abbreviation \* |
 | offsetString | string | Timezone offset in HH:MM:SS |
 | offsetMinutes | integer | Timezone offset in minutes |
+
+\* Returns "custom" when manually specifying an offset in minutes. Returns "not available" if timezone information doesnt exist, in such cases refer to the offset values.
 
 <br>
 
