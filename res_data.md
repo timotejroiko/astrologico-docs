@@ -39,26 +39,28 @@ All fields (except `name`, `formula` and `error`) are arrays when using the [Eph
 
 | Value | Type | Descripton |
 |---|---|
-| name | string | Object name |
-| formula | string | Object's formula (arabic parts only) |
-| reversed | string | Whether the formula was reversed (arabic parts only) |
-| longitude | float | The object's ecliptic longitude in decimal degrees |
-| latitude | float | The object's ecliptic latitude in decimal degrees |
-| distance | float | The object's distance in AU |
-| longitudeSpeed | float | The object's longitude speed in decimal degrees per day |
-| latitudeSpeed | float | The object's latitude speed in decimal degrees per day |
-| distanceSpeed | float | The object's distance changes in AU per day |
-| hds | string | The object's gate, line, color, tone and base position for the Human Design System |
-| stationary | boolean | Whether the object is considered "stationary" |
-| declination | float | The object's celestial declination in decimal degrees |
-| rightAscension | float | The object's right ascension in decimal degrees |
-| declinationSpeed | float | The object's declination speed in decimal degrees per day |
-| rightAscensionSpeed | float | The object's right ascension speed in decimal degrees per day |
-| magnitude | float | The object's magnitude |
-| angularDiameter | float | The object's angular diameter in decimal degrees |
-| azimuth | float | The object's azimuth decimal degrees |
-| altitude | float | The object's altitude in decimal degrees |
-| error | string | error message (if an error occurs) |
+| name | String | Object name |
+| names | Array | Array of names for objects with multiple names (returned instead of `name` for stars and arabic parts only) |
+| designations | Array | Array of official designations (returned for stars only) |
+| formula | String | Object's formula (arabic parts only) |
+| reversed | String | Whether the formula was reversed (arabic parts only) |
+| longitude | Float | The object's ecliptic longitude in decimal degrees |
+| latitude | Float | The object's ecliptic latitude in decimal degrees |
+| distance | Float | The object's distance in AU |
+| longitudeSpeed | Float | The object's longitude speed in decimal degrees per day |
+| latitudeSpeed | Float | The object's latitude speed in decimal degrees per day |
+| distanceSpeed | Float | The object's distance changes in AU per day |
+| hds | String | The object's gate, line, color, tone and base position for the Human Design System |
+| stationary | Boolean | Whether the object is considered "stationary" |
+| declination | Float | The object's celestial declination in decimal degrees |
+| rightAscension | Float | The object's right ascension in decimal degrees |
+| declinationSpeed | Float | The object's declination speed in decimal degrees per day |
+| rightAscensionSpeed | Float | The object's right ascension speed in decimal degrees per day |
+| magnitude | Float | The object's magnitude |
+| angularDiameter | Float | The object's angular diameter in decimal degrees |
+| azimuth | Float | The object's azimuth decimal degrees |
+| altitude | Float | The object's altitude in decimal degrees |
+| error | String | error message (if an error occurs) |
 
 Not all objects support all display options, some are exclusive to certain objects while others might not be available to certain objects. In case a field is not available, it will return `"not available"` instead.
 
