@@ -45,7 +45,7 @@ The following functions and values can be localized:
 |---|---|---|
 | [querylocation](/astrologico/param_location.html#querylocation) | Parameter | Localized search \* |
 | [queryResult](/astrologico/res_metadata.html#location) | Response | Localized result |
-| [name](/astrologico/res_metadata.html#timezone) | Response | Localized Timezone name |
+| [name](/astrologico/res_metadata.html#tz) | Response | Localized Timezone name |
 
 \* A localized querylocation request allows for language-specific searches, for example searching for `rome` in English will return `Rome, Italy` but searching for `rome` in Italian will return `Rome, Georgia, United States`.
 
