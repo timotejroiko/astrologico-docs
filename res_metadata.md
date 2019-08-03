@@ -141,8 +141,8 @@ Metadata contains information about the returned results such as house system us
 |---|---|---|
 | id | String | IANA/tzdb Timezone identifier \*\* |
 | name | String | Full Timezone name \* \*\* \*\*\* |
-| offsetString | String* | Timezone offset in HH:MM:SS |
-| offsetMinutes | Integer* | Timezone offset in minutes |
+| offsetString | String* | Timezone offset in HH:MM:SS \* |
+| offsetMinutes | Integer* | Timezone offset in minutes \* |
 
 \* Returns an array of values when using the [Ephemeris](/astrologico/v1_ephemeris.html) endpoint.
 
