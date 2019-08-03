@@ -42,19 +42,21 @@ navigation: 5
 
 ## Date Parameters
 
-There are several Date parameters available, you only need to use one of them. If none are used, the request will default to the current date and time.
+There are several Date parameters available, you only need to use one of them at a time. If none are used, the request will default to the current date and time.
 
-| Parameter | Type | Input Type | Descripton |
+| Parameter | Type | Input Type | Descripton
 |---|---|---|---|
 | timestamp | Integer | UTC | Unix timestamp in milliseconds |
 | jdet | Float | UTC | Julian day in ephemeris time or terrestrial time |
 | jdut | Float | UTC | Julian day in universal time |
-| [utcdate](#datearray) | array | UTC | Indexed date/time array in UTC |
-| [localdate](#datearray) | array | LOCAL | Indexed date/time array in local time |
+| [utcdate](#datearray) | Array | UTC | Indexed date/time array in UTC |
+| [localdate](#datearray) | Array | LOCAL | Indexed date/time array in local time |
+
+Using `localdate` increases the request's total cost by 2.
 
 <br>
 
-### utcdate/localdate
+### utcdate & localdate
 {:id="datearray"}
 
 | Index | Type | Required | Default | Descripton |
@@ -66,7 +68,7 @@ There are several Date parameters available, you only need to use one of them. I
 | 4 | Integer | no | 0 | minute |
 | 5 | Float | no | 0 | second and millisecond |
 
-The `localdate` parameter uses a [Location Parameter](/astrologico/param_location.html) to obtain the correct timezone. Optionally, a manual timezone can be provided using the [Timezone](/astrologico/param_timezone) parameter. Using `localdate` turns a `Type1` request into a `Type2` request.
+The `localdate` parameter requires a [Location Parameter](/astrologico/param_location.html) or a [Timezone](/astrologico/param_timezone) parameter to obtain the required timezone. If none are found, it defaults to UTC. Using `localdate` increases the request's total cost by 2.
 
 <br>
 

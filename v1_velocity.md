@@ -39,10 +39,10 @@ This is endpoint lets you examine the average speeds and other related data for 
 
 | Parameter | Type | Descripton |
 |---|---|---|
-| [planet](/astrologico/param_planets.html) | string | Object ID |
-| years | array | Reference years (max 20) |
-| [Options](/astrologico/param_options.html) | array | Optional. Set calculation options |
-| [Display](/astrologico/param_display.html) | array | Optional. Speed values to display (defaults to LONGITUDE_SPEED) |
+| [planet](/astrologico/param_planets.html) | String | Required. Object ID |
+| years | Array | Required. Reference years (max 20) |
+| [Options](/astrologico/param_options.html) | Array | Set calculation options |
+| [Display](/astrologico/param_display.html) | Array | Speed values to display (defaults to LONGITUDE_SPEED) |
 
 <br>
 
@@ -50,9 +50,10 @@ This is endpoint lets you examine the average speeds and other related data for 
 
 | key | Type | Description |
 |---|---|---|
-| [status](/astrologico/res_status.html) | string | Contains the response status |
-| [error](/astrologico/res_status.html) | string | Contains the error message in case of error |
-| [result](#result) | object | Object containing the results |
+| [status](/astrologico/res_status.html) | String | Contains the response status |
+| [error](/astrologico/res_status.html) | String | Contains the error message in case of error |
+| [result](#result) | Object | Object containing the results |
+| [keyInfo](/astrologico/res_keyinfo.html) | Object | Contains data about your API key's usage and rate limits |
 
 <br>
 
@@ -62,7 +63,9 @@ This is endpoint lets you examine the average speeds and other related data for 
 | key | Type | Description |
 |---|---|---|
 | name | string | Object name |
-| <[year](#year)> | object | Object containing data for a specific year |
+| <[year](#year)> | Object | Object containing data for a specific year |
+| <[year](#year)> | Object | Object containing data for a specific year |
+| ... | Object | Object containing data for a specific year |
 
 <br>
 
@@ -71,12 +74,16 @@ This is endpoint lets you examine the average speeds and other related data for 
 
 | key | Type | Description |
 |---|---|---|
-| <[value](#value)> | object | Object containing data about a specific value |
+| <[value](#value)> | Object | Object containing data about a specific value |
+| <[value](#value)> | Object | Object containing data about a specific value |
+| ... | Object | Object containing data about a specific value |
 
 <br>
 
 ### Response - Value
 {:id="value"}
+
+Data for the Display value selected in the Year specified.
 
 | key | Type | Description |
 |---|---|---|
@@ -92,7 +99,7 @@ This is endpoint lets you examine the average speeds and other related data for 
 
 ## Sample request
 
-Get the dates for the next 10 solar returns for a person born in timestamp `739847298374`, starting from `October 10, 2015`
+Get Mercury's average Longitude and Latitude speeds for the years 2015 and 2016.
 
 ```
 GET

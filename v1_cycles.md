@@ -39,11 +39,14 @@ This is endpoint is a standalone version of the [Return](/astrologico/param_retu
 
 | Parameter | Type | Descripton |
 |---|---|---|
-| <[Date](/astrologico/param_date.html)> | number/array | Set date using one of the available date parameters. |
-| <[Location](/astrologico/param_location.html)> | number/array | Set location using one of the available location parameters. |
-| [planet](/astrologico/param_planets.html) | number | Object ID |
-| range | number | Amount of cycles to return (default 5, max 20) |
-| reference | number | Reference/base chart in unix timestamp |
+| <[Date](/astrologico/param_date.html)> | Number/Array | Set date using one of the available date parameters. |
+| <[Location](/astrologico/param_location.html)> | Number/Array | Set location using one of the available location parameters. |
+| [planet](/astrologico/param_planets.html) | String | Required. Object ID of the desired object |
+| range | Number | Required. Amount of cycles to calculate (default 5, max 20) |
+| reference | Number | Required. Reference/base chart in unix timestamp |
+| [options](/astrologico/param_options.html) | Array | Set calculation options |
+| [timezone](/astrologico/param_timezone.html) | String/Integer | Set timezone manually |
+| [language](/astrologico/param_language.html) | String | Set language to localize certain functions |
 
 <br>
 
@@ -51,11 +54,12 @@ This is endpoint is a standalone version of the [Return](/astrologico/param_retu
 
 | key | Type | Description |
 |---|---|---|
-| [status](/astrologico/res_status.html) | string | Contains the response status |
-| [error](/astrologico/res_status.html) | string | Contains the error message in case of error |
-| [date](/astrologico/res_metadata.html#date) | object | Date and time information |
-| [referenceDate](/astrologico/res_metadata.html#date) | object | Reference date (base chart) |
-| [result](#result) | object | result object |
+| [status](/astrologico/res_status.html) | String | Contains the response status |
+| [error](/astrologico/res_status.html) | String | Contains the error message in case of error |
+| [date](/astrologico/res_metadata.html#date) | Object | Date and time information |
+| [referenceDate](/astrologico/res_metadata.html#date) | Object | Reference date (base chart) |
+| [result](#result) | Object | result object |
+| [keyInfo](/astrologico/res_keyinfo.html) | Object | Contains data about your API key's usage and rate limits |
 
 <br>
 

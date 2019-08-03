@@ -42,14 +42,14 @@ navigation: 5
 
 ## Derived
 
-An indexed array to create a derived chart from the [Date](/astrologico/param_date.html) parameter.
+An indexed array to create a derived chart from the [Date](/astrologico/param_date.html) parameter. Derived charts increase the request's total cost by 1.
 
 | Index | Type | Descripton |
 |---|---|---|
-| 0 | string | Derived chart type |
-| 1 | number/string | Derived chart option |
+| 0 | String | Derived chart type |
+| 1 | Integer/String | Derived chart option |
 
-Currently derived chart supports the following types in index 0:
+Currently derived charts supports the following types at index 0:
 
 | Type | Description |
 |---|---|
@@ -61,24 +61,24 @@ Currently derived chart supports the following types in index 0:
 ### Derived - Persona
 {:id="persona"}
 
-A "Persona" chart is the first time the sun transits over a person's natal planet. When using a Persona chart, the second index should contain the desired Object ID.
+A "Persona" chart is the moment the sun transits over a person's natal planet for the first time. When using a Persona chart, the second index should contain the Object ID of the desired planet or object.
 
 | Index | Type | Descripton |
 |---|---|---|
-| 0 | string | "persona" |
-| 1 | string | Object ID |
+| 0 | String | "persona" |
+| 1 | String | Object ID |
 
 <br>
 
 ### Derived - HDS
 {:id="hds"}
 
-A "Design" chart is a prenatal or a postnatal chart used in the Human Design System. When using a Design chart, the second index should contain the Design type.
+A "Design" chart is a prenatal or a postnatal chart used in the Human Design System. When using a Design chart, the second index should contain the Design type ID as shown below.
 
 | Index | Type | Descripton |
 |---|---|---|
-| 0 | string | "hds" |
-| 1 | integer | Design type |
+| 0 | String | "hds" |
+| 1 | Integer | Design type ID |
 
 The following Design types are supported:
 

@@ -39,11 +39,13 @@ This endpoint is a standalone version of the date parameters and date conversion
 
 | Parameter | Type | Descripton |
 |---|---|---|
-| <[Date](/astrologico/param_date.html)> | number/array | Set date using one of the available date parameters. |
-| <[Location](/astrologico/param_location.html)> | number/array | Find timezone using one of the available location parameters. |
-| [timezone](/astrologico/param_timezone.html) | array | Optional. Set timezone manually |
+| <[Date](/astrologico/param_date.html)> | Number/Array | Set date using one of the available date parameters. |
+| <[Location](/astrologico/param_location.html)> | Number/Array | Find timezone using one of the available location parameters. |
+| [options](/astrologico/param_options.html) | Array | Set calendar options |
+| [timezone](/astrologico/param_timezone.html) | String/Integer | Set timezone manually |
+| [language](/astrologico/param_language.html) | String | Set language to localize certain functions |
 
-If Date is in UTC, the option `utctolocal` is enabled by default.
+If input Date is in UTC and a [Location](/astrologico/param_location.html) parameter is provided, the option `UTCTOLOCAL` is enabled by default without aditional cost.
 
 <br>
 
@@ -51,9 +53,10 @@ If Date is in UTC, the option `utctolocal` is enabled by default.
 
 | key | Type | Description |
 |---|---|---|
-| [status](/astrologico/res_status.html) | string | Contains the response status |
-| [error](/astrologico/res_status.html) | string | Contains the error message in case of error |
-| [date](/astrologico/res_metadata.html#date) | object | Contains the date object |
+| [status](/astrologico/res_status.html) | String | Contains the response status |
+| [error](/astrologico/res_status.html) | String | Contains the error message in case of error |
+| [date](/astrologico/res_metadata.html#date) | Object | Contains the date object |
+| [keyInfo](/astrologico/res_keyinfo.html) | Object | Contains data about your API key's usage and rate limits |
 
 <br>
 

@@ -50,7 +50,7 @@ If `status` returns `ERROR`, an aditional `error` field will be returned with a 
 }
 ```
 
-Occasionally when our server goes through changes or updates, a small downtime can be expected (usually about 1-2 seconds at a time). In such cases, the following error message is be returned but you can safely have your application automatically retry the request:
+Occasionally when our server goes through changes or updates, a small downtime can be expected (usually about 1-2 seconds at a time). In such cases, the following error message is be returned and you can safely have your application automatically retry the request:
 
 ```
 {

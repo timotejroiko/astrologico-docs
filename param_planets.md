@@ -42,17 +42,18 @@ navigation: 5
 
 ## Planets
 
-An array of IDs specifying the objects to calculate. The ID format consists of a type identifier followed by an object number. Currently a maximum of 100 objects can be requested at a time. If omitted, it defaults to `P0 P1 P2 P3 P4 P5 P6 P7 P8 P9 P11`.
+An array of IDs specifying the objects to calculate. The ID format consists of a type identifier followed by an object number. Currently a maximum of 1000 objects can be requested at a time. If omitted, it defaults to the objects `P0 P1 P2 P3 P4 P5 P6 P7 P8 P9 P11`.
 
 | Example | Descripton |
 |---|---|
 |P0|Planet number 0 (sun)|
 |S1351|Star number 1351 (regulus)|
 |A3|Asteroid number 3 (juno)|
+|NP5|Planet number 5's Ascending Node (jupiter's north node)|
 
 <br>
 
-### Object Type
+### Object Types
 
 | Object Type | Descripton |
 |---|---|
@@ -78,11 +79,11 @@ An array of IDs specifying the objects to calculate. The ID format consists of a
 
 <br>
 
-### Main IDs
+### Object IDs
 
-Asteroid IDs follow the same numbering as their official designation. Other objects are either numbered alphabetically or follow a special order, but you can use the [Search](/astrologico/search.html) endpoint to lookup objects by name and get their IDs. Here are the IDs for some of the most used objects:
+Asteroid IDs follow the same numbering as their official designation. Other objects are either numbered alphabetically or follow a special order. You can use the [Search](/astrologico/search.html) endpoint to lookup objects by name and get their IDs. Here are the IDs for some of the most used objects:
 
-| Code point | Object |
+| ID | Object |
 |---|---|
 | P0 | Sun |
 | P1 | Moon |
@@ -103,6 +104,7 @@ Asteroid IDs follow the same numbering as their official designation. Other obje
 | P12 | Mean Lilith |
 | P13 | True Lilith |
 | P21 | Natural Lilith |
+| C1 | Comet Halley |
 | A1 | Ceres |
 | A2 | Pallas |
 | A3 | Juno |

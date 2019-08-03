@@ -42,18 +42,18 @@ navigation: 6
 
 ## Metadata
 
-Metadata contains information about the returned results such as house system, coordinates used, location, date, etc...
+Metadata contains information about the returned results such as house system used, coordinates used, location, date, etc...
 
 | Value | Type | Descripton |
 |---|---|
-| [options](#options) | object | Settings and options information |
-| [location](#location) | object | Geographic coordinates information |
-| [date](#date) | object | Date and time information |
-| [referenceDate](#date) | object | Reference date (returned only when doing operations that require a reference chart) |
-| [derivedDate](#date) | object | Derived date (returned only when using derived chart options) |
-| [progressedPlanetsDate](#date) | object | Progressed date for planets (returned only when using progressed chart options) |
-| [progressedHousesDate](#date) | object | Progressed date for houses (returned only when using progressed chart options) |
-| [returnDate](#date) | object | Return date (returned only when using return chart options) |
+| [options](#options) | Object | Settings and options information |
+| [location](#location) | Object | Geographic coordinates information |
+| [date](#date) | Object | Date and time information |
+| [referenceDate](#date) | Object | Reference date (returned only when doing operations that require a reference chart) |
+| [derivedDate](#date) | Object | Derived date (returned only when using derived chart options) |
+| [progressedPlanetsDate](#date) | Object | Progressed date for planets (returned only when using progressed chart options) |
+| [progressedHousesDate](#date) | Object | Progressed date for houses (returned only when using progressed chart options) |
+| [returnDate](#date) | Object | Return date (returned only when using return chart options) |
 
 <br>
 
@@ -62,18 +62,18 @@ Metadata contains information about the returned results such as house system, c
 
 | Value | Type | Descripton |
 |---|---|---|
-| zodiacType | string | Zodiac type (tropical or sidereal) |
-| zodiacName | string | Zodiac name when using sidereal (returns `false` if tropical) |
-| positions | string | Planetary positions (apparent / true) |
-| coordinates | string | Coordinates system (geocentric / topocentric / heliocentric) |
-| astrometric | boolean | Whether astrometric positions are enabled or not |
-| houseSystem | string/boolean | House system (returns `false` if houses were not enabled) |
-| progressed | boolean | Whether progressed date is being used or not |
-| derived | boolean | Whether a derived date is being used or not |
-| return | boolean | Whether a return date is being used or not |
-| planetsDate | string | The date object used for planets |
-| housesDate | string | The date object used for houses |
-| displayOptions | array | Array of values to be calculated |
+| zodiacType | String | Zodiac type (tropical/ sidereal) |
+| zodiacName | String/Boolean | Ayanamsa name when using sidereal (returns `false` if not using sidereal) |
+| positions | String | Planetary positions (apparent / true) |
+| coordinates | String | Coordinates system (geocentric / topocentric / heliocentric) |
+| astrometric | Boolean | Whether astrometric positions are enabled or not |
+| houseSystem | String/Boolean | House system (returns `false` if houses were not enabled) |
+| progressed | Boolean | Whether progressed date is being used |
+| derived | Boolean | Whether a derived date is being used |
+| return | Boolean | Whether a return date is being used |
+| planetsDate | String | The date object used for planets |
+| housesDate | String | The date object used for houses |
+| displayOptions | Array | Array of values that were calculated |
 
 <br>
 
@@ -82,10 +82,12 @@ Metadata contains information about the returned results such as house system, c
 
 | Value | Type | Descripton |
 |---|---|---|
-| latitude | float | Geographic latitude in decimal degrees |
-| longitude | float | Geographic longitude in decimal degrees |
-| elevation | float | Elevation above sea level in meters |
-| queryResult | string | Resulting location (returned only when using `querylocation`) |
+| longitude | Float | Geographic longitude in decimal degrees |
+| latitude | Float | Geographic latitude in decimal degrees |
+| elevation | Integer | Elevation above sea level in meters |
+| queryResult | String | Resulting location (returned only when using `querylocation`) \* |
+
+\* The query result can be localized using the [Language](/astrologico/param_language.html) parameter.
 
 <br>
 
@@ -94,39 +96,41 @@ Metadata contains information about the returned results such as house system, c
 
 | Value | Type | Descripton |
 |---|---|---|
-| input | string | Selected date parameter |
-| calendar | string | Calendar used (julian / gregorian) |
-| accuracy | integer | Date accuracy level from 1 to 5 (increases when date is more specific, ie: contains hour, minute, etc...) |
-| ISO | string/array* | Date in ISO format |
-| UNIX | integer/array* | Date in unix timestamp format |
-| [UTCDate](#dateobj) | object | Object containing individual date values in UTC |
-| [localDate](#dateobj) | object | Object containing individual date values in local time (returned only when using non-UTC dates) |
-| [timezone](#tz) | object | Object containing timezone details (returned only when using non-UTC dates) |
-| [JD](#jd) | object | Object containing date in Julian Days (both variants) |
-| siderealTime | string/array* | Sidereal time at longitude 0 (Greenwich meridian) |
-| localSiderealTime | string/array* | Sidereal time at specified location (returned only when using non-UTC dates) |
-| obliquity | string/array* | Obliquity of the ecliptic |
-| ayanamsa | string/array* | Value of specified Ayanamsa (returned only when using sidereal) |
-| sun | string/array* | Longitude of the Sun |
-| moon | string/array* | Longitude of the Moon |
-| ascendant | string/array* | Longitude of the Ascendant |
+| input | String | Input Date parameter before conversion |
+| calendar | String | Calendar used (julian / gregorian) |
+| accuracy | Integer | Date accuracy level from 1 to 5 (increases when date is more specific, ie: contains hour, minute, etc...) |
+| ISO | String/Array* | Date in ISO format |
+| UNIX | Integer/Array* | Date in unix timestamp format |
+| [UTCDate](#dateobj) | Object | Object containing individual values in UTC |
+| [localDate](#dateobj) | Object | Object containing individual values in local time (returned only when working with non-UTC dates) |
+| [timezone](#tz) | Object | Object containing timezone details (returned only when working with non-UTC dates) |
+| [JD](#jd) | Object | Object containing date in Julian Days (both variants) |
+| siderealTime | String/Array* | Sidereal time at longitude 0 (Greenwich meridian) |
+| localSiderealTime | String/Array* | Sidereal time at specified location (returned only when working with non-UTC dates) |
+| obliquity | String/Array* | Obliquity of the ecliptic |
+| ayanamsa | String/Array* | Value of specified Ayanamsa (returned only when using sidereal) |
+| sun | String/Array* | Longitude of the Sun |
+| moon | String/Array* | Longitude of the Moon |
+| ascendant | String/Array* | Longitude of the Ascendant |
 
-\* Returns array of values when using the `ephemeris` endpoint.
+\* Returns an array of values when using the [Ephemeris](/astrologico/v1_ephemeris.html) endpoint.
 
 <br>
 
-### Metadata - Date - Date object
+### Metadata - Date - UTCDate & LocalDate
 {:id="dateobj"}
 
 | Value | Type | Descripton |
 |---|---|---|
-| day | integer | Day number (1-31) |
-| month | integer | Month number (1-12) |
-| year | integer | Full year number |
-| hour | integer | Hour (0-24) |
-| minute | integer | Minute (1-60) |
-| second | integer | Second (0-60) |
-| millisecond | integer | Millisecond (0-999) |
+| day | Integer* | Day (1-31) |
+| month | Integer* | Month (1-12) |
+| year | Integer* | Full Year |
+| hour | Integer* | Hour (0-24) |
+| minute | Integer* | Minute (0-60) |
+| second | Integer* | Second (0-60) |
+| millisecond | Integer* | Millisecond (0-999) |
+
+\* Returns an array of values when using the [Ephemeris](/astrologico/v1_ephemeris.html) endpoint.
 
 <br>
 
@@ -135,12 +139,16 @@ Metadata contains information about the returned results such as house system, c
 
 | Value | Type | Descripton |
 |---|---|---|
-| name | string | Timezone identifier according to the tz-database \* |
-| abbr | string | Timezone abbreviation \* |
-| offsetString | string | Timezone offset in HH:MM:SS |
-| offsetMinutes | integer | Timezone offset in minutes |
+| id | String | IANA/tzdb Timezone identifier \*\* |
+| name | String | Full Timezone name \* \*\* \*\*\* |
+| offsetString | String* | Timezone offset in HH:MM:SS |
+| offsetMinutes | Integer* | Timezone offset in minutes |
 
-\* Returns "custom" when manually specifying an offset in minutes. Returns "not available" if timezone information doesnt exist, in such cases refer to the offset values.
+\* Returns an array of values when using the [Ephemeris](/astrologico/v1_ephemeris.html) endpoint.
+
+\*\* Returns "custom" when manually specifying an offset in minutes. Returns "not available" if no timezone information exists (dates before circa 1918), in such cases refer to the offset values instead, which will be calculated from geographical longitude (sidereal timezone). For future dates beyond circa 2038, timezones will continue to work but without accounting for summer/winter/daylight-saving time information.
+
+\*\*\* The full Timezone name can be localized using the [Language](/astrologico/param_language.html) parameter.
 
 <br>
 
@@ -149,7 +157,9 @@ Metadata contains information about the returned results such as house system, c
 
 | Value | Type | Descripton |
 |---|---|---|
-| julianDayET | float | Julian day in Ephemeris/Terrestrial time |
-| julianDayUT | float | Julian day in Universal Time |
+| julianDayET | Float* | Julian day in Ephemeris/Terrestrial time |
+| julianDayUT | Float* | Julian day in Universal Time |
+
+\* Returns an array of values when using the [Ephemeris](/astrologico/v1_ephemeris.html) endpoint.
 
 <br><br><br>

@@ -33,7 +33,7 @@ navigation: 6
 
 ## Planets
 
-The planets field contains all the calculated planetary data organized by Object IDs.
+The planets field contains all the calculated planetary data keyed by Object IDs.
 
 | Value | Type | Descripton |
 |---|---|

@@ -39,15 +39,19 @@ This is the primary endpoint through which you can retrieve everything you need 
 
 | Parameter | Type | Descripton |
 |---|---|---|
-| <[Date](/astrologico/param_date.html)> | number/array | Set date using one of the available date parameters. |
-| <[Location](/astrologico/param_location.html)> | number/array | Set location using one of the available location parameters. |
-| [planets](/astrologico/param_planets.html) | array | Set planets and objects to display |
-| [houses](/astrologico/param_houses.html) | string | Set houses to display |
-| [display](/astrologico/param_display.html) | array | Set values to display |
-| [options](/astrologico/param_options.html) | array | Set calculation options |
-| [derived](/astrologico/param_derived.html) | array | Create a derived chart |
-| [progression](/astrologico/param_progression.html) | array | Create a progressed chart |
-| [return](/astrologico/param_return.html) | array | Create a return chart |
+| <[Date](/astrologico/param_date.html)> | Number/Array | Set date using one of the available date parameters. |
+| <[Location](/astrologico/param_location.html)> | Number/Array | Set location using one of the available location parameters. |
+| [planets](/astrologico/param_planets.html) | Array | Set planets and objects to display |
+| [houses](/astrologico/param_houses.html) | Integer | Set houses to display |
+| [options](/astrologico/param_options.html) | Array | Set calculation options |
+| [sidereal](/astrologico/param_sidereal.html) | Integer/Array | Enable the Sidereal zodiac and set an Ayanamsa |
+| [display](/astrologico/param_display.html) | Array | Set values to display |
+| [stations](/astrologico/param_display.html) | Array | Customize the "stationary" display option |
+| [derived](/astrologico/param_derived.html) | Array | Create a derived chart |
+| [progression](/astrologico/param_progression.html) | Array | Create a progressed chart |
+| [return](/astrologico/param_return.html) | Array | Create a return chart |
+| [timezone](/astrologico/param_timezone.html) | String/Integer | Set timezone manually |
+| [language](/astrologico/param_language.html) | String | Set language to localize certain functions |
 
 <br>
 
@@ -55,11 +59,12 @@ This is the primary endpoint through which you can retrieve everything you need 
 
 | key | Type | Description |
 |---|---|---|
-| [status](/astrologico/res_status.html) | string | Contains the response status |
-| [error](/astrologico/res_status.html) | string | Contains the error message in case of error |
-| [metadata](/astrologico/res_metadata.html) | object | Contains information about the data |
-| [houses](/astrologico/res_houses.html) | object | Contains data for houses and related points |
-| [planets](/astrologico/res_planets.html) | object | Contains data for planets and other objects |
+| [status](/astrologico/res_status.html) | String | Contains the response status |
+| [error](/astrologico/res_status.html) | String | Contains the error message in case of error |
+| [metadata](/astrologico/res_metadata.html) | Object | Contains information about the data |
+| [houses](/astrologico/res_houses.html) | Object | Contains data for houses and related points |
+| [planets](/astrologico/res_planets.html) | Object | Contains data for planets and other objects |
+| [keyInfo](/astrologico/res_keyinfo.html) | Object | Contains data about your API key's usage and rate limits |
 
 <br>
 

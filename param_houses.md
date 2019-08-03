@@ -33,7 +33,13 @@ navigation: 5
 
 ## Houses
 
-A house system ID to display Houses, Ascendant, Midheaven and other related points.
+This parameter enables Houses and sets a House System with which to calculate Houses, Ascendant, Midheaven and other related points.
+
+| Type | Descripton |
+|---|---|
+| Integer | House System ID |
+
+### Houses - House System IDs
 
 | ID | House System |
 |---|---|
@@ -64,7 +70,7 @@ A house system ID to display Houses, Ascendant, Midheaven and other related poin
 
 ### Example
 
-Retrieving houses, Ascendant, Midheaven and other related points using Placidus:
+Retrieving houses, Ascendant, Midheaven and other related points using the `Placidus` house system:
 
 | GET | POST |
 |---|---|

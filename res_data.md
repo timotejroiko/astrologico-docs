@@ -35,7 +35,7 @@ navigation: 6
 
 This object contains all the calculated data. These can be enabled by using [Display Options](/astrologico/param_display.html).
 
-All fields (except `name`, `formula` and `error`) are arrays when using the `ephemeris` endpoint.
+All fields (except `name`, `formula` and `error`) are arrays when using the [Ephemeris](/astrologico/v1_ephemeris.html) endpoint.
 
 | Value | Type | Descripton |
 |---|---|
@@ -48,7 +48,7 @@ All fields (except `name`, `formula` and `error`) are arrays when using the `eph
 | longitudeSpeed | float | The object's longitude speed in decimal degrees per day |
 | latitudeSpeed | float | The object's latitude speed in decimal degrees per day |
 | distanceSpeed | float | The object's distance changes in AU per day |
-| hds | string | The objects gate, line, color, tone and base position for the Human Design System |
+| hds | string | The object's gate, line, color, tone and base position for the Human Design System |
 | stationary | boolean | Whether the object is considered "stationary" |
 | declination | float | The object's celestial declination in decimal degrees |
 | rightAscension | float | The object's right ascension in decimal degrees |
@@ -58,8 +58,8 @@ All fields (except `name`, `formula` and `error`) are arrays when using the `eph
 | angularDiameter | float | The object's angular diameter in decimal degrees |
 | azimuth | float | The object's azimuth decimal degrees |
 | altitude | float | The object's altitude in decimal degrees |
-| error | string | error message |
+| error | string | error message (if an error occurs) |
 
-Not all objects return all of the above, some are exclusive to certain objects while others might not be available to certain objects. In case a field is not available, it will return `"not available"` instead.
+Not all objects support all display options, some are exclusive to certain objects while others might not be available to certain objects. In case a field is not available, it will return `"not available"` instead.
 
 <br><br><br>

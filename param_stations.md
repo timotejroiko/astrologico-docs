@@ -33,11 +33,27 @@ navigation: 5
 
 ## Stations
 
-When [Display](/astrologico/param_display.html) includes Stations, `true` is returned if the object is within 1 day of its zero point (when it switches directions). This option can be used to change when an object should be considered "Stationary". Stations support number of days from zero and percentage from average speed.
+When `STATIONS` are enabled in [Display](/astrologico/param_display.html), `true` is returned if the object is within 1 day of its zero point (point where it switches directions). This array changes that behavior and redefines when an object should be considered "Stationary".
+
+| Index | Type | Descripton |
+|---|---|---|
+| 0 | Float | Number |
+| 1 | String | Option |
+
+Stations currently support the following options in index 1:
+
+| Option | Description |
+|---|---|
+| "days" | Index 0 becomes number of days from zero |
+| "%"" | Index 0 becomes percentage of average speed |
+
+<br>
+
+### Examples
 
 |GET Example|POST Example|Description|
 |---|---|---|
-|`stations=2|days`|`options:[2,"days"]`| Consider an object "stationary" if within 2 days of its zero point |
-|`stations=3|%`|`options:[3,"%"]`| Consider an object "stationary" if its speed is below 3% of its absolute average speed that year |
+|`stations=2|days`|`stations:[2,"days"]`| Consider an object "stationary" if within 2 days of its zero point |
+|`stations=3|%`|`stations:[3,"%"]`| Consider an object "stationary" if its speed is below 3% of its absolute average speed that year |
 
 <br><br><br>

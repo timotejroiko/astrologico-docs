@@ -41,8 +41,8 @@ This endpoint is used to find information and the correct IDs of supported objec
 
 | Parameter | Type | Descripton |
 |---|---|---|
-| query | string | The search term |
-| [type](#type) | string | Optional. Filter results by object type |
+| query | String | Required. The search term |
+| [type](#type) | String | Filter results by object type |
 
 <br>
 
@@ -64,10 +64,10 @@ This endpoint is used to find information and the correct IDs of supported objec
 
 | key | Type | Description |
 |---|---|---|
-| [status](/astrologico/res_status.html) | string | Contains the response status |
-| [error](/astrologico/res_status.html) | string | Contains the error message in case of error |
-| display | string | Number of displayed results and total results |
-| [results](#results) | array | Array of results (max 100) |
+| [status](/astrologico/res_status.html) | String | Contains the response status |
+| [error](/astrologico/res_status.html) | String | Contains the error message in case of error |
+| display | String | Displayed results and total results |
+| [results](#results) | Array | Array of results (max 100) |
 
 <br>
 
@@ -78,13 +78,14 @@ The results field is an array of objects which contain the following fields.
 
 | key | Type | Description |
 |---|---|---|
-| name | string | Object name |
-| names | array | Array of names for objects with multiple names (returned for stars and arabic parts only) |
-| designations | array | Array of official designations (returned for stars only) |
-| code | string | Object ID to use with other endpoints |
-| type | string | Object type |
-| formula | string | The object formula (returned for arabic parts only) |
-| reverse | boolean | Whether the formula is automatically reversed for night charts (returned for arabic parts only) |
+| name | String | Object name |
+| names | Array | Array of names for objects with multiple names (returned instead of name. for stars and arabic parts only) |
+| designations | Array | Array of official designations (returned for stars only) |
+| code | String | Object ID to use with other endpoints |
+| type | String | Object type |
+| formula | String | The object formula (returned for arabic parts only) |
+| reverse | Boolean | Whether the formula is automatically reversed for night charts (returned for arabic parts only) |
+| [keyInfo](/astrologico/res_keyinfo.html) | Object | Contains data about your API key's usage and rate limits |
 
 <br>
 

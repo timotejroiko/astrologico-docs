@@ -33,7 +33,7 @@ navigation: 5
 
 ## Display
 
-An array of planetary values that the request should return. If none is specified, it defaults to `LONGITUDE` and `LONGITUDE_SPEED`.
+An array of planetary values the request should return. If none is specified, it defaults to `LONGITUDE LONGITUDE_SPEED`. Not all objects support all display values, for more info see [Response Data](/astrologico/res_data.html);
 
 | option | Descripton |
 |---|---|

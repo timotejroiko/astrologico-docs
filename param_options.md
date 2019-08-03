@@ -43,7 +43,10 @@ An array of options to configure several chart generation settings, timezones, e
 | ASTROMETRIC | Astrometric positions (disable Aberration of Light and Gravitational Deflection) |
 | JULIAN | Use Julian calendar instead of automatic |
 | GREGORIAN | Use Gregorian calendar instead of automatic |
-| UTCTOLOCAL | Return Local Date when input is a UTC date (becomes a `Type2` request) |
+| UTCTOLOCAL | Convert UTC date to Local Date when input is in UTC (increases total cost by 2) |
+| USAGE | Return information about cost, current usage, rate limits, expiration, etc... |
+
+Using the option `UTCTOLOCAL` increases the request's total cost by 2.
 
 ### Example
 

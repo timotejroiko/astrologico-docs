@@ -45,12 +45,12 @@ Astrologico API's features include:
 
 * Covers a time range of over 20000 years
 * Built-in date, time and location converters
-* Tropical and sidereal zodiacs, over 40 built-in ayanamsas and the ability to define custom ayanamsas
+* Tropical and sidereal zodiacs, over 40 built-in ayanamsas and customizable ayanamsas
 * Over 20 astrological house systems
-* Derived data such as persona charts and the human design system
+* Derived data such as "persona" charts and the "human design system"
 * Progressed charts with several different methods
 * Solar Returns and Returns for other objects
-* Specialized tools such as stations, motion changes, aspect/transit lookup, ephemerides and more
+* Specialized tools such as stations, cycles, motions, aspect/transit lookups, ephemerides and more
 * Includes major planets, hypothetical planets, over 1000 comets, over 500000 asteroids, over 100 arabic parts/lots, Planetary Nodes, Apsides and more
 * Over 7000 built-in stars and access to millions of stars and stellar objects through our integration with the simbad database
 * Several types of information including Longitude, Latitude, Declination, Right Ascension, Altitude, Azimuth, Distance, Speeds, Human Design and more
@@ -59,7 +59,7 @@ Astrologico API's features include:
   
 ## GET vs POST
 
-There are two differences between `GET` and `POST` requests. In `GET` requests, array parameters should be pipe-delimited query strings, and the API key should be a query-string as well. In `POST` requests, array parameters should be JSON arrays, and the API key should be in an `Authorization` header.
+There are two differences between `GET` and `POST` requests. In `GET` requests, arrays should be given as pipe-delimited query strings, and the API key should be in a query-string as well. In `POST` requests the API key should be given in an `Authorization` header.
 
 | GET  | POST |
 | --- | --- |
@@ -67,17 +67,15 @@ There are two differences between `GET` and `POST` requests. In `GET` requests, 
 
 <br>
 
-## Request Type, Rate Limits & Pricing
+## Cost, Rate Limits & Pricing
 
-Depending on the endpoint and the parameters used, a request can be `type1` or `type2`. `type1` requests require less resources, while `type2` requests require more resources and as such have lower rate limits.
-
-When the limits are hit, subsequent requests will have a scaling delay added to them before a response is returned. Our API will continue to be available even if you go over our rate limits, but we advise you to upgrade your key to avoid slowing down your application. Limits reset at midnight UTC.
+Depending on the endpoint and the parameters used, a request will have a given `cost` based on complexity and resource usage. Each day you will be given a usage limit, and when the limit is reached, subsequent requests will be increasingly throttled. Our API will continue to be available even if you go over our rate limits, but we advise you to upgrade your key to avoid slowing down your application. Limits reset at midnight UTC.
 
 Our current Rate limits are as follows:
 
-| Pricing | Type1  | Type2 |
-| --- | --- | --- |
-| Free | 250/day | 50/day |
+| Pricing | Daily Limit |
+| --- | --- |
+| Free | 500 |
 
 Premium options and pricing for higher rate limits will be available soon.
 

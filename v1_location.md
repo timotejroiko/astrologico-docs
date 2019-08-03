@@ -39,8 +39,8 @@ This endpoint is a standalone version of the `querylocation` parameter included 
 
 | Parameter | Type | Descripton |
 |---|---|---|
-| query | string | Name to lookup |
-| lang | string | Optional. Get localized result (if available) using a 2-digit language code |
+| query | String | Required. Name to lookup |
+| [language](/astrologico/param_language.html) | String | Set language to make a localized search |
 
 <br>
 
@@ -48,9 +48,10 @@ This endpoint is a standalone version of the `querylocation` parameter included 
 
 | key | Type | Description |
 |---|---|---|
-| [status](/astrologico/res_status.html) | string | Contains the response status |
-| [error](/astrologico/res_status.html) | string | Contains the error message in case of error |
-| [location](/astrologico/res_metadata.html#location) | object | Contains the location object |
+| [status](/astrologico/res_status.html) | String | Contains the response status |
+| [error](/astrologico/res_status.html) | String | Contains the error message in case of error |
+| [location](/astrologico/res_metadata.html#location) | Object | Contains the location object |
+| [keyInfo](/astrologico/res_keyinfo.html) | Object | Contains data about your API key's usage and rate limits |
 
 <br>
 

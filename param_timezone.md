@@ -35,11 +35,13 @@ navigation: 5
 
 Timezone can be manually specified using either an offset in minutes or a timezone string according to the [tz-database specification](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 
-| Parameter | Type | Descripton |
-|---|---|---|---|
-| timezone | string/number | timezone string or offset minutes |
+| Type | Descripton |
+|---|---|
+| String/Integer | Timezone string or offset minutes |
 
-Examples:
+<br>
+
+### Examples
 
 | GET | POST | Descripton |
 |---|---|---|

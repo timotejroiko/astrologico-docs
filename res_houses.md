@@ -42,20 +42,20 @@ navigation: 6
 
 ## Houses
 
-The houses field contains the calculated data for all the house cusps and angles using the specified house system.
+The houses field contains the calculated data for all the house cusps and angles using the house system specified in [Houses](/astrologico/param_houses.html).
 
 | Value | Type | Descripton |
 |---|---|
-| [houses](#houses) | object | Object containing house cusps data |
-| [ascendant](/astrologico/res_data.html) | object | Ascendant |
-| [mc](/astrologico/res_data.html) | object | MC (midheaven / medium coeli) |
-| [armc](/astrologico/res_data.html) | object | ARMC (right rscencion of the midheaven) |
-| [vertex](/astrologico/res_data.html) | object | Vertex |
-| [equatorialAscendant](/astrologico/res_data.html) | object | Equatorial Ascendant |
-| [kochCoAscendant](/astrologico/res_data.html) | object | Koch co-Ascendant |
-| [munkaseyCoAscendant](/astrologico/res_data.html) | object | Munkasey co-Ascendant |
-| [munkaseyPolarAscendant](/astrologico/res_data.html) | object | Munkasey Polar Ascendant |
-| error | string | error message* |
+| [houses](#houses) | Object | Object containing house cusps data |
+| [ascendant](/astrologico/res_data.html) | Object | Ascendant |
+| [mc](/astrologico/res_data.html) | Object | MC (midheaven / medium coeli) |
+| [armc](/astrologico/res_data.html) | Object | ARMC (right rscencion of the midheaven) |
+| [vertex](/astrologico/res_data.html) | Object | Vertex |
+| [equatorialAscendant](/astrologico/res_data.html) | Object | Equatorial Ascendant |
+| [kochCoAscendant](/astrologico/res_data.html) | Object | Koch co-Ascendant |
+| [munkaseyCoAscendant](/astrologico/res_data.html) | Object | Munkasey co-Ascendant |
+| [munkaseyPolarAscendant](/astrologico/res_data.html) | Object | Munkasey Polar Ascendant |
+| error | String | error message* |
 
 \* If an error occurs, an error message is displayed here and no other fields are returned.
 
@@ -68,9 +68,9 @@ The inner houses field contains the calculated house cusps for the selected hous
 
 | Value | Type | Descripton |
 |---|---|
-| [house1](/astrologico/res_data.html) | object | 1st house |
-| [house2](/astrologico/res_data.html) | object | 2nd house |
-| [house3](/astrologico/res_data.html) | object | 3rd house |
-| ... | object | etc... |
+| [house1](/astrologico/res_data.html) | Object | 1st house |
+| [house2](/astrologico/res_data.html) | Object | 2nd house |
+| [house3](/astrologico/res_data.html) | Object | 3rd house |
+| ... | Object | etc... |
 
 <br><br><br>
