@@ -46,7 +46,7 @@ The houses field contains the calculated data for all the house cusps and angles
 
 | Value | Type | Descripton |
 |---|---|
-| [houses](#houses) | Object | Object containing house cusps data |
+| [houses](#housesobj) | Object | Object containing house cusps data |
 | [ascendant](/astrologico/res_data.html) | Object | Ascendant |
 | [mc](/astrologico/res_data.html) | Object | MC (midheaven / medium coeli) |
 | [armc](/astrologico/res_data.html) | Object | ARMC (right rscencion of the midheaven) |
@@ -62,7 +62,7 @@ The houses field contains the calculated data for all the house cusps and angles
 <br>
 
 ### Houses - Houses
-{:id="houses"}
+{:id="housesobj"}
 
 The inner houses field contains the calculated house cusps for the selected house system. When using Gauquelin Sectors the number of house cusps returned is 36 instead of 12, and the house cusps are clockwise instead of counterclockwise.
 
