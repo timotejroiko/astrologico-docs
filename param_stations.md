@@ -44,8 +44,8 @@ Stations currently support the following options in index 1:
 
 | Option | Description |
 |---|---|
-| "days" | Index 0 becomes number of days from zero |
-| "%"" | Index 0 becomes percentage of average speed |
+| days | Index 0 becomes number of days from zero |
+| % | Index 0 becomes percentage of average speed |
 
 <br>
 
