@@ -42,7 +42,7 @@ navigation: 5
 
 ## Planets
 
-An array of IDs specifying the objects to calculate. The ID format consists of a type identifier followed by an object number. Currently a maximum of 1000 objects can be requested at a time. If omitted, it defaults to the objects `P0 P1 P2 P3 P4 P5 P6 P7 P8 P9 P11`.
+An array of IDs specifying the objects to calculate. The ID format consists of a type identifier followed by an object number. Currently a maximum of 100 objects can be requested at a time. If omitted, it defaults to the objects `P0 P1 P2 P3 P4 P5 P6 P7 P8 P9 P11`.
 
 | Example | Descripton |
 |---|---|
