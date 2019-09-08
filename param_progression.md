@@ -33,7 +33,7 @@ navigation: 5
 
 ## Progression
 
-An indexed array to create a "Progressed" chart from the [Date](/astrologico/param_date.html) parameter. It requires a reference/base chart in a unix timestamp format.
+An indexed array to create a "Progressed" chart from the [Date](/astrologico/param_date.html) parameter. It requires a reference/base chart in a unix timestamp format. Progressions increase the request's total cost by 1.
 
 | Index | Type | Descripton |
 |---|---|---|

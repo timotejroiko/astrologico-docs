@@ -35,7 +35,7 @@ navigation: 1
 
 Astrologico API is a fully featured microservice for retrieving astrological calculations and data. All endpoints are `HTTPS` only and available via `GET` or `POST`. The API is nearly production ready and we encourage you to experiment with it and help us weed out any remaining bugs, inconsistencies or incorrect data. You can get an API key at our [Discord server](https://discord.gg/jtaCURK){:target="_blank"}
 
-The API's base url is `https://api.astrologico.org`.
+By using this service, you agree to our [Terms and Conditions](#) (coming soon);
 
 <br>
 
@@ -43,17 +43,17 @@ The API's base url is `https://api.astrologico.org`.
 
 Astrologico API's features include:
 
-* Covers a time range of over 20000 years
+* Covers a time range of 30000 years for planets and 6000 years for asteroids
 * Built-in date, time and location converters
 * Tropical and sidereal zodiacs, over 40 built-in ayanamsas and customizable ayanamsas
-* Over 20 astrological house systems
-* Derived data such as "persona" charts and the "human design system"
+* Over 20 built-in astrological house systems and ability to derive houses from RAMC
+* Derived charts such as "persona" charts and the "human design system"
 * Progressed charts with several different methods
 * Solar Returns and Returns for other objects
 * Specialized tools such as stations, cycles, motions, aspect/transit lookups, ephemerides and more
 * Includes major planets, hypothetical planets, over 1000 comets, over 500000 asteroids, over 100 arabic parts/lots, Planetary Nodes, Apsides and more
 * Over 7000 built-in stars and access to millions of stars and stellar objects through our integration with the simbad database
-* Several types of information including Longitude, Latitude, Declination, Right Ascension, Altitude, Azimuth, Distance, Speeds, Human Design and more
+* Several types of information including Longitude, Latitude, Declination, Right Ascension, Altitude, Azimuth, Distance, Speeds, I-Ching hexagrams/gates and more
 
 <br>
   

@@ -37,7 +37,7 @@ Casting a western chart for `June 25th 1994 at 18:30 (6:30pm) in Miami, Florida`
 
 Omitting `planets` will return a default selection as mentioned in [Planets](/astrologico/param_planets.html).
 
-Because `localdate` and/or `querylocation` are used, this is a `Type2` request.
+Because `localdate` and `querylocation` are used, this request's total cost is `8`.
 
 ```
 GET
@@ -55,7 +55,7 @@ header: {
 body: {
 	"localdate":[25,6,1994,18,30],
 	"querylocation":"miami florida",
-	"houses":15
+	"houses":[16]
 }
 ```
 
@@ -65,7 +65,7 @@ body: {
 
 Casting a "vedic" chart for `May 14th 1987 at 8:43 (8:43am) in London, United Kingdom` using only traditional planets, "mean" rahu & ketu, `Whole Signs` houses, Lahiri sidereal zodiac, UTC time and location by coordinates.
 
-Because neither `localdate` nor `querylocation` are used, this is a `Type1` request.
+Because neither `localdate` nor `querylocation` are used, this request's total cost is `2`.
 
 ```
 GET
@@ -83,9 +83,9 @@ header: {
 body: {
 	"utcdate":[14,5,1987,8,43],
 	"location":[51.509865,0.118092],
-	"houses":23,
+	"houses":[24],
 	"sidereal":2,
-	"planets":["P0","P1","P2","P3","P4","P5","P6""P10","P23"]
+	"planets":["P0","P1","P2","P3","P4","P5","P6","P10","P23"]
 }
 ```
 
@@ -95,7 +95,9 @@ body: {
 
 Casting a "human design system" chart for `December 1st 2001 at 21:21 (9:21pm) in Lisbon, Portugal` using local time and location by name.
 
-Since a human design combines two charts, it requires multiple requests to be made. To avoid using multiple `Type2` requests, you can use some converted information returned from the first request in the second one.
+Since the human design combines two charts, it requires multiple requests to be made. To avoid doing multiple complex requests, you can use some converted information returned from the first request in the second one.
+
+Here, the first request's cost is `8` while the second one's cost is `3`.
 
 ```
 GET
@@ -143,7 +145,7 @@ POST
 
 Casting a "solar return" chart for the year `2015` in `New York USA` for a person born in `June 24th 1967 at 9:34 (9:24am) in Paris, France` using local time and location by name. This chart requires a reference date which should be provided as a timestamp, so the base chart must be calculated first in order to obtain it.
 
-Both requests are `Type2` because they are using `querylocation`
+Here, the first request's cost is `8` while the second one's cost is `7`.
 
 ```
 GET
@@ -189,8 +191,8 @@ All longitudes are returned in 360 decimal degrees. The easiest way to get zodia
 To obtain degrees, minutes and seconds, some further math is required. here's a simple javascript example.
 
 ```js
-// get the longitude received form the api, in this example the value is 265.78468274
-let longitude = planets.P0.longitude; // 265.78468274
+// get the longitude received form the api, lets say in this example the value is 265.78468274
+let longitude = response.planets.P0.longitude; // 265.78468274
 
 // list the zodiac signs in the correct order
 let zodiac = ["aries","taurus","gemini","cancer","leo","virgo","libra","scorpio","sagittarius","capricorn","aquarius","pisces"];

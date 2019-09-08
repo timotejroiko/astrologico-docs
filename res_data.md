@@ -47,6 +47,7 @@ All fields (except `name`, `formula` and `error`) are arrays when using the [Eph
 | longitude | Float | The object's ecliptic longitude in decimal degrees |
 | latitude | Float | The object's ecliptic latitude in decimal degrees |
 | distance | Float | The object's distance in AU |
+| distanceLY | Float | The object's distance in Light Years (returned for stars only) |
 | longitudeSpeed | Float | The object's longitude speed in decimal degrees per day |
 | latitudeSpeed | Float | The object's latitude speed in decimal degrees per day |
 | distanceSpeed | Float | The object's distance changes in AU per day |

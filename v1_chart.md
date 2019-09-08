@@ -42,7 +42,7 @@ This is the primary endpoint through which you can retrieve everything you need 
 | <[Date](/astrologico/param_date.html)> | Number/Array | Set date using one of the available date parameters. |
 | <[Location](/astrologico/param_location.html)> | Number/Array | Set location using one of the available location parameters. |
 | [planets](/astrologico/param_planets.html) | Array | Set planets and objects to display |
-| [houses](/astrologico/param_houses.html) | Integer | Set houses to display |
+| [houses](/astrologico/param_houses.html) | Array | Set houses to display |
 | [options](/astrologico/param_options.html) | Array | Set calculation options |
 | [sidereal](/astrologico/param_sidereal.html) | Integer/Array | Enable the Sidereal zodiac and set an Ayanamsa |
 | [display](/astrologico/param_display.html) | Array | Set values to display |

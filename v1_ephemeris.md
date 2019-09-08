@@ -52,7 +52,7 @@ The same as the [Chart](/astrologico/chart.html) endpoint but returns arrays of 
 | <[Location](/astrologico/param_location.html)> | Number/Array | Set location using one of the available location parameters. |
 | [range](#range) | Array | Required. Set the time range |
 | [planets](/astrologico/param_planets.html) | Array | Set objects to display |
-| [houses](/astrologico/param_houses.html) | String | Set houses to display |
+| [houses](/astrologico/param_houses.html) | Array | Set houses to display |
 | [options](/astrologico/param_options.html) | Array | Set calculation options |
 | [sidereal](/astrologico/param_sidereal.html) | Integer/Array | Enable the Sidereal zodiac and set an Ayanamsa |
 | [display](/astrologico/param_display.html) | Array | Set values to display |

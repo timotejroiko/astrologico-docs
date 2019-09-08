@@ -33,7 +33,7 @@ navigation: 5
 
 ## Return
 
-An indexed array to create a "Return" chart from the [Date](/astrologico/param_date.html) parameter, by finding the nearest dates an object returns to its exact original position. It requires a reference/base chart in a unix timestamp format.
+An indexed array to create a "Return" chart from the [Date](/astrologico/param_date.html) parameter, by finding the nearest dates an object returns to its exact original position. It requires a reference/base chart in a unix timestamp format. Returns increase the request's total cost by 1.
 
 | Index | Type | Descripton |
 |---|---|---|
