@@ -46,7 +46,6 @@ This endpoint attempts to find all objects of a given type located in a certain 
 | [target](#target) | Number | Target value |
 | [options](/astrologico/param_options.html) | Array | Set calculation options |
 | [sidereal](/astrologico/param_sidereal.html) | Integer/Array | Enable the Sidereal zodiac and set an Ayanamsa |
-| [stations](/astrologico/param_display.html) | Array | Customize the "stationary" display option |
 | [timezone](/astrologico/param_timezone.html) | String/Integer | Set timezone manually |
 
 <br>
