@@ -79,7 +79,7 @@ This endpoint attempts to find all objects of a given type located in a certain 
 <br>
 
 ### Parameters - Target
-{:id="param"}
+{:id="target"}
 
 | Accepted Values | Types |
 |---|---|
