@@ -41,8 +41,15 @@ This endpoint is used to find information and the correct IDs of supported objec
 
 | Parameter | Type | Descripton |
 |---|---|---|
-| query | String | Required. The search term |
-| [type](#type) | String | Filter results by object type |
+| <[Date](/astrologico/param_date.html)> | Number/Array | Set date using one of the available date parameters. |
+| <[Location](/astrologico/param_location.html)> | Number/Array | Set location using one of the available location parameters. |
+| [type](#type) | String | Object type to scan |
+| [param](#param) | String | Parameter to scan for matching target value |
+| [target](#target) | Number | Target value |
+| [options](/astrologico/param_options.html) | Array | Set calculation options |
+| [sidereal](/astrologico/param_sidereal.html) | Integer/Array | Enable the Sidereal zodiac and set an Ayanamsa |
+| [stations](/astrologico/param_display.html) | Array | Customize the "stationary" display option |
+| [timezone](/astrologico/param_timezone.html) | String/Integer | Set timezone manually |
 
 <br>
 
@@ -51,12 +58,33 @@ This endpoint is used to find information and the correct IDs of supported objec
 
 | Type | Descripton |
 |---|---|
-| P | Planets, lunar nodes and other objects |
 | A | Asteroids |
 | S | Stars |
-| H | Hypothetical planets |
-| C | Comets |
-| L | Arabic parts/lots |
+| O | Planets, Hypotheticals, Comets, Arabic parts and other objects |
+
+<br>
+
+### Parameters - Param
+{:id="param"}
+
+| Accepted Parameters |
+|---|
+| LONGITUDE |
+| LATITUDE |
+| ASCENSION |
+| DECLINATION |
+| AZIMUTH |
+| ALTITUDE |
+
+<br>
+
+### Parameters - Target
+{:id="param"}
+
+| Target Range | Types |
+|---|---|
+| from 0 to 360 | LONGITUDE, ASCENSION, AZIMUTH |
+| from -90 to 90 | LATITUDE, DECLINATION, ALTITUDE |
 
 <br>
 
