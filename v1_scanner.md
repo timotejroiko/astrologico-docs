@@ -97,8 +97,23 @@ This endpoint attempts to find all objects of a given type located in a certain 
 |---|---|---|
 | [status](/astrologico/res_status.html) | String | Contains the response status |
 | [error](/astrologico/res_status.html) | String | Contains the error message in case of error |
-| results | Array | An array of all objects found nearby the given coordinates |
+| [results](#results) | Array | An array of all objects found nearby the given coordinates |
 | [keyInfo](/astrologico/res_keyinfo.html) | Object | Contains data about your API key's usage and rate limits |
+
+<br>
+
+### Response - Results
+{:id="results"}
+
+The results field is an array of objects which contain the following fields.
+
+| key | Type | Description |
+|---|---|---|
+| name | String | Object name |
+| names | Array | Array of names for objects with multiple names (returned instead of `name` for stars and arabic parts) |
+| designations | Array | Array of official designations (returned for stars only) |
+| <param> | Number | The position of the object in the supplied parameter |
+| id | String | Object ID to use with other endpoints (not available in deep scan mode) |
 
 <br>
 

@@ -68,6 +68,7 @@ This endpoint is used to find information and the correct IDs of supported objec
 | [error](/astrologico/res_status.html) | String | Contains the error message in case of error |
 | display | String | Displayed results and total results |
 | [results](#results) | Array | Array of results (max 100) |
+| [keyInfo](/astrologico/res_keyinfo.html) | Object | Contains data about your API key's usage and rate limits |
 
 <br>
 
@@ -81,11 +82,10 @@ The results field is an array of objects which contain the following fields.
 | name | String | Object name |
 | names | Array | Array of names for objects with multiple names (returned instead of `name` for stars and arabic parts only) |
 | designations | Array | Array of official designations (returned for stars only) |
-| code | String | Object ID to use with other endpoints |
+| id | String | Object ID to use with other endpoints |
 | type | String | Object type |
 | formula | String | The object formula (returned for arabic parts only) |
 | reverse | Boolean | Whether the formula is automatically reversed for night charts (returned for arabic parts only) |
-| [keyInfo](/astrologico/res_keyinfo.html) | Object | Contains data about your API key's usage and rate limits |
 
 <br>
 
