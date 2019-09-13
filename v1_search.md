@@ -42,7 +42,7 @@ This endpoint is used to find information and the correct IDs of supported objec
 | Parameter | Type | Descripton |
 |---|---|---|
 | query | String | Required. The search term |
-| [type](#type) | String | Filter results by object type |z
+| [type](#type) | String | Filter results by object type |
 
 <br>
 
