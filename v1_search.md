@@ -41,15 +41,8 @@ This endpoint is used to find information and the correct IDs of supported objec
 
 | Parameter | Type | Descripton |
 |---|---|---|
-| <[Date](/astrologico/param_date.html)> | Number/Array | Set date using one of the available date parameters. |
-| <[Location](/astrologico/param_location.html)> | Number/Array | Set location using one of the available location parameters. |
-| [type](#type) | String | Object type to scan |
-| [param](#param) | String | Parameter to scan for matching target value |
-| [target](#target) | Number | Target value |
-| [options](/astrologico/param_options.html) | Array | Set calculation options |
-| [sidereal](/astrologico/param_sidereal.html) | Integer/Array | Enable the Sidereal zodiac and set an Ayanamsa |
-| [stations](/astrologico/param_display.html) | Array | Customize the "stationary" display option |
-| [timezone](/astrologico/param_timezone.html) | String/Integer | Set timezone manually |
+| query | String | Required. The search term |
+| [type](#type) | String | Filter results by object type |z
 
 <br>
 
@@ -58,39 +51,12 @@ This endpoint is used to find information and the correct IDs of supported objec
 
 | Type | Descripton |
 |---|---|
+| P | Planets, lunar nodes and other objects |
 | A | Asteroids |
 | S | Stars |
-| O | Planets, Hypotheticals, Comets, Arabic parts and other objects |
-| D | Deep scan of stars and celestial objects from the simbad database \* |
-
-\* In deep scan mode, a secondary target value is required.
-
-<br>
-
-### Parameters - Param
-{:id="param"}
-
-| Accepted Parameters |
-|---|
-| LONGITUDE |
-| LATITUDE |
-| ASCENSION |
-| DECLINATION |
-| AZIMUTH |
-| ALTITUDE |
-
-<br>
-
-### Parameters - Target
-{:id="param"}
-
-| Accepted Values | Types |
-|---|---|
-| number from 0 to 360 | LONGITUDE, ASCENSION, AZIMUTH |
-| number from -90 to 90 | LATITUDE, DECLINATION, ALTITUDE |
-| number,number | Deep scan mode \* |
-
-\* In deep scan mode, the `target` parameter should contain a pair of two comma-separated values (lat-lon, asc-dec, azi-alt). For example, if the selected `param` is `LONGITUDE`, the `target` field should contain values for `LONGITUDE` and `LATITUDE`, or if the selected `param` is `DECLINATION`, then it should contain values for `DECLINATION` and `ASCENSION`, and so on... The first value always corresponds to the selected `param` and the second value corresponds to its maching coordinate pair.
+| H | Hypothetical planets |
+| C | Comets |
+| L | Arabic parts/lots |
 
 <br>
 

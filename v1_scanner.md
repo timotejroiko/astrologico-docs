@@ -39,8 +39,56 @@ This endpoint attempts to find all objects of a given type located in a certain 
 
 | Parameter | Type | Descripton |
 |---|---|---|
-| query | String | Required. Name to lookup |
-| [language](/astrologico/param_language.html) | String | Set language to make a localized search |
+| <[Date](/astrologico/param_date.html)> | Number/Array | Set date using one of the available date parameters. |
+| <[Location](/astrologico/param_location.html)> | Number/Array | Set location using one of the available location parameters. |
+| [type](#type) | String | Object type to scan |
+| [param](#param) | String | Parameter to scan for matching target value |
+| [target](#target) | Number | Target value |
+| [options](/astrologico/param_options.html) | Array | Set calculation options |
+| [sidereal](/astrologico/param_sidereal.html) | Integer/Array | Enable the Sidereal zodiac and set an Ayanamsa |
+| [stations](/astrologico/param_display.html) | Array | Customize the "stationary" display option |
+| [timezone](/astrologico/param_timezone.html) | String/Integer | Set timezone manually |
+
+<br>
+
+### Parameters - Type
+{:id="type"}
+
+| Type | Descripton |
+|---|---|
+| A | Asteroids |
+| S | Stars |
+| O | Planets, Hypotheticals, Comets, Arabic parts and other objects |
+| D | Deep scan of stars and celestial objects from the simbad database \* |
+
+\* In deep scan mode, a secondary target value is required.
+
+<br>
+
+### Parameters - Param
+{:id="param"}
+
+| Accepted Parameters |
+|---|
+| LONGITUDE |
+| LATITUDE |
+| ASCENSION |
+| DECLINATION |
+| AZIMUTH |
+| ALTITUDE |
+
+<br>
+
+### Parameters - Target
+{:id="param"}
+
+| Accepted Values | Types |
+|---|---|
+| number from 0 to 360 | LONGITUDE, ASCENSION, AZIMUTH |
+| number from -90 to 90 | LATITUDE, DECLINATION, ALTITUDE |
+| number,number | Deep scan mode \* |
+
+\* In deep scan mode, the `target` parameter should contain a pair of two comma-separated values (lat-lon, asc-dec, azi-alt). For example, if the selected `param` is `LONGITUDE`, the `target` field should contain values for `LONGITUDE` and `LATITUDE`, or if the selected `param` is `DECLINATION`, then it should contain values for `DECLINATION` and `ASCENSION`, and so on... The first value always corresponds to the selected `param` and the second value corresponds to its maching coordinate pair.
 
 <br>
 
@@ -50,7 +98,7 @@ This endpoint attempts to find all objects of a given type located in a certain 
 |---|---|---|
 | [status](/astrologico/res_status.html) | String | Contains the response status |
 | [error](/astrologico/res_status.html) | String | Contains the error message in case of error |
-| [location](/astrologico/res_metadata.html#location) | Object | Contains the location object |
+| results | Array | An array of all objects found nearby the given coordinates |
 | [keyInfo](/astrologico/res_keyinfo.html) | Object | Contains data about your API key's usage and rate limits |
 
 <br>
