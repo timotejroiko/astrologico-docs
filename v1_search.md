@@ -61,6 +61,9 @@ This endpoint is used to find information and the correct IDs of supported objec
 | A | Asteroids |
 | S | Stars |
 | O | Planets, Hypotheticals, Comets, Arabic parts and other objects |
+| D | Deep scan of stars and celestial objects from the simbad database \* |
+
+\* In deep scan mode, a secondary target value is required.
 
 <br>
 
@@ -81,10 +84,13 @@ This endpoint is used to find information and the correct IDs of supported objec
 ### Parameters - Target
 {:id="param"}
 
-| Target Range | Types |
+| Accepted Values | Types |
 |---|---|
-| from 0 to 360 | LONGITUDE, ASCENSION, AZIMUTH |
-| from -90 to 90 | LATITUDE, DECLINATION, ALTITUDE |
+| number from 0 to 360 | LONGITUDE, ASCENSION, AZIMUTH |
+| number from -90 to 90 | LATITUDE, DECLINATION, ALTITUDE |
+| number,number | Deep scan mode \* |
+
+\* In deep scan mode, the `target` parameter should contain a pair of two comma-separated values (lat-lon, asc-dec, azi-alt). For example, if the selected `param` is `LONGITUDE`, the `target` field should contain values for `LONGITUDE` and `LATITUDE`, or if the selected `param` is `DECLINATION`, then it should contain values for `DECLINATION` and `ASCENSION`, and so on... The first value always corresponds to the selected `param` and the second value corresponds to its maching coordinate pair.
 
 <br>
 
