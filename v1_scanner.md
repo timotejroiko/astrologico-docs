@@ -112,7 +112,7 @@ The results field is an array of objects which contain the following fields.
 | name | String | Object name |
 | names | Array | Array of names for objects with multiple names (returned instead of `name` for stars and arabic parts) |
 | designations | Array | Array of official designations (returned for stars only) |
-| <param> | Number | The position of the object in the supplied parameter |
+| &lt;param&gt; | Number | The position of the object in the supplied parameter |
 | id | String | Object ID to use with other endpoints (not available in deep scan mode) |
 
 <br>
