@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Endpoints - /v1/cycles
+title: Endpoints - /v1/finder
 navigation: 3
 ---
 
@@ -31,9 +31,9 @@ navigation: 3
 
 <br>
 
-## Cycles
+## Finder
 
-This is endpoint is a standalone version of the [Return](/astrologico/param_return.html) parameter. It lets you examine the cycles of an object by finding the exact dates it returns to its original position. Only full returns are counted, repeated returns because of motion changes are ignored.
+This is endpoint is used to lookup transit dates, or the exact moment an object reaches a specific position in the sky
 
 ### Parameters
 

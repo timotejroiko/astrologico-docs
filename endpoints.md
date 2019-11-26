@@ -45,12 +45,12 @@ The API's base url is `https://api.astrologico.org`.
 | [/v1/dateconversion](/astrologico/v1_dateconversion.html) | Convert between local and universal time in multiple formats | 2 |
 | [/v1/location](/astrologico/v1_location.html) | Find coordinates by location name (geocoding) | 4 |
 | [/v1/velocity](/astrologico/v1_velocity.html) | View an object's average speeds and motion during a given year | 6 |
-| [/v1/cycles](/astrologico/v1_cycles.html) | Find the dates an object returns to its original position | 8 |
+| [/v1/finder](/astrologico/v1_transit.html) | Finds the dates an object reaches a specific position | 8 |
 | [/v1/scanner](/astrologico/v1_scanner.html) | Scans a point in the sky and returns all objects found | 25 |
 
 <!--
+| [/v1/cycles](/astrologico/v1_cycles.html) | Find the dates an object returns to its original position | 8 |
 | /v1/motion (soon) | Find the dates an object changes motion | Type2 |
-| /v1/findtransit (soon) | Find the dates an object reaches a certain position | Type2 |
 | /v1/findaspect (soon) | Find the dates an object forms a specific aspect with another objecy | Type2 |
 
 -->

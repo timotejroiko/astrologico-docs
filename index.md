@@ -52,7 +52,7 @@ Astrologico API's features include:
 * Solar Returns and Returns for other objects
 * Specialized tools such as stations, cycles, motions, aspect/transit lookups, ephemerides and more
 * Includes major planets, hypothetical planets, over 1000 comets, over 500000 asteroids, over 100 arabic parts/lots, Planetary Nodes, Apsides and more
-* Over 7000 built-in stars and access to millions of stars and stellar objects through our integration with the simbad database
+* Over 7000 built-in stars, plus access to millions of stars and stellar objects through our integration with the simbad database
 * Several types of information including Longitude, Latitude, Declination, Right Ascension, Altitude, Azimuth, Distance, Speeds, I-Ching hexagrams/gates and more
 
 <br>
@@ -77,6 +77,6 @@ Our current Rate limits are as follows:
 | --- | --- |
 | Free | 500 |
 
-Premium options and pricing for higher rate limits will be available soon.
+Options and pricing for higher rate limits will be available soon.
 
 <br><br><br>

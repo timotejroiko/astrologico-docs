@@ -41,7 +41,7 @@ This parameter enables Houses and sets a House System with which to calculate Ho
 | 1 | Float | RAMC value \* |
 | 2 | Float | Obliquity value \* |
 
-\* If index 1 and 2 are set, the houses will be calculated from the given RAMC value instead of the date and location. Calculating houses from an RAMC also requires specifying the Obliquity of the ecliptic value. Calculating houses from an RAMC is only available in the [Chart](/astrologico/v1_chart) Endpoint.
+\* If index 1 and 2 are set, the houses will be calculated from the given RAMC value instead of the date and location. Calculating houses from an RAMC also requires specifying the Obliquity of the ecliptic value and is only available in the [Chart](/astrologico/v1_chart) Endpoint.
 
 <br>
 
