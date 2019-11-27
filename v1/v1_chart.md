@@ -1,36 +1,3 @@
----
-layout: page
-title: Endpoints - /v1/chart
-navigation: 3
----
-
-<style>
-	.inner a {
-		color: royalblue;
-		font-weight: bold;
-	}
-	.inner code {
-		font-size: 100%;
-	}
-	.navigation li {
-		padding: 0.3vh;
-	}
-	.sidebar {
-		min-width: 300px;
-	}
-	.sidebar .sidebar-main {
-	    height: calc(100% - 50px);
-	    overflow-y: auto;
-	}
-	@media (max-width: 745px) {
-		.sidebar .sidebar-main {
-		    height: calc(100% - 320px);
-		}
-	}
-</style>
-
-<br>
-
 ## Chart
 
 This is the primary endpoint through which you can retrieve everything you need to generate accurate astrological charts of various types. All parameters are optional, check each parameter's documentation for default values and additional information.

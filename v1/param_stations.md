@@ -1,36 +1,3 @@
----
-layout: page
-title: Parameters - Stations
-navigation: 5
----
-
-<style>
-	.inner a {
-		color: royalblue;
-		font-weight: bold;
-	}
-	.inner code {
-		font-size: 100%;
-	}
-	.navigation li {
-		padding: 0.3vh;
-	}
-	.sidebar {
-		min-width: 300px;
-	}
-	.sidebar .sidebar-main {
-	    height: calc(100% - 50px);
-	    overflow-y: auto;
-	}
-	@media (max-width: 745px) {
-		.sidebar .sidebar-main {
-		    height: calc(100% - 320px);
-		}
-	}
-</style>
-
-<br>
-
 ## Stations
 
 When `STATIONS` are enabled in [Display](/astrologico/param_display.html), `true` is returned if the object is within 1 day of its zero point (point where it switches directions). This array changes that behavior and redefines when an object should be considered "Stationary".

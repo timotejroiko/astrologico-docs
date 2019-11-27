@@ -1,36 +1,3 @@
----
-layout: page
-title: Endpoints - /v1/scanner
-navigation: 3
----
-
-<style>
-	.inner a {
-		color: royalblue;
-		font-weight: bold;
-	}
-	.inner code {
-		font-size: 100%;
-	}
-	.navigation li {
-		padding: 0.3vh;
-	}
-	.sidebar {
-		min-width: 300px;
-	}
-	.sidebar .sidebar-main {
-	    height: calc(100% - 50px);
-	    overflow-y: auto;
-	}
-	@media (max-width: 745px) {
-		.sidebar .sidebar-main {
-		    height: calc(100% - 320px);
-		}
-	}
-</style>
-
-<br>
-
 ## Scanner
 
 This endpoint attempts to find all objects of a given type located in a certain position. Requests to this endpoint are pretty expensive and might often be throttled to prevent abuse and resource starvation, so expect them to be slow (5-10 seconds per request on average).

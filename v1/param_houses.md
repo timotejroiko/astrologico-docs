@@ -1,36 +1,3 @@
----
-layout: page
-title: Parameters - Houses
-navigation: 5
----
-
-<style>
-	.inner a {
-		color: royalblue;
-		font-weight: bold;
-	}
-	.inner code {
-		font-size: 100%;
-	}
-	.navigation li {
-		padding: 0.3vh;
-	}
-	.sidebar {
-		min-width: 300px;
-	}
-	.sidebar .sidebar-main {
-	    height: calc(100% - 50px);
-	    overflow-y: auto;
-	}
-	@media (max-width: 745px) {
-		.sidebar .sidebar-main {
-		    height: calc(100% - 320px);
-		}
-	}
-</style>
-
-<br>
-
 ## Houses
 
 This parameter enables Houses and sets a House System with which to calculate Houses, Ascendant, Midheaven and other related points. It also supports calculating houses from a specific RAMC (Right Ascension of the Midheaven) value, such as for obtaining composite houses.

@@ -1,36 +1,3 @@
----
-layout: page
-title: Parameters - Return
-navigation: 5
----
-
-<style>
-	.inner a {
-		color: royalblue;
-		font-weight: bold;
-	}
-	.inner code {
-		font-size: 100%;
-	}
-	.navigation li {
-		padding: 0.3vh;
-	}
-	.sidebar {
-		min-width: 300px;
-	}
-	.sidebar .sidebar-main {
-	    height: calc(100% - 50px);
-	    overflow-y: auto;
-	}
-	@media (max-width: 745px) {
-		.sidebar .sidebar-main {
-		    height: calc(100% - 320px);
-		}
-	}
-</style>
-
-<br>
-
 ## Return
 
 An indexed array to create a "Return" chart from the [Date](/astrologico/param_date.html) parameter, by finding the nearest dates an object returns to its exact original position. It requires a reference/base chart in a unix timestamp format. Returns increase the request's total cost by 1.

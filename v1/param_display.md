@@ -1,36 +1,3 @@
----
-layout: page
-title: Parameters - Display
-navigation: 5
----
-
-<style>
-	.inner a {
-		color: royalblue;
-		font-weight: bold;
-	}
-	.inner code {
-		font-size: 100%;
-	}
-	.navigation li {
-		padding: 0.3vh;
-	}
-	.sidebar {
-		min-width: 300px;
-	}
-	.sidebar .sidebar-main {
-	    height: calc(100% - 50px);
-	    overflow-y: auto;
-	}
-	@media (max-width: 745px) {
-		.sidebar .sidebar-main {
-		    height: calc(100% - 320px);
-		}
-	}
-</style>
-
-<br>
-
 ## Display
 
 An array of planetary values the request should return. If none is specified, it defaults to `LONGITUDE LONGITUDE_SPEED`. Not all objects support all display values, for more info see [Response Data](/astrologico/res_data.html);

@@ -1,37 +1,4 @@
----
-layout: page
-title: Parameters - Sidereal
-navigation: 5
----
-
-<style>
-	.inner a {
-		color: royalblue;
-		font-weight: bold;
-	}
-	.inner code {
-		font-size: 100%;
-	}
-	.navigation li {
-		padding: 0.3vh;
-	}
-	.sidebar {
-		min-width: 300px;
-	}
-	.sidebar .sidebar-main {
-	    height: calc(100% - 50px);
-	    overflow-y: auto;
-	}
-	@media (max-width: 745px) {
-		.sidebar .sidebar-main {
-		    height: calc(100% - 320px);
-		}
-	}
-</style>
-
-<br>
-
-## Sidereal
+﻿## Sidereal
 
 The Sidereal option creates charts with the Sidereal zodiac used in several types of Astrology. It offers several built in Ayanamsas, as well as an option to set a custom Ayanamsa.
 
