@@ -1,4 +1,6 @@
-﻿### Western Chart
+﻿## Examples
+
+### Western Chart #text
 
 Casting a western chart for `June 25th 1994 at 18:30 (6:30pm) in Miami, Florida` using `Placidus` houses, local time and location by name.
 
