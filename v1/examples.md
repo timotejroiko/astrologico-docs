@@ -6,7 +6,7 @@ Omitting `planets` will return a default selection as mentioned in [Planets](/as
 
 Because `localdate` and `querylocation` are used, this request's total cost is `8`.
 
-```plaintext
+```http
 GET
 
 https://api.astrologico.org/v1/chart?localdate=25|6|1994|18|30&querylocation=miami florida&houses=15&key=APIKEY
@@ -34,7 +34,7 @@ Casting a "vedic" chart for `May 14th 1987 at 8:43 (8:43am) in London, United Ki
 
 Because neither `localdate` nor `querylocation` are used, this request's total cost is `2`.
 
-```plaintext
+```http
 GET
 
 https://api.astrologico.org/v1/chart?utcdate=14|5|1987|8|43&location=51.509865|0.118092&planets=P0|P1|P2|P3|P4|P5|P6|P10|P23&houses=23&sidereal=2&key=APIKEY
@@ -66,7 +66,7 @@ Since the human design combines two charts, it requires multiple requests to be 
 
 Here, the first request's cost is `8` while the second one's cost is `3`.
 
-```plaintext
+```http
 GET
 
 https://api.astrologico.org/v1/chart?localdate=14|5|1987|8|43&querylocation=lisbon portugal&planets=P0|P14|P1|P2|P3|P4|P5|P6|P7|P8|P9|P11|P24&display=hds&key=APIKEY
@@ -114,7 +114,7 @@ Casting a "solar return" chart for the year `2015` in `New York USA` for a perso
 
 Here, the first request's cost is `8` while the second one's cost is `7`.
 
-```plaintext
+```http
 GET
 
 https://api.astrologico.org/v1/chart?localdate=24|6|1967|9|34&querylocation=paris france&key=APIKEY
