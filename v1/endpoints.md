@@ -2,7 +2,7 @@
 
 Here is a list of the currently available endpoints.
 
-The API's base url is `https://api.astrologico.org/v1`.
+v1's base url is `https://api.astrologico.org/v1`.
 
 | Endpoint | Description | Base Cost
 |---|---|---|
@@ -16,5 +16,3 @@ The API's base url is `https://api.astrologico.org/v1`.
 | [scanner](/astrologico/v1/scanner.html) | Scans a point in the sky and returns all objects found | 25 |
 
 Some endpoints have additional costs based on the parameters used.
-
-<br><br><br>
