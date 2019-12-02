@@ -1,49 +1,45 @@
 ## Chart
 
-This is the primary endpoint through which you can retrieve everything you need to generate accurate astrological charts of various types. All parameters are optional, check each parameter's documentation for default values and additional information.
+This is the primary endpoint through which you can retrieve everything you need to generate accurate astrological charts of various types. All parameters are optional, check each parameter's documentation page for default values and additional information.
 
 ### Parameters
 
 | Parameter | Type | Descripton |
 |---|---|---|
-| <[Date](parameters_date.html)> | Number/Array | Set date using one of the available date parameters. |
-| <[Location](parameters_location.html)> | Number/Array | Set location using one of the available location parameters. |
-| [planets](parameters_planets.html) | Array | Set planets and objects to display |
-| [houses](parameters_houses.html) | Array | Set houses to display |
-| [options](parameters_options.html) | Array | Set calculation options |
-| [sidereal](parameters_sidereal.html) | Integer/Array | Enable the Sidereal zodiac and set an Ayanamsa |
-| [display](parameters_display.html) | Array | Set values to display |
-| [stations](parameters_display.html) | Array | Customize the "stationary" display option |
-| [derived](parameters_derived.html) | Array | Create a derived chart |
-| [progression](parameters_progression.html) | Array | Create a progressed chart |
-| [return](parameters_return.html) | Array | Create a return chart |
-| [timezone](parameters_timezone.html) | String/Integer | Set timezone manually |
-| [language](parameters_language.html) | String | Set language to localize certain functions |
-
-<br>
+| <[Date](parameters_date.md)> | Number/Array | Set date using one of the available date parameters. |
+| <[Location](parameters_location.md)> | Number/Array | Set location using one of the available location parameters. |
+| [planets](parameters_planets.md) | Array | Set planets and objects to display |
+| [houses](parameters_houses.md) | Array | Set houses to display |
+| [options](parameters_options.md) | Array | Set calculation options |
+| [sidereal](parameters_sidereal.md) | Integer/Array | Enable the Sidereal zodiac and set an Ayanamsa |
+| [display](parameters_display.md) | Array | Set values to display |
+| [stations](parameters_display.md) | Array | Customize the "stationary" display option |
+| [derived](parameters_derived.md) | Array | Create a derived chart |
+| [progression](parameters_progression.md) | Array | Create a progressed chart |
+| [return](parameters_return.md) | Array | Create a return chart |
+| [timezone](parameters_timezone.md) | String/Integer | Set timezone manually |
+| [language](parameters_language.md) | String | Set language to localize certain functions |
 
 ### Response
 
 | key | Type | Description |
 |---|---|---|
-| [status](response_status.html) | String | Contains the response status |
-| [error](response_status.html) | String | Contains the error message in case of error |
-| [metadata](response_metadata.html) | Object | Contains information about the data |
-| [houses](response_houses.html) | Object | Contains data for houses and related points |
-| [planets](response_planets.html) | Object | Contains data for planets and other objects |
-| [keyInfo](response_keyinfo.html) | Object | Contains data about your API key's usage and rate limits |
-
-<br>
+| [status](response_status.md) | String | Contains the response status |
+| [error](response_status.md) | String | Contains the error message in case of error |
+| [metadata](response_metadata.md) | Object | Contains information about the data |
+| [houses](response_houses.md) | Object | Contains data for houses and related points |
+| [planets](response_planets.md) | Object | Contains data for planets and other objects |
+| [keyInfo](response_keyinfo.md) | Object | Contains data about your API key's usage and rate limits |
 
 ## Sample request
 
-```
+```http
 GET
 
 https://api.astrologico.org/v1/chart?utcdate=25|10|2003|12|30&location=51.5074|0.1278&planets=P0|P1|P2&key=APIKEY
 ```
 
-```
+```json
 POST
 
 url: "https://api.astrologico.org/v1/chart",
@@ -57,11 +53,9 @@ body: {
 }
 ```
 
-<br>
-
 ## Sample response
 
-```
+```json
 "status": "OK",
 "metadata": {
 	"options": {

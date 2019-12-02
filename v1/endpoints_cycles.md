@@ -1,56 +1,49 @@
 ## Finder
 
-This is endpoint is used to lookup transit dates, or the exact moment an object reaches a specific position in the sky
+This is endpoint is used to lookup the exact moment an object arrives at a specific position in the sky
 
 ### Parameters
 
 | Parameter | Type | Descripton |
 |---|---|---|
-| <[Date](/astrologico/param_date.html)> | Number/Array | Set date using one of the available date parameters. |
-| <[Location](/astrologico/param_location.html)> | Number/Array | Set location using one of the available location parameters. |
-| [planet](/astrologico/param_planets.html) | String | Required. Object ID of the desired object |
+| <[Date](parameters_date.md)> | Number/Array | Set date using one of the available date parameters. |
+| <[Location](parameters_location.md)> | Number/Array | Set location using one of the available location parameters. |
+| [planet](parameters_planets.md) | String | Required. Object ID of the desired object |
 | range | Number | Required. Amount of cycles to calculate (default 5, max 20) |
 | reference | Number | Required. Reference/base chart in unix timestamp |
-| [options](/astrologico/param_options.html) | Array | Set calculation options |
-| [timezone](/astrologico/param_timezone.html) | String/Integer | Set timezone manually |
-| [language](/astrologico/param_language.html) | String | Set language to localize certain functions |
-
-<br>
+| [options](parameters_options.md) | Array | Set calculation options |
+| [timezone](parameters_timezone.md) | String/Integer | Set timezone manually |
+| [language](parameters_language.md) | String | Set language to localize certain functions |
 
 ### Response
 
 | key | Type | Description |
 |---|---|---|
-| [status](/astrologico/res_status.html) | String | Contains the response status |
-| [error](/astrologico/res_status.html) | String | Contains the error message in case of error |
-| [date](/astrologico/res_metadata.html#date) | Object | Date and time information |
-| [referenceDate](/astrologico/res_metadata.html#date) | Object | Reference date (base chart) |
+| [status](response_status.md) | String | Contains the response status |
+| [error](response_status.md) | String | Contains the error message in case of error |
+| [date](response_metadata.md#date) | Object | Date and time information |
+| [referenceDate](response_metadata.md#date) | Object | Reference date (base chart) |
 | [result](#result) | Object | result object |
-| [keyInfo](/astrologico/res_keyinfo.html) | Object | Contains data about your API key's usage and rate limits |
-
-<br>
+| [keyInfo](response_keyinfo.md) | Object | Contains data about your API key's usage and rate limits |
 
 ### Response - Result
-{:id="result"}
 
 | key | Type | Description |
 |---|---|---|
 | name | string | Object name |
-| cycles | array | Array of [Date](/astrologico/res_metadata.html#date) objects |
-
-<br>
+| cycles | array | Array of [Date](/response_metadata.md#date) objects |
 
 ## Sample request
 
 Get the dates for the next 10 solar returns for a person born in timestamp `739847298374`, starting from `October 10, 2015`
 
-```
+```http
 GET
 
 https://api.astrologico.org/v1/cycles?planet=P0&utcdate=10|10|2015&reference=739847298374&range=10&key=APIKEY
 ```
 
-```
+```json
 POST
 
 url: "https://api.astrologico.org/v1/cycles",
@@ -65,11 +58,9 @@ body: {
 }
 ```
 
-<br>
-
 ## Sample response
 
-```
+```json
 {
 	"status":"OK",
 	"date":{
@@ -379,5 +370,3 @@ body: {
 	}
 }
 ```
-
-<br><br><br>
