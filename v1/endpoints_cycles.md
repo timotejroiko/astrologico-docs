@@ -31,7 +31,7 @@ This is endpoint is used to lookup the exact moment an object arrives at a speci
 | key | Type | Description |
 |---|---|---|
 | name | string | Object name |
-| cycles | array | Array of [Date](/response_metadata.md#date) objects |
+| cycles | array | Array of [Date](response_metadata.md#date) objects |
 
 ## Sample request
 
