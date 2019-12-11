@@ -37,7 +37,7 @@ This is endpoint is used to lookup the exact moment an object arrives at a speci
 
 Get the dates for the next 10 solar returns for a person born in timestamp `739847298374`, starting from `October 10, 2015`
 
-```http
+```ruby
 GET
 
 https://api.astrologico.org/v1/cycles?planet=P0&utcdate=10|10|2015&reference=739847298374&range=10&key=APIKEY
