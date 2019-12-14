@@ -1,14 +1,14 @@
 ﻿## Examples
 
-### Western Chart #text
+### Western Chart
 
 Casting a western chart for `June 25th 1994 at 18:30 (6:30pm) in Miami, Florida` using `Placidus` houses, local time and location by name.
 
-Omitting `planets` will return a default selection as mentioned in [Planets](/astrologico/param_planets.html).
+Omitting `planets` will return a default selection as mentioned in [Planets](parameters_planets.md).
 
 Because `localdate` and `querylocation` are used, this request's total cost is `8`.
 
-```http
+```ruby
 GET
 
 https://api.astrologico.org/v1/chart?localdate=25|6|1994|18|30&querylocation=miami florida&houses=15&key=APIKEY
@@ -28,15 +28,13 @@ body: {
 }
 ```
 
-<br>
-
 ### Vedic Chart
 
 Casting a "vedic" chart for `May 14th 1987 at 8:43 (8:43am) in London, United Kingdom` using only traditional planets, "mean" rahu & ketu, `Whole Signs` houses, Lahiri sidereal zodiac, UTC time and location by coordinates.
 
 Because neither `localdate` nor `querylocation` are used, this request's total cost is `2`.
 
-```http
+```ruby
 GET
 
 https://api.astrologico.org/v1/chart?utcdate=14|5|1987|8|43&location=51.509865|0.118092&planets=P0|P1|P2|P3|P4|P5|P6|P10|P23&houses=23&sidereal=2&key=APIKEY
@@ -58,8 +56,6 @@ body: {
 }
 ```
 
-<br>
-
 ### Human Design System
 
 Casting a "human design system" chart for `December 1st 2001 at 21:21 (9:21pm) in Lisbon, Portugal` using local time and location by name.
@@ -68,7 +64,7 @@ Since the human design combines two charts, it requires multiple requests to be 
 
 Here, the first request's cost is `8` while the second one's cost is `3`.
 
-```http
+```ruby
 GET
 
 https://api.astrologico.org/v1/chart?localdate=14|5|1987|8|43&querylocation=lisbon portugal&planets=P0|P14|P1|P2|P3|P4|P5|P6|P7|P8|P9|P11|P24&display=hds&key=APIKEY
@@ -108,15 +104,13 @@ POST
 }
 ```
 
-<br>
-
 ### Solar Return Chart
 
 Casting a "solar return" chart for the year `2015` in `New York USA` for a person born in `June 24th 1967 at 9:34 (9:24am) in Paris, France` using local time and location by name. This chart requires a reference date which should be provided as a timestamp, so the base chart must be calculated first in order to obtain it.
 
 Here, the first request's cost is `8` while the second one's cost is `7`.
 
-```http
+```ruby
 GET
 
 https://api.astrologico.org/v1/chart?localdate=24|6|1967|9|34&querylocation=paris france&key=APIKEY
@@ -151,11 +145,9 @@ POST
 }
 ```
 
-<br>
-
 ### Zodiac Signs and Degrees
 
-All longitudes are returned in 360 decimal degrees. The easiest way to get zodiac signs and degrees is to use the modulo/modulus operator present in most programming languages.
+All longitudes are returned in 360 decimal degrees starting from 0 Aries. The easiest way to get zodiac signs and degrees is to use the modulo/modulus operator present in most programming languages.
 
 To obtain degrees, minutes and seconds, some further math is required. here's a simple javascript example.
 
@@ -184,5 +176,3 @@ let second = Math.floor(signdegree * 60 % 1 * 60); // 4
 // this will output: 25° 47' 4''
 console.log(degree + "° " + minute + "' " + second + "''");
 ```
-
-<br><br><br>
