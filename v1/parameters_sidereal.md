@@ -75,7 +75,7 @@ A custom ayanamsa can be set by specifying an array, instead of an integer, cont
 
 |GET|POST|Description|
 |---|---|---|
-|`sidereal=6`|`sidereal:6`|Set Ayanamsa to Krishnamurti|
-|`sidereal=2451545|25.5`|`sidereal:[2451545,25.5]`|Set Ayanamsa to 25.5 degrees (25 deg 30 min) at julian day 2451545 (J2000 / noon of January 1st, 2000)|
+|sidereal=6|sidereal:6|Set Ayanamsa to Krishnamurti|
+|sidereal=2451545\|25.5|sidereal:[2451545,25.5]|Set Ayanamsa to 25.5 degrees (25 deg 30 min) at julian day 2451545 (J2000 / noon of January 1st, 2000)|
 
-<br><br><br>
+<br>

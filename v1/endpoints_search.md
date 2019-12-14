@@ -1,6 +1,6 @@
 ## Search
 
-This endpoint is used to find information and the correct IDs of supported objects, including planets, asteroids, stars, hypotheticals, arabic parts, and more
+This endpoint is used to find information and the correct IDs of supported objects, including planets, asteroids, stars, hypotheticals, arabic parts, and more.
 
 <br>
 
@@ -14,7 +14,6 @@ This endpoint is used to find information and the correct IDs of supported objec
 <br>
 
 ### Parameters - Type
-{:id="type"}
 
 | Type | Descripton |
 |---|---|
@@ -31,16 +30,15 @@ This endpoint is used to find information and the correct IDs of supported objec
 
 | key | Type | Description |
 |---|---|---|
-| [status](/astrologico/res_status.html) | String | Contains the response status |
-| [error](/astrologico/res_status.html) | String | Contains the error message in case of error |
+| [status](response_status.md) | String | Contains the response status |
+| [error](response_status.md) | String | Contains the error message in case of error |
 | display | String | Displayed results and total results |
 | [results](#results) | Array | Array of results (max 100) |
-| [keyInfo](/astrologico/res_keyinfo.html) | Object | Contains data about your API key's usage and rate limits |
+| [keyInfo](response_keyinfo.md) | Object | Contains data about your API key's usage and rate limits |
 
 <br>
 
 ### Response - Results
-{:id="results"}
 
 The results field is an array of objects which contain the following fields.
 
@@ -68,7 +66,7 @@ https://api.astrologico.org/v1/search?key=APIKEY&query=eris
 POST
 
 url: "https://api.astrologico.org/v1/search",
-header: {
+headers: {
 	Authorization: APIKEY
 }
 body: {
@@ -215,4 +213,4 @@ body: {
 }
 ```
 
-<br><br><br>
+<br>

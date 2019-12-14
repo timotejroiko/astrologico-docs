@@ -1,6 +1,6 @@
 ## Return
 
-An indexed array to create a "Return" chart from the [Date](/astrologico/param_date.html) parameter, by finding the nearest dates an object returns to its exact original position. It requires a reference/base chart in a unix timestamp format. Returns increase the request's total cost by 1.
+An indexed array to create a "Return" chart from the [Date](parameters_date.md) parameter, by finding the nearest dates an object returns to its exact original position. It requires a reference/base chart in a unix timestamp format. Returns increase the request's total cost by 1.
 
 | Index | Type | Descripton |
 |---|---|---|
@@ -16,8 +16,8 @@ Creating a Solar Return chart for a person born in timestamp `739847298374` (12 
 
 |GET|POST|Description|
 |---|---|---|
-|`return=739847298374|P0|closest`|`options:[739847298374,"P0","closest"]`| Closest Solar Return |
-|`return=739847298374|P5|next`|`options:[739847298374,"P5","next"]`| Next Jupiter Return |
-|`return=739847298374|P1|current`|`options:[739847298374,"P1","current"]`| Previous (current) Lunar Return |
+|return=739847298374\|P0\|closest|return:[739847298374,"P0","closest"]| Closest Solar Return |
+|return=739847298374\|P5\|next|return:[739847298374,"P5","next"]| Next Jupiter Return |
+|return=739847298374\|P1\|current|return:[739847298374,"P1","current"]| Previous (current) Lunar Return |
 
-<br><br><br>
+<br>

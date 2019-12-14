@@ -8,7 +8,7 @@ This parameter enables Houses and sets a House System with which to calculate Ho
 | 1 | Float | RAMC value \* |
 | 2 | Float | Obliquity value \* |
 
-\* If index 1 and 2 are set, the houses will be calculated from the given RAMC value instead of the date and location. Calculating houses from an RAMC also requires specifying the Obliquity of the ecliptic value and is only available in the [Chart](/astrologico/v1_chart) Endpoint.
+\* If index 1 and 2 are set, the houses will be calculated from the given RAMC value instead of the date and location. Calculating houses from an RAMC also requires specifying the Obliquity of the ecliptic value and is only available in the [Chart](endpoints_chart.md) Endpoint.
 
 <br>
 
@@ -41,12 +41,14 @@ This parameter enables Houses and sets a House System with which to calculate Ho
 | 23 | Vehlow Equal (middle of 1st house = ascendant) |
 | 24 | Whole Sign |
 
+<br>
+
 ### Example
 
 Retrieving houses, Ascendant, Midheaven and other related points using the `Placidus` house system:
 
 | GET | POST |
 |---|---|
-|`houses=16`|`houses:[16]`|
+|houses=16|houses:[16]|
 
-<br><br><br>
+<br>

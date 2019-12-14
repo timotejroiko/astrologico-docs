@@ -22,6 +22,8 @@ An array of planetary values the request should return. If none is specified, it
 | DISTANCE_SPEED | Distance speed (AU per day) |
 | ALL | All of the above |
 
+<br>
+
 ### Example
 
 Retrieving `Longitude`, `Latitude` and `Declination` values:
@@ -29,3 +31,5 @@ Retrieving `Longitude`, `Latitude` and `Declination` values:
 | GET | POST |
 |---|---|
 |display=LONGITUDE\|LATITUDE\|DECLINATION|display:["LONGITUDE","LATITUDE","DECLINATION"]|
+
+<br>

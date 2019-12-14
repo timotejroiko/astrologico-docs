@@ -1,24 +1,25 @@
 ## Scanner
 
-This endpoint attempts to find all objects of a given type located in a certain position. Requests to this endpoint are pretty expensive and might often be throttled to prevent abuse and resource starvation, so expect them to be slow (5-10 seconds per request on average).
+This endpoint attempts to find all objects of a given type located in a certain position. Requests to this endpoint are pretty expensive and might often be throttled to prevent abuse, so expect them to be slow (5-10 seconds per request on average).
+
+<br>
 
 ### Parameters
 
 | Parameter | Type | Descripton |
 |---|---|---|
-| <[Date](/astrologico/param_date.html)> | Number/Array | Set date using one of the available date parameters. |
-| <[Location](/astrologico/param_location.html)> | Number/Array | Set location using one of the available location parameters. |
+| <[Date](parameters_date.md)> | Number/Array | Set date using one of the available date parameters. |
+| <[Location](parameters_location.md)> | Number/Array | Set location using one of the available location parameters. |
 | [type](#type) | String | Object type to scan |
 | [param](#param) | String | Parameter to scan for matching target value |
 | [target](#target) | Number | Target value |
-| [options](/astrologico/param_options.html) | Array | Set calculation options |
-| [sidereal](/astrologico/param_sidereal.html) | Integer/Array | Enable the Sidereal zodiac and set an Ayanamsa |
-| [timezone](/astrologico/param_timezone.html) | String/Integer | Set timezone manually |
+| [options](parameters_options.md) | Array | Set calculation options |
+| [sidereal](parameters_sidereal.md) | Integer/Array | Enable the Sidereal zodiac and set an Ayanamsa |
+| [timezone](parameters_timezone.md) | String/Integer | Set timezone manually |
 
 <br>
 
 ### Parameters - Type
-{:id="type"}
 
 | Type | Descripton |
 |---|---|
@@ -32,7 +33,6 @@ This endpoint attempts to find all objects of a given type located in a certain 
 <br>
 
 ### Parameters - Param
-{:id="param"}
 
 | Accepted Parameters |
 |---|
@@ -46,7 +46,6 @@ This endpoint attempts to find all objects of a given type located in a certain 
 <br>
 
 ### Parameters - Target
-{:id="target"}
 
 | Accepted Values | Types |
 |---|---|
@@ -62,15 +61,14 @@ This endpoint attempts to find all objects of a given type located in a certain 
 
 | key | Type | Description |
 |---|---|---|
-| [status](/astrologico/res_status.html) | String | Contains the response status |
-| [error](/astrologico/res_status.html) | String | Contains the error message in case of error |
+| [status](response_status.md) | String | Contains the response status |
+| [error](response_status.md) | String | Contains the error message in case of error |
 | [results](#results) | Array | An array of all objects found nearby the given coordinates |
-| [keyInfo](/astrologico/res_keyinfo.html) | Object | Contains data about your API key's usage and rate limits |
+| [keyInfo](response_keyinfo.md) | Object | Contains data about your API key's usage and rate limits |
 
 <br>
 
 ### Response - Results
-{:id="results"}
 
 The results field is an array of objects which contain the following fields.
 
@@ -84,7 +82,7 @@ The results field is an array of objects which contain the following fields.
 
 <br>
 
-## Sample request
+### Sample request
 
 ```
 GET
@@ -96,7 +94,7 @@ https://api.astrologico.org/v1/location?query=new%20york&key=APIKEY
 POST
 
 url: "https://api.astrologico.org/v1/location",
-header: {
+headers: {
 	"Authorization": APIKEY
 },
 body: {
@@ -106,7 +104,7 @@ body: {
 
 <br>
 
-## Sample response
+### Sample response
 
 ```
 {
@@ -120,4 +118,4 @@ body: {
 }
 ```
 
-<br><br><br>
+<br>

@@ -12,8 +12,8 @@ Timezone can be manually specified using either an offset in minutes or a timezo
 
 | GET | POST | Descripton |
 |---|---|---|
-| `timezone=America/New_York` | `timezone:"America/New_York"` | Set timezone to America/New_York (UTC-5 or UTC-4) |
-| `timezone=300` | `timezone:300` | Set timezone to +300 minutes (UTC+5) |
-| `timezone=-120` | `timezone:-120` | Set timezone to -120 minutes (UTC-2) |
+| timezone=America/New_York | timezone:"America/New_York" | Set timezone to America/New_York (UTC-5 or UTC-4) |
+| timezone=300 | timezone:300 | Set timezone to +300 minutes (UTC+5) |
+| timezone=-120 | timezone:-120 | Set timezone to -120 minutes (UTC-2) |
 
-<br><br><br>
+<br>

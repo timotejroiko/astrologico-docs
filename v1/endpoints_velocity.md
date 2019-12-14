@@ -2,14 +2,16 @@
 
 This is endpoint lets you examine the average speeds and other related data for an object during a given year.
 
+<br>
+
 ### Parameters
 
 | Parameter | Type | Descripton |
 |---|---|---|
-| [planet](/astrologico/param_planets.html) | String | Required. Object ID |
+| [planet](parameters_planets.md) | String | Required. Object ID |
 | years | Array | Required. Reference years (max 20) |
-| [Options](/astrologico/param_options.html) | Array | Set calculation options |
-| [Display](/astrologico/param_display.html) | Array | Speed values to display (defaults to LONGITUDE_SPEED) |
+| [Options](parameters_options.md) | Array | Set calculation options |
+| [Display](parameters_display.md) | Array | Speed values to display (defaults to LONGITUDE_SPEED) |
 
 <br>
 
@@ -17,15 +19,14 @@ This is endpoint lets you examine the average speeds and other related data for 
 
 | key | Type | Description |
 |---|---|---|
-| [status](/astrologico/res_status.html) | String | Contains the response status |
-| [error](/astrologico/res_status.html) | String | Contains the error message in case of error |
+| [status](response_status.md) | String | Contains the response status |
+| [error](response_status.md) | String | Contains the error message in case of error |
 | [result](#result) | Object | Object containing the results |
-| [keyInfo](/astrologico/res_keyinfo.html) | Object | Contains data about your API key's usage and rate limits |
+| [keyInfo](response_keyinfo.md) | Object | Contains data about your API key's usage and rate limits |
 
 <br>
 
 ### Response - Result
-{:id="result"}
 
 | key | Type | Description |
 |---|---|---|
@@ -37,7 +38,6 @@ This is endpoint lets you examine the average speeds and other related data for 
 <br>
 
 ### Response - Year
-{:id="year"}
 
 | key | Type | Description |
 |---|---|---|
@@ -48,7 +48,6 @@ This is endpoint lets you examine the average speeds and other related data for 
 <br>
 
 ### Response - Value
-{:id="value"}
 
 Data for the Display value selected in the Year specified.
 
@@ -64,7 +63,7 @@ Data for the Display value selected in the Year specified.
 
 <br>
 
-## Sample request
+### Sample request
 
 Get Mercury's average Longitude and Latitude speeds for the years 2015 and 2016.
 
@@ -78,7 +77,7 @@ https://api.astrologico.org/v1/velocity?planet=P2&years=2015|2016&display=LONGIT
 POST
 
 url: "https://api.astrologico.org/v1/velocity",
-header: {
+headers: {
 	"Authorization": APIKEY
 },
 body: {
@@ -90,7 +89,7 @@ body: {
 
 <br>
 
-## Sample response
+### Sample response
 
 ```
 {
@@ -141,4 +140,4 @@ body: {
 }
 ```
 
-<br><br><br>
+<br>

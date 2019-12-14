@@ -3,7 +3,7 @@
 Metadata contains information about the returned results such as house system used, coordinates used, location, date, etc...
 
 | Value | Type | Descripton |
-|---|---|
+|---|---|---|
 | [options](#options) | Object | Settings and options information |
 | [location](#location) | Object | Geographic coordinates information |
 | [date](#date) | Object | Date and time information |
@@ -16,7 +16,6 @@ Metadata contains information about the returned results such as house system us
 <br>
 
 ### Metadata - options
-{:id="options"}
 
 | Value | Type | Descripton |
 |---|---|---|
@@ -36,7 +35,6 @@ Metadata contains information about the returned results such as house system us
 <br>
 
 ### Metadata - Location
-{:id="location"}
 
 | Value | Type | Descripton |
 |---|---|---|
@@ -45,12 +43,11 @@ Metadata contains information about the returned results such as house system us
 | elevation | Integer | Elevation above sea level in meters |
 | queryResult | String | Resulting location (returned only when using `querylocation`) \* |
 
-\* The query result can be localized using the [Language](/astrologico/param_language.html) parameter.
+\* The query result can be localized using the [Language](parameters_language.md) parameter.
 
 <br>
 
 ### Metadata - Date
-{:id="date"}
 
 | Value | Type | Descripton |
 |---|---|---|
@@ -59,10 +56,10 @@ Metadata contains information about the returned results such as house system us
 | accuracy | Integer | Date accuracy level from 1 to 5 (increases when date is more specific, ie: contains hour, minute, etc...) |
 | ISO | String/Array* | Date in ISO format |
 | UNIX | Integer/Array* | Date in unix timestamp format |
-| [UTCDate](#dateobj) | Object | Object containing individual values in UTC |
-| [localDate](#dateobj) | Object | Object containing individual values in local time (returned only when working with non-UTC dates) |
-| [timezone](#tz) | Object | Object containing timezone details (returned only when working with non-UTC dates) |
-| [JD](#jd) | Object | Object containing date in Julian Days (both variants) |
+| [UTCDate](#localdate) | Object | Object containing individual values in UTC |
+| [localDate](#localdate) | Object | Object containing individual values in local time (returned only when working with non-UTC dates) |
+| [timezone](#timezone) | Object | Object containing timezone details (returned only when working with non-UTC dates) |
+| [JD](#day) | Object | Object containing date in Julian Days (both variants) |
 | siderealTime | String/Array* | Sidereal time at longitude 0 (Greenwich meridian) |
 | localSiderealTime | String/Array* | Sidereal time at specified location (returned only when working with non-UTC dates) |
 | obliquity | String/Array* | Obliquity of the ecliptic |
@@ -71,12 +68,11 @@ Metadata contains information about the returned results such as house system us
 | moon | String/Array* | Longitude of the Moon |
 | ascendant | String/Array* | Longitude of the Ascendant |
 
-\* Returns an array of values when using the [Ephemeris](/astrologico/v1_ephemeris.html) endpoint.
+\* Returns an array of values when using the [Ephemeris](endpoints_ephemeris.md) endpoint.
 
 <br>
 
 ### Metadata - Date - UTCDate & LocalDate
-{:id="dateobj"}
 
 | Value | Type | Descripton |
 |---|---|---|
@@ -88,12 +84,11 @@ Metadata contains information about the returned results such as house system us
 | second | Integer* | Second (0-60) |
 | millisecond | Integer* | Millisecond (0-999) |
 
-\* Returns an array of values when using the [Ephemeris](/astrologico/v1_ephemeris.html) endpoint.
+\* Returns an array of values when using the [Ephemeris](endpoints_ephemeris.md) endpoint.
 
 <br>
 
 ### Metadata - Date - Timezone
-{:id="tz"}
 
 | Value | Type | Descripton |
 |---|---|---|
@@ -102,22 +97,21 @@ Metadata contains information about the returned results such as house system us
 | offsetString | String* | Timezone offset in HH:MM:SS \* |
 | offsetMinutes | Integer* | Timezone offset in minutes \* |
 
-\* Returns an array of values when using the [Ephemeris](/astrologico/v1_ephemeris.html) endpoint.
+\* Returns an array of values when using the [Ephemeris](endpoints_ephemeris.md) endpoint.
 
 \*\* Returns "custom" when manually specifying an offset in minutes. Returns "not available" if no timezone information exists (dates before circa 1918), in such cases refer to the offset values instead, which will be calculated from geographical longitude (sidereal timezone). For future dates beyond circa 2038, timezones will continue to work but without accounting for summer/winter/daylight-saving time information.
 
-\*\*\* The full Timezone name can be localized using the [Language](/astrologico/param_language.html) parameter.
+\*\*\* The full Timezone name can be localized using the [Language](parameters_language.md) parameter.
 
 <br>
 
 ### Metadata - Date - Julian Day
-{:id="jd"}
 
 | Value | Type | Descripton |
 |---|---|---|
 | julianDayET | Float* | Julian day in Ephemeris/Terrestrial time |
 | julianDayUT | Float* | Julian day in Universal Time |
 
-\* Returns an array of values when using the [Ephemeris](/astrologico/v1_ephemeris.html) endpoint.
+\* Returns an array of values when using the [Ephemeris](endpoints_ephemeris.md) endpoint.
 
-<br><br><br>
+<br>

@@ -1,11 +1,11 @@
 ## Data
 
-This object contains all the calculated data. These can be enabled by using [Display Options](/astrologico/param_display.html).
+This object contains all the calculated data. These fields can be enabled by using [Display Options](parameters_display.md).
 
-All fields (except `name`, `formula` and `error`) are arrays when using the [Ephemeris](/astrologico/v1_ephemeris.html) endpoint.
+All fields (except `name`, `formula` and `error`) are arrays when using the [Ephemeris](endpoints_ephemeris.md) endpoint.
 
 | Value | Type | Descripton |
-|---|---|
+|---|---|---|
 | name | String | Object name |
 | names | Array | Array of names for objects with multiple names (returned instead of `name` for stars and arabic parts only) |
 | designations | Array | Array of official designations (returned for stars only) |
@@ -32,4 +32,4 @@ All fields (except `name`, `formula` and `error`) are arrays when using the [Eph
 
 Not all objects support all display options, some are exclusive to certain objects while others might not be available to certain objects. In case a field is not available, it will return `"not available"` instead.
 
-<br><br><br>
+<br>

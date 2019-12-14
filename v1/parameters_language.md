@@ -10,9 +10,9 @@ The following functions and values can be localized:
 
 | Field | Kind | Descripton |
 |---|---|---|
-| [querylocation](/astrologico/param_location.html#querylocation) | Parameter | Localized search \* |
-| [queryResult](/astrologico/res_metadata.html#location) | Response | Localized result |
-| [name](/astrologico/res_metadata.html#tz) | Response | Localized Timezone name |
+| [querylocation](parameters_location.md#querylocation) | Parameter | Localized search \* |
+| [queryResult](response_metadata.md#location) | Response | Localized result |
+| [name](response_metadata.md#tz) | Response | Localized Timezone name |
 
 \* A localized querylocation request allows for language-specific searches, for example searching for `rome` in English will return `Rome, Italy` but searching for `rome` in Italian will return `Rome, Georgia, Stati Uniti d'America` (Rome, Georgia, United States).
 
@@ -26,4 +26,4 @@ Set language to Italian, allowing for location searches using Italian terms and 
 |---|---|---|
 | `language=it` | `language:"it"` | Set language to Italian |
 
-<br><br><br>
+<br>

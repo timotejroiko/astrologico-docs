@@ -1,6 +1,6 @@
 ## Derived
 
-An indexed array to create a derived chart from the [Date](param_date.md) parameter. Derived charts increase the request's total cost by 1.
+An indexed array to create a derived chart from the [Date](parameters_date.md) parameter. Derived charts increase the request's total cost by 1.
 
 | Index | Type | Descripton |
 |---|---|---|
@@ -14,6 +14,8 @@ Currently derived charts supports the following types at index 0:
 | [persona](#persona) | Create a "Persona" chart |
 | [hds](#hds) | Create a "Design" chart for the Human Design System |
 
+<br>
+
 ### Derived - Persona
 
 A "Persona" chart is the moment the sun transits over a person's natal planet for the first time. When using a Persona chart, the second index should contain the Object ID of the desired planet or object.
@@ -22,6 +24,8 @@ A "Persona" chart is the moment the sun transits over a person's natal planet fo
 |---|---|---|
 | 0 | String | "persona" |
 | 1 | String | Object ID |
+
+<br>
 
 ### Derived - HDS
 
@@ -45,9 +49,13 @@ The following Design types are supported:
 | 7 | Postnatal Solar Minute Design |
 | 8 | Postnatal Lunar Minute Design |
 
+<br>
+
 ### Examples
 
 |GET|POST|Description|
 |---|---|---|
 |derived=persona\|P2|derived:["persona","P2"]| Mercury Persona chart |
 |derived=hds\|1|derived:["hds",1]| Default "Design" chart for the Human Design System |
+
+<br>

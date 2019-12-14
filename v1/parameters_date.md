@@ -12,6 +12,8 @@ There are several Date parameters available, you only need to use one of them at
 
 Using `localdate` increases the request's total cost by 2.
 
+<br>
+
 ### utcdate & localdate
 
 | Index | Type | Required | Default | Descripton |
@@ -23,7 +25,9 @@ Using `localdate` increases the request's total cost by 2.
 | 4 | Integer | no | 0 | minute |
 | 5 | Float | no | 0 | second and millisecond |
 
-The `localdate` parameter requires a [Location Parameter](parameters_location.md) or a [Timezone](params_timezone.md) parameter to obtain the required timezone. If none are found, it defaults to UTC. Using `localdate` increases the request's total cost by 2.
+The `localdate` parameter requires a [Location Parameter](parameters_location.md) or a [Timezone](parameters_timezone.md) parameter to obtain the required timezone. If none are found, it defaults to UTC. Using `localdate` increases the request's total cost by 2.
+
+<br>
 
 ### Examples
 
@@ -38,3 +42,5 @@ Here's an example of how each parameter should be used to generate a chart for `
 | localdate | localdate=15\|2\|1995\|13\|53 | localdate:[15,2,1995,13,53] |
 
 For `localdate` to get the correct timezone here, it needs to be used with the correct [Location Parameter](parameters_location.md) for the city of New York, or the [Timezone](parameters_timezone.md) parameter specifying New York's timezone.
+
+<br>

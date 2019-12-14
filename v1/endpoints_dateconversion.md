@@ -2,6 +2,8 @@
 
 This endpoint is a standalone version of the date parameters and date conversion functions included in the main endpoints.
 
+<br>
+
 ### Parameters
 
 | Parameter | Type | Descripton |
@@ -27,7 +29,7 @@ If input Date is in UTC and a [Location](/astrologico/param_location.html) param
 
 <br>
 
-## Sample request
+### Sample request
 
 ```
 GET
@@ -39,7 +41,7 @@ https://api.astrologico.org/v1/dateconversion?timestamp=2786472349&location=68|3
 POST
 
 url: "https://api.astrologico.org/v1/dateconversion",
-header: {
+headers: {
 	"Authorization": APIKEY
 },
 body: {
@@ -50,7 +52,7 @@ body: {
 
 <br>
 
-## Sample response
+### Sample response
 
 ```
 {
@@ -98,4 +100,4 @@ body: {
 }
 ```
 
-<br><br><br>
+<br>

@@ -18,7 +18,7 @@ https://api.astrologico.org/v1/chart?localdate=25|6|1994|18|30&querylocation=mia
 POST
 
 url: "https://api.astrologico.org/v1/chart",
-header: {
+headers: {
 	"Authorization": APIKEY
 },
 body: {
@@ -27,6 +27,8 @@ body: {
 	"houses":[16]
 }
 ```
+
+<br>
 
 ### Vedic Chart
 
@@ -44,7 +46,7 @@ https://api.astrologico.org/v1/chart?utcdate=14|5|1987|8|43&location=51.509865|0
 POST
 
 url: "https://api.astrologico.org/v1/chart",
-header: {
+headers: {
 	"Authorization": APIKEY
 },
 body: {
@@ -55,6 +57,8 @@ body: {
 	"planets":["P0","P1","P2","P3","P4","P5","P6","P10","P23"]
 }
 ```
+
+<br>
 
 ### Human Design System
 
@@ -78,7 +82,7 @@ POST
 
 {
 	url: "https://api.astrologico.org/v1/chart",
-	header: {
+	headers: {
 		"Authorization": APIKEY
 	},
 	body: {
@@ -91,7 +95,7 @@ POST
 
 {
 	url: "https://api.astrologico.org/v1/chart",
-	header: {
+	headers: {
 		"Authorization": APIKEY
 	},
 	body: {
@@ -103,6 +107,8 @@ POST
 	}
 }
 ```
+
+<br>
 
 ### Solar Return Chart
 
@@ -123,7 +129,7 @@ POST
 
 {
 	url: "https://api.astrologico.org/v1/chart",
-	header: {
+	headers: {
 		"Authorization": APIKEY
 	},
 	body: {
@@ -134,7 +140,7 @@ POST
 
 {
 	url: "https://api.astrologico.org/v1/chart",
-	header: {
+	headers: {
 		"Authorization": APIKEY
 	},
 	body: {
@@ -144,6 +150,8 @@ POST
 	}
 }
 ```
+
+<br>
 
 ### Zodiac Signs and Degrees
 
@@ -176,3 +184,5 @@ let second = Math.floor(signdegree * 60 % 1 * 60); // 4
 // this will output: 25° 47' 4''
 console.log(degree + "° " + minute + "' " + second + "''");
 ```
+
+<br>
