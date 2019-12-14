@@ -2,13 +2,13 @@
 
 This is the official documentation for the version 1 of the API. This version has been through extensive private testing and is now ready for public testing. Version 1 will remain available for experimental use and small projects but keep an eye out for the upcoming Version 2 of the API.
 
-For any questions, bug reports, etc... feel free to contact us via discord or github.
+For any questions, bug reports, etc... feel free to contact us via [Discord](https://discord.gg/jtaCURK) or [Github](https://github.com/timotejroiko/astrologico-docs).
 
 <br>
 
 ### Getting Started
 
-Astrologico API is a fully featured microservice capable of retrieving planetary positions, astrological calculations and other data. All endpoints are `HTTPS` only and available via `GET` or `POST`. We encourage you to experiment with it and help us weed out any remaining bugs, inconsistencies or incorrect information. Astrologico API requires an API key which can be obtained at our [Discord server](https://discord.gg/jtaCURK) or by contacting us
+Astrologico API is a fully featured microservice capable of retrieving planetary positions, astrological calculations and other data. All endpoints are `HTTPS` only and available via `GET` or `POST`. We encourage you to experiment with it and help us weed out any remaining bugs, inconsistencies or incorrect information. Astrologico API requires an API key which can be obtained at our [Discord server](https://discord.gg/jtaCURK) or by contacting us.
 
 By using this service, you agree to our [Terms and Conditions](#) (coming soon);
 
