@@ -8,19 +8,19 @@ The same as the [Chart](endpoints_chart.md) endpoint but returns arrays of value
 
 | Parameter | Type | Descripton |
 |---|---|---|
-| <[Date](/astrologico/param_date.md)> | Number/Array | Set date using one of the available date parameters. |
-| <[Location](/astrologico/param_location.md)> | Number/Array | Set location using one of the available location parameters. |
+| <[Date](parameters_date.md)> | Number/Array | Set date using one of the available date parameters. |
+| <[Location](parameters_location.md)> | Number/Array | Set location using one of the available location parameters. |
 | [range](#range) | Array | Required. Set the time range |
-| [planets](/astrologico/param_planets.md) | Array | Set objects to display |
-| [houses](/astrologico/param_houses.md) | Array | Set houses to display |
-| [options](/astrologico/param_options.md) | Array | Set calculation options |
-| [sidereal](/astrologico/param_sidereal.md) | Integer/Array | Enable the Sidereal zodiac and set an Ayanamsa |
-| [display](/astrologico/param_display.md) | Array | Set values to display |
-| [stations](/astrologico/param_display.md) | Array | Customize the "stationary" display option |
-| [derived](/astrologico/param_derived.md) | Array | Ephemeris for a derived chart |
-| [progression](/astrologico/param_progression.md) | array | Ephemeris for a progressed chart |
-| [timezone](/astrologico/param_timezone.md) | String/Integer | Set timezone manually |
-| [language](/astrologico/param_language.md) | String | Set language to localize certain functions |
+| [planets](parameters_planets.md) | Array | Set objects to display |
+| [houses](parameters_houses.md) | Array | Set houses to display |
+| [options](parameters_options.md) | Array | Set calculation options |
+| [sidereal](parameters_sidereal.md) | Integer/Array | Enable the Sidereal zodiac and set an Ayanamsa |
+| [display](parameters_display.md) | Array | Set values to display |
+| [stations](parameters_display.md) | Array | Customize the "stationary" display option |
+| [derived](parameters_derived.md) | Array | Ephemeris for a derived chart |
+| [progression](parameters_progression.md) | array | Ephemeris for a progressed chart |
+| [timezone](parameters_timezone.md) | String/Integer | Set timezone manually |
+| [language](parameters_language.md) | String | Set language to localize certain functions |
 
 <br>
 
