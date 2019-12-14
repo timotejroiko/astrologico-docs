@@ -1,52 +1,25 @@
 # Astrologico API v2 (Alpha)
 
-This is the official documentation for the version 2 of the API. Version 2 is a complete rewrite of version one, offering more scalability and performance, which enables more complex features. Although most of its core is complete, its implementation is still in its early stages, therefore its has less features than v1 at the moment.
+This is the official documentation for the version 2 of the API. Version 2 is a complete redesign and rewrite of version 1 and offers better scalability which enables more complex features. This version is being actively developed and updates will be posted here regularly.
 
-For any questions, bug reports, etc... feel free to contact me via discord or open an issue specifying the relevant version.
+For any questions, bug reports, etc... feel free to contact us via [Discord](https://discord.gg/jtaCURK) or [Github](https://github.com/timotejroiko/astrologico-docs).
+
+<br>
+
+## Differences from Version 1
+
+coming soon
+
+<br>
 
 ## Getting Started
 
-Astrologico API is a fully featured microservice for retrieving astrological calculations and data. All endpoints are `HTTPS` only and available via `GET` or `POST`. We encourage you to experiment with it and help us weed out any remaining bugs, inconsistencies or incorrect data. You can request an API key at our [Discord server](https://discord.gg/jtaCURK){:target="_blank"}
-
-By using this service, you agree to our [Terms and Conditions](#) (coming soon);
+coming soon
 
 <br>
 
 ## Features
 
-Astrologico API's features include:
-
-* Covers a time range of 30000 years for planets and stars, and 6000 years for asteroids
-* Built-in date, time and location converters
-* Tropical and sidereal zodiacs, over 40 built-in ayanamsas plus customizable ayanamsas
-* Over 20 built-in house systems plus ability to derive houses from RAMC
-* Derived charts such as "Persona" charts and the "Human Design System"
-* Includes major planets, hypothetical planets, over 1000 comets, over 500000 asteroids, over 100 arabic parts/lots, Artificial Satellites, Planetary Nodes, Apsides and more
-* Over 7000 built-in stars, plus access to millions of stars and stellar objects through our integration with the simbad database
-* Available data includes Longitude, Latitude, Declination, Right Ascension, Altitude, Azimuth, Distance, Speeds, Human Design hexagrams and more
+coming soon
 
 <br>
-  
-## GET vs POST
-
-There are two differences between `GET` and `POST` requests. In `GET` requests, arrays should be pipe-delimited query strings, and the API key should be in a query-string as well. In `POST` requests the API key should be given in an `Authorization` header.
-
-| GET  | POST |
-| --- | --- |
-| ?field=value1\|value2\|value3&key=APIKEY  | header: { Authorization: APIKEY },<br>body: { field: [value1,value2,value3] } |
-
-<br>
-
-## Cost, Rate Limits & Pricing
-
-Depending on the endpoint and the parameters used, a request will have a given `cost` based on complexity and resource usage. Each day you will be given a usage limit, and when the limit is reached, subsequent requests will be increasingly throttled. Our API will continue to be available even if you go over our rate limits, but we advise you to upgrade your key to avoid slowing down your application. Limits reset at midnight UTC.
-
-Our current Rate limits are as follows:
-
-| Pricing | Daily Limit |
-| --- | --- |
-| Free | 300 |
-
-Options and pricing for higher rate limits will be available soon.
-
-<br><br><br>

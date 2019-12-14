@@ -51,6 +51,6 @@ Our current Rate limits are as follows:
 | --- | --- |
 | Free | 300 |
 
-Options and pricing for higher rate limits will be available soon.
+Options and pricing for higher rate limits will be available later on down the road.
 
 <br>
