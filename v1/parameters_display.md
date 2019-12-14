@@ -1,6 +1,6 @@
 ## Display
 
-An array of planetary values the request should return. If none is specified, it defaults to `LONGITUDE LONGITUDE_SPEED`. Not all objects support all display values, for more info see [Response Data](/astrologico/res_data.html);
+An array of planetary values the request should return. If none is specified, it defaults to `LONGITUDE LONGITUDE_SPEED`. Not all objects support all display values, for more info see [Response Data](response_data.md);
 
 | option | Descripton |
 |---|---|
@@ -28,6 +28,4 @@ Retrieving `Longitude`, `Latitude` and `Declination` values:
 
 | GET | POST |
 |---|---|
-|`display=LONGITUDE|LATITUDE|DECLINATION`|`display:["LONGITUDE","LATITUDE","DECLINATION"]`|
-
-<br><br><br>
+|display=LONGITUDE\|LATITUDE\|DECLINATION|display:["LONGITUDE","LATITUDE","DECLINATION"]|
