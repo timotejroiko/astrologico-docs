@@ -33,7 +33,7 @@ This parameter enables Houses and sets a House System with which to calculate Ho
 | 15 | Morinus |
 | 16 | Placidus |
 | 17 | Polich / Page / Topocentric |
-| 18 | Porphyrius / Porphyry |
+| 18 | Porphyry |
 | 19 | Pullen SD (sinusoidal delta) / Neo-Porphyry |
 | 20 | Pullen SR (sinusoidal ratio) |
 | 21 | Regiomontanus |
