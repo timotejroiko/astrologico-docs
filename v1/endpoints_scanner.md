@@ -87,18 +87,21 @@ The results field is an array of objects which contain the following fields.
 ```
 GET
 
-https://api.astrologico.org/v1/location?query=new%20york&key=APIKEY
+https://api.astrologico.org/v1/scanner?utcdate=10|10|2015&target=2&type=O&param=LONGITUDE&key=APIKEY
 ```
 
 ```
 POST
 
-url: "https://api.astrologico.org/v1/location",
+url: "https://api.astrologico.org/v1/scanner",
 headers: {
 	"Authorization": APIKEY
 },
 body: {
-	query: "new york"
+	utcdate: [10,10,2015],
+	target: 2,
+	type: "O",
+	param: "LONGITUDE"
 }
 ```
 
@@ -109,12 +112,43 @@ body: {
 ```
 {
 	"status": "OK",
-	"location": {
-		"queryResult": "New York, New York, United States",
-		"longitude": -73.9808,
-		"latitude": 40.7648,
-		"elevation": 30
-	}
+	"result": [
+		{
+			"name": "57P/duToit-Neujmin-Delporte",
+			"longitude": 1.8999676817825324,
+			"id": "C61"
+		},
+		{
+			"name": "231P/LINEAR-NEAT",
+			"longitude": 2.369568993038678,
+			"id": "C307"
+		},
+		{
+			"name": "C/1874 Q1 (Coggia)",
+			"longitude": 0.816902382232026,
+			"id": "C505"
+		},
+		{
+			"name": "C/2006 V1 (Catalina)",
+			"longitude": 2.3589702048429606,
+			"id": "C845"
+		},
+		{
+			"name": "P/2005 E1 (Tubbiolo)",
+			"longitude": 1.5435894405720267,
+			"id": "C1196"
+		},
+		{
+			"name": "P/2010 H4 (Scotti)",
+			"longitude": 0.5188327578728367,
+			"id": "C1252"
+		},
+		{
+			"name": "True South Node",
+			"longitude": 1.0430285550213796,
+				"id": "P24"
+		}
+	]
 }
 ```
 
