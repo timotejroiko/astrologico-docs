@@ -10,7 +10,7 @@ For any questions, bug reports, etc... feel free to contact us via [Discord](htt
 
 Astrologico API is a fully featured microservice capable of retrieving planetary positions, astrological calculations and other data. All endpoints are `HTTPS` only and available via `GET` or `POST`. We encourage you to experiment with it and help us weed out any remaining bugs, inconsistencies or incorrect information. Astrologico API requires an API key which can be obtained at our [Discord server](https://discord.gg/jtaCURK) or by contacting us.
 
-By using this service, you agree to our [Terms and Conditions](https://astrologico.org/terms.php);
+By using this service, you agree to our [Terms and Conditions](https://astrologico.org/terms);
 
 <br>
 
