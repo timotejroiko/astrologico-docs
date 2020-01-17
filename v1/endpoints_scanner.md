@@ -1,6 +1,6 @@
 ## Scanner
 
-This endpoint attempts to find all objects of a given type located in a certain position. Requests to this endpoint are pretty expensive and might often be throttled to prevent abuse, so expect them to be slow (5-10 seconds per request on average).
+This endpoint scans the sky and attempts to find all objects of a given type located in a certain position for a given date. Requests to this endpoint are expensive and might often be throttled to prevent abuse, so expect them to be slow (5-10 seconds per request on average).
 
 <br>
 
@@ -23,7 +23,7 @@ This endpoint attempts to find all objects of a given type located in a certain 
 
 | Type | Descripton |
 |---|---|
-| A | Asteroids |
+| A | Asteroids (limited to ~21000 named asteroids) |
 | S | Stars |
 | O | Planets, Hypotheticals, Comets, Arabic parts and other objects |
 | D | Deep scan of stars and celestial objects from the simbad database \* |
@@ -63,12 +63,12 @@ This endpoint attempts to find all objects of a given type located in a certain 
 |---|---|---|
 | [status](response_status.md) | String | Contains the response status |
 | [error](response_status.md) | String | Contains the error message in case of error |
-| [results](#results) | Array | An array of all objects found nearby the given coordinates |
+| [result](#results) | Array | An array of all objects found nearby the given coordinates |
 | [keyInfo](response_keyinfo.md) | Object | Contains data about your API key's usage and rate limits |
 
 <br>
 
-### Response - Results
+### Response - Result
 
 The results field is an array of objects which contain the following fields.
 
