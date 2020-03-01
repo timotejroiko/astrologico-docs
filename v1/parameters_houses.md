@@ -8,7 +8,7 @@ This parameter enables Houses and sets a House System with which to calculate Ho
 | 1 | Float | RAMC value \* |
 | 2 | Float | Obliquity value \* |
 
-\* If index 1 and 2 are set, the houses will be calculated from the given RAMC value instead of the date and location. Calculating houses from an RAMC also requires specifying the Obliquity of the ecliptic value and is only available in the [Chart](endpoints_chart.md) Endpoint.
+\* If index 1 and 2 are set, the houses will be calculated from the given RAMC value instead of the date and location (it still requires a geographic location to be set). Calculating houses from an RAMC also requires specifying the Obliquity of the ecliptic value and is only available in the [Chart](endpoints_chart.md) Endpoint.
 
 <br>
 
@@ -45,10 +45,16 @@ This parameter enables Houses and sets a House System with which to calculate Ho
 
 ### Example
 
-Retrieving houses, Ascendant, Midheaven and other related points using the `Placidus` house system:
+Retrieving houses, Ascendant, Midheaven and other related points using the `Placidus` house system.
 
 | GET | POST |
 |---|---|
 |houses=16|houses:[16]|
+
+Retrieving houses, Ascendant, Midheaven and other related points using the `Placidus` house system for a "Composite" chart. This calculation requires 3 values: The average RAMC from the combined charts, the average Obliquity of the Ecliptic from the combined charts and the average Geographic Latitude from the combined charts (ie: location=35|0). Some values might not be available here.
+
+| GET | POST |
+|---|---|
+|houses=16\|225.325\|23.546|houses:[16,225.325,23.546]|
 
 <br>
