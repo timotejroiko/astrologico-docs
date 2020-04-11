@@ -49,7 +49,7 @@ Our current Rate limits are as follows:
 
 | Pricing | Daily Limit |
 | --- | --- |
-| Free | 300 |
+| Free | 500 |
 
 Options and pricing for higher rate limits will be available later on down the road.
 
